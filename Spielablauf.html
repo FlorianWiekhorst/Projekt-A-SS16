@@ -1,0 +1,150 @@
+/*
+09.04.2016
+Übersicht über den Ablauf des Spieles:
+-Das Spiel beginnt!
+ (In diesem Beispiel wird mit 4 Spielern gespielt, das Spielfeld wurde aufgebaut)
+ 
+ [Die Turmteile werden nach Art sortiert, verdeckt gemischt auf die dazugehörigen Nachziehstapel 
+  des Spielplans gelegt und dann so viele Plättchen aufgedeckt, bis alle Auslagen auf dem jeweiligen 
+  Spielplanbereich belegt sind.]
+  
+- jeder Spieler hat ein Zählstein (für Prestige-Punkte), dieser wird zu Beginn auf 0 gesetzt.
+- Es existiert ein Jahreszähler-Stein, diesen zu Begin auf 1 setzen.
+- Der Startspieler wird zufällig ermittelt:
+    - er erhält die Marke "Gunst der Kalifen" + 20 Asari
+    - nachfolgende Spieler erhalten 20 Asari + Anzahl spieler vor ihnen
+      (Spieler 2 erhält 21 Asari, Spieler 3 erhält 22, usw)
+
+- Alle Einkäufer werden gemischt und bei 4 Spielern an jeden Spieler 7 Einkäufer verdeckt verteilt.
+
+- Spieler 1 legt einen lilafarbenen Einkäufer auf das Feld mit den Turmbasisteilen.
+    -Er kauft das weiße Basisteil für 8 Asari.
+    -Der Kaufpreis hängt dabei nicht von der Art des Turmteils, sondern nur von der Farbe ab.
+
+- Das Turmteil legt er hinter seinen Sichtschirm. Das leere Feld wird nicht wieder aufgefüllt.
+
+- Spieler 2 legt einen türkisen Einkäufer in die Bank auf das 12er-Feld.
+    -Er erhält somit 12 Asari aus der Bank.
+    
+- Spieler 3 legt einen grünen Einkäufer auf das Feld mit den Turmspitzen.
+    -Er kauft die braune Spitze für 3 Asari.
+
+- Spieler 4 legt einen braunen Einkäufer auf das Feld mit den Turmfenstern.
+    -Er kauft das rote Fenster für 5 Asari.
+    
+- Spieler 1 geht in die Bank.
+    Da hier schon ein türkiser Einkäufer liegt, muss auch er einen türkisen Einkäufer legen.
+    Kann er dieses nicht, so müsste er verdeckt 2 beliebige Einkäufer legen.
+    Spieler 1 erhält 10 Asari.
+    
+- Spieler 2 geht auch in die Bank.
+    Er legt einen türkisen Einkäufer und erhält 8 Asari.
+    
+- Spieler 3 legt einen blauen Einkäufer auf das Feld mit den Turmmittelteilen.
+    Er kauft das schwarze Mittelteil für 6 Asari.
+    
+- Spieler 4 legt einen lilafarbenen Einkäufer auf das Feld mit den Turmbasisteilen.
+    Er kauft das rote Basisteil für 5 Asari.
+    
+- Spieler 1 möchte eine Turmspitze kaufen, hat aber keinen grünen Einkäufer mehr.
+    Aus diesem Grund legt er verdeckt 2 beliebige Einkäufer ab.
+    Er kauft die weiße Spitze für 8 Asari.
+    
+- Spieler 2 legt einen braunen Einkäufer und holt sich für 4 Asari ein grünes Fensterteil.
+
+- Spieler 3 legt einen grünen Einkäufer und holt sich für 4 Asari eine grüne Turmspitze.
+
+- Spieler 3 legt einen grünen Einkäufer und holt sich für 5 Asari eine rote Turmspitze.
+    Es sind jetzt alle Einkäuferfelder belegt, so dass in diesem Jahr kein Spieler mehr Turmspitzen kaufen kann.
+    
+- Spieler 1 legt einen braunen Einkäufer auf das 2er-Feld des Baukreises.
+    Hierfür muss er 2 Asari bezahlen.
+    Das 2er-Feld erlaubt ihm 2 Turmteile zu bauen.
+    
+- Er baut einen weißen Turm bestehend aus einer Basis und einer Spitze.
+    Eine Basis und eine Spitze sind die beiden Teile, die jeder Turm mindestens haben muss.
+    Für den Bau von 2 Turmteilen erhält er 2 Prestigepunkte.
+    
+- Spieler 2 legt einen blauen Einkäufer und holt sich für 4 Asari ein grünes Turmmittelteil.
+
+- Spieler 3 legt einen blauen Einkäufer und holt sich für 6 Asari ein schwarzes Turmmittelteil.
+
+- Spieler 4 legt einen blauen Einkäufer und holt sich für 5 Asari ein rotes Turmmittelteil.
+    Es sind jetzt alle Einkäuferfelder belegt, so dass in diesem Jahr kein Spieler mehr Turmmittelteile kaufen kann.
+    
+- Spieler 1 legt einen lilafarbenen Einkäufer und holt sich für 6 Asari eine schwarze Turmbasis.
+
+- Spieler 2 legt einen braunen Einkäufer und holt sich für 4 Asari ein grünes Fensterteil.
+
+- Spieler 3 legt verdeckt einen Einkäufer auf das 5 Asari-Feld der Bank.
+    Dies ist das einzige Feld im Spiel, auf dem Einkäufer beliebiger Farbe und Anzahl gelegt werden.
+    Spieler 3 erhält 5 Asari von der Bank.
+    
+- Spieler 4 holt sich auch 5 Asari. (Bankfach 5 geht wohl öfters)
+
+- Spieler 1 holt sich auch 5 Asari.
+
+- Spieler 2 legt verdeckt 2 Einkäufer und holt sich für 4 Asari eine grüne Turmbasis.
+
+- Spieler 3 legt verdeckt 2 Einkäufer und holt sich für 6 Asari eine schwarze Turmbasis.
+
+- Spieler 4 legt einen braunen Einkäufer auf das 4er-Feld des Baukreises.
+    Hierfür muss er 4 Asari bezahlen.
+    Das 4er-Feld erlaubt ihm 4 Turmteile zu bauen.
+    
+- Er baut einen roten Turm bestehend aus einer Basis, einem Mitteil, einem Fenster und einer Spitze.
+    Für den Bau von 4 Turmteilen erhält er 4 Prestigepunkte.
+    
+- Spieler 4 holt sich 5 Asari.
+    Mit dem Legen des letzten Einkäufers endet das Jahr. (ENDE eines Jahres!)
+    
+- Am Ende eines Jahres gibt es Prestigepunkte: (Punkteverteilung des Jahres)
+    -> Der Besitzer der Gunst des Kalifen erhält 1 Prestigepunkt.
+    -> Für jeden gebauten Turm erhält sein Besitzer 1 Prestigepunkt.
+    -> Für jede Goldverzierung erhält sein Besitzer 1 Prestigepunkt.
+    
+  (BEGIN eines neuen jahres)  
+- Alle leeren Spielplanfelder werden mit neuen Turmteilen vom entsprechenden Nachziehstapel aufgefüllt.
+    Alle Spieler erhalten 20 Asari.
+    Alle Einkäufer werden vom Spielplan genommen, mit dem Einkäuferkartenstapel zusammengemischt 
+    und wieder 7 Karten an jeden Spieler verteilt.
+    Der Jahreszähler wird ein Jahr weiterbewegt.
+    
+- Erklärung spezieller Spielplanfelder.
+    Alle Felder werden durch das Auflegen eines Einkäufers aktiviert.
+    Von links nach rechts:
+      - Gunst der Kalifen erhalten. 
+      - 3 Asari bezahlen und aus einem beliebigen Nachziehstapel ein Turmteil aussuchen. Dieses Turmteil muss trotzdem bezahlt werden.
+      - Das Gleiche, nur dass es hier 5 Asari kostet.
+    
+- Schlusswertung am Ende des 4. Jahres. (Endpunkteverteilung)
+    -> Es werden in jeder Farbe der höchste und zweithöchste Turm ermittelt. Je nach Farbe und Platz gibt es Prestigepunkte.
+    -> Prestigepunkte für den allgemein höchsten/zweithöchsten Turm.
+    -> Prestigepunkte für die meisten/zweitmeisten Türme bei einem Spieler.
+    -> Pro 10 Asari gibt es 1 Prestigepunkt.
+   
+- Es gewinnt natürlich der Spieler mit der höchsten Endprestige nach 4 Jahren.   
+   
+--- Zusatzbedingungen der Profivariante: 
+- Eckfelder in der Profivariante.
+    In der so ebenen gezeigten Variante warn beide Felder verdeckt, d.h. die Brunnenseite lag oben. 
+    In der Profivariante liegt die Brunnenseite unten.
+    Diese Felder erlauben das Rekrutieren von Einkäufern.
+    Einkäufer auf ein Feld legen, Betrag an die Bank zahlen und 2 Einkäufer vom Nachziehstapel ziehen.
+    
+- Im Haus der leuchtenden Fenster legt ein Spieler einen seiner Einkäufer auf ein Feld und zieht für:
+    -> 4 Asari 3 leuchtende Fenster und behält eines davon.
+    -> 10 Asari 5 leuchtende Fenster und behält zwei davon.    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
