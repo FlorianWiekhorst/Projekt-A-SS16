@@ -9,6 +9,19 @@ Dazu kommen Daten der Arbeiten und regelmäßige persönliche Termine.
 Unsere Software ermöglicht dann eine gute Übersicht.
 Dem User stehen eine Reihe von Anpassungsmöglichkeiten zur Verfügung.
 
+### Update der Spielidee - 02.05.2016 ###
+
+Da meine urprüngliche Idee zu simple und zu wenig interaktiv im Sinne dieses Projektes war,
+widme ich mein Projekt A nun dem Ziel ein webbasiertes Softwareprojekt auf der Basis des Brettspiels "Asara" zu erstellen.
+
+Genau wie bei dem klassischen Brettspiel Asara wird auch in meinem Softwareprojekt mit 2-4 Spielern gespielt.
+Ziel ist es die verschiedenen Möglichkeiten und Abläufe des Brettspiels sinnvoll zu einem interaktiven digitalen 
+Spiel umzuwandeln.
+
+Eine Beschreibung zum Brettspiel findet man unter:
+http://www.brettspiele-report.de/asara/
+
+
 === Feedback Alpers, 2016-04-07 ===
 
 Wichtig: Sie haben bereits eine Datei strukt.html erstellt. Das sollen Sie aber erst tun, nachdem Sie die vorigen Aufgaben abgeschlossen haben. Denn nur dann wissen Sie, was Sie tun sollen.
