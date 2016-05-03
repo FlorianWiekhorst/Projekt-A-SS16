@@ -111,3 +111,24 @@ Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst später währen
 
 Viele Grüße,
 Markus Alpers
+
+===================================
+=== Feedback Alpers, 2016-05-03 ===
+===================================
+
+Leider fehlt die Beschreibung des Spiels komplett. Bedenken Sie bitte, dass es einen Unterschied macht, ob ein Spiel als Brettspiel oder als webbasierte Anwendung entwickelt wird. Deshalb ist es unumgänglich, dass Sie für die Softwareentwicklung eine Beschreibung entsprechend der Vorgaben aus Kap. 5 erstellen.
+
+Bitte beachten Sie insbesondere, dass Ihre Aufgabe damit auch darin besteht, zu prüfen, welche Elemente des Brettspiels nicht in die Beschreibung eines webbasierten Spiels eingearbeitet werden sollten und umgekehrt, welche zusätzlichen Elemente Sie einfügen können.
+
+Dazu kommt, dass das Brettspiel nur eine Vorlage für Sie sein soll; es gibt kaum etwas langweiligeres als die Umsetzung eines Brettspiels, in ein Computerspiel, weil dabei die Interaktion zwischen Spielern wegfällt, ohne dass die Möglichkeiten des Mediums ausreichend eingesetzt werden würden.
+
+Wertung 2: Projektbeschreibung: gesamt: -5 / 10
+- Pro Interaktionsmöglichkeit: 0
+- Knappe aber klare Beschreibung: 0
+- Werbeslogans u.ä.: 0
+- Designaspekte: 0
+- Voraussetzung bekannten Wissens: -5
+
+=====================
+=== Feedback Ende ===
+=====================
