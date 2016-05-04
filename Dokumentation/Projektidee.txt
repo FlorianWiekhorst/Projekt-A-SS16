@@ -22,6 +22,119 @@ Eine Beschreibung zum Brettspiel findet man unter:
 http://www.brettspiele-report.de/asara/
 
 
+
+### Projektidee FlorianWiekhorst, 4.Mai.2016 ###
+
+Titel:			Asara Digital
+
+Inhalt:		100 TurmBauteile verteilt auf 5 Bereiche und unterteilt in 5 Farben
+			   -20 Basisteile
+			   -20 Mittelteile
+			   -25 Fenster 
+			   -15 leuchtende Fenster
+			   -20 Spitzen
+
+		   	Asari-Münzen (Zahlungsmittel)
+		  	Jahreszähler (Rundenzähler)
+		  	Prestigepunktezähler
+    		Spielanleitung (pdf)
+		  	45 Einkäufer (zum erwerbt von Bauteilen auf dem Markt)
+   			Die Gunst des Kalifen (ein kaufbarer Punkte-Buff)
+    		Ein Zeitlimit pro Runde (Die Märkte haben nicht ewig geöffnet)
+
+
+Bereiche:		In der normalen Version 7 Stück:
+      				- Die 4 Märkte (für Bauteile)
+      				- Die Bank (Einkäufer zu Asari)
+      				- Das Haus der Spione (Gunst, gezielt Teilestapel durchsuchen)
+      				- Der Baubereich 
+
+			      In der Pro Version kommen zwei weitere hinzu:
+      				- Die Werkstatt der leuchtenden Fenster (zusätzliche Fenster erwerben)
+      				- Das Zelt (Einkäufer rekrutieren)
+
+
+Kurzbeschreibung: 	
+
+      Der Spieler tritt gegen CPU-Gegner an.
+			Es geht darum Türme zu errichten.
+			Nach 4 Runden gewinnt derjenige mit den meisten Punkten.
+
+			Punkte werden durch errichtete Türme ermittelt.
+			Türme geben unterschiedlich viele Punkte, jenachdem welche Teile benutzt wurden.
+			Bauteile erwirbt man auf Märkten mit Einkäufern.
+			Preis der Bauteile wird durch ihre Farbe bestimmt. 
+			(Weiss 8, Schwarz 6, Rot 5, Grün 4, Braun 3) [Alle Preise in Asari]
+
+			Einkäufer gibt es in 5 Farben.
+			Alle Bereiche (Märkte, Bank, Baubereich,usw) passen ihre Farbe dem erstem Einkäufer an.
+			Jeder Spieler erhält 7 züfallige Einkäufer bei Jahresstart.
+			
+			Am Ende eines Zuges hat man die Möglichkeit einen oder mehrere Türme zu bauen.
+			Ein Turm muss mindesstens aus einem Basisteil und einer Spitze bestehen.
+			Ein Turm kann nur aus Teilen derselben Farbe gebaut werden.
+			
+			Die Gunst des Kalifen erhält zu Spielbegin der züfällig ermittelte Beginner.
+			Im Spielverlauf kann man durch Asari die Gunst erhalten/stehlen.
+			
+			Ein Jahr endet sobald kein Spieler mehr Einkäufer besitzt.
+			Im Anschlussjahr startet der Spieler mit der Gunst.
+
+			Am Ende von Jahr 4 gibt es eine umfangreiche Berechnung der Punkte.
+			Der Spieler mit den meisten Punkten gewinnt.
+			Die Punkte und der Name des menschl. Spielers werden in die Highscoreliste eingetragen.
+
+
+			
+Ablauf:			
+
+      Der Nutzer erblickt die Titelseite.
+			Er kann sich einloggen oder neu anmelden.
+
+			Daraufhin wählt er seinen Namen und eine Spielerfarbe.
+			Er kann sich seine GegnerAnzahl aussuchen.
+			Und den Spielmodus wählen: Normal/Pro.
+			
+			Der Startspieler wird zufällig ermittelt.
+			Er erhält die Gunst des Kalifen.
+			Alle Spieler erhalten Asari und Einkäufer.
+			
+			Sobald der Spieler an der Reihe ist wählt er unter Zeitdruck ein Feld.
+			Je nachdem welches Feld er wählt, ändern sich seine Aktionsmöglichkeiten:
+				
+				- Wählt er einen Markt für Bauteile, kann er dort ein Bauteil erwerben.			
+				
+				- Wählt er die Bank, kann er Einkäufer verkaufen um Asari zu erhalten.
+
+				- Wählt er den Baubereich, kann er, solange er über die richtigen 
+				  Bauteile einer Farbe verfügt, für einige Asari bauen.
+
+				- Wählt er das Zelt, kann er neue Einkäufer gegen Asari anwerben.
+
+				- Wählt er das Haus der leuchtenden Fenster, kann er, solange er die vier/zehn Asari 
+				  aufbringen kann, sich 3/5 Fenstern ansehen, und sich davon ein/zwei nehmen.
+
+				- Wählt er das Haus der Spione, kann er sich die Gunst erkaufen, oder gegen Asari
+				  ein Bauteil aus einem der Arrays wählen.
+
+				Wichtig: All diese Aktionen setzten natürlich vorraus, dass der Spieler über die
+					 nötigen Ressourcen vefügt. z.b.: Anzahl/Farbe Einkäufer, genug Asari, usw,
+					 sowie das noch freie Felder zum Ablegen von Einkäufern vorhanden sind.
+
+
+			Solange der Nutzer nicht am Zug ist, laufen die Züge der CPU Gegner ab.
+			Auch diese erwerben Bauteile, bauen Türme, besuchen die Bank oder einen der anderen Bereiche.
+
+			Dadurch können geplante Spielzüge des Nutzers vernichtet werden, bzw ihm Bauteile fehlen.
+			Oder der Zugang zu einem Markt wird teurer, da er die Marktfarbe nicht bedienen kann.
+
+			Am Ende vom vierten Jahr werden anhand der erbauten Türme nocheinmal viele Punkte vergeben.
+			Es folgt eine Endauflistung der Mitspieler mit ihren erreichten Punkten.
+
+## Ende Projektbeschreibung ###
+
+
+
 === Feedback Alpers, 2016-04-07 ===
 
 Wichtig: Sie haben bereits eine Datei strukt.html erstellt. Das sollen Sie aber erst tun, nachdem Sie die vorigen Aufgaben abgeschlossen haben. Denn nur dann wissen Sie, was Sie tun sollen.
