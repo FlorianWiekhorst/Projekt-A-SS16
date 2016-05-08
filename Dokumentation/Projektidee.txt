@@ -1,4 +1,4 @@
-=== Projektidee FlorianWiekhorst, 2016-04-05 ===
+=== Projektidee FlorianWiekhorst, 5.April.2016 ===
 
 Projekt A 
 Der Studienplaner
@@ -10,7 +10,6 @@ Unsere Software ermöglicht dann eine gute Übersicht.
 Dem User stehen eine Reihe von Anpassungsmöglichkeiten zur Verfügung.
 
 ### Update der Spielidee - 02.05.2016 ###
-
 Da meine urprüngliche Idee zu simple und zu wenig interaktiv im Sinne dieses Projektes war,
 widme ich mein Projekt A nun dem Ziel ein webbasiertes Softwareprojekt auf der Basis des Brettspiels "Asara" zu erstellen.
 
@@ -27,7 +26,7 @@ http://www.brettspiele-report.de/asara/
 
 Titel:			Asara Digital
 
-Inhalt:		100 TurmBauteile verteilt auf 5 Bereiche und unterteilt in 5 Farben
+Inhalt:			100 TurmBauteile verteilt auf 5 Bereiche und unterteilt in 5 Farben
 			   -20 Basisteile
 			   -20 Mittelteile
 			   -25 Fenster 
@@ -37,19 +36,17 @@ Inhalt:		100 TurmBauteile verteilt auf 5 Bereiche und unterteilt in 5 Farben
 		   	Asari-Münzen (Zahlungsmittel)
 		  	Jahreszähler (Rundenzähler)
 		  	Prestigepunktezähler
-    		Spielanleitung (pdf)
+    			Spielanleitung (pdf)
 		  	45 Einkäufer (zum erwerbt von Bauteilen auf dem Markt)
    			Die Gunst des Kalifen (ein kaufbarer Punkte-Buff)
-    		Ein Zeitlimit pro Runde (Die Märkte haben nicht ewig geöffnet)
+    			Ein Zeitlimit pro Runde (Die Märkte haben nicht ewig geöffnet)
 
 
-Bereiche:		In der normalen Version 7 Stück:
+Bereiche:		9 Stück:
       				- Die 4 Märkte (für Bauteile)
       				- Die Bank (Einkäufer zu Asari)
       				- Das Haus der Spione (Gunst, gezielt Teilestapel durchsuchen)
       				- Der Baubereich 
-
-			      In der Pro Version kommen zwei weitere hinzu:
       				- Die Werkstatt der leuchtenden Fenster (zusätzliche Fenster erwerben)
       				- Das Zelt (Einkäufer rekrutieren)
 
