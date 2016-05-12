@@ -11,71 +11,89 @@
 	Stand 12.05.2016
 
 
-	Startseite:
--1-		-Textfeld Spieltitel
--2-		-Hintergrundbild
--3-		-Button "Anleitung" mit Pop-upWindow der Anleitung
--4-		-Button "Login" 
--5-		-Button "Registrierung"
+view_Index:	[Startseite]
+I.	-1-	-Textfeld Spieltitel
+I.	-2-	-Hintergrundbild
+I.	-3-	-Button "Anleitung" (Pop-up-Window der Anleitung)
+I.	-4-	-Button "HighScore" (Pop-up-Window Liste_Highscore)
+I.	-5-	-Button "Login" 
+I.	-6-	-Button "Registrierung"
 		
-	Login-Seite:
--6-		-Hintergrundbild
--7-		-Textfeld Spielernamen
--8-		-Textfeld Passwort
--9-		-Button "Zum Spiel"
--10-		-Textfeld Fehler1 (Wenn Name/Passwort falsch)
+view_Login:	[Login-Seite]
+II.	-7-	-Hintergrundbild
+II.	-8-	-Textfeld Spielernamen
+II. 	-9-	-Textfeld Passwort
+II.	-10-	-Button "Zum Spiel"
+II.	-11-	-Textfeld Fehler1 (Wenn Name/Passwort falsch)
 	
-	Registrierungs-Seite:
--11-		-Hintergrundbild
--12-		-Textfeld Neuer Spielername
--13-		-Textfeld Neues Passwort
--14-		-Textfeld Neues Passwort wiederholen
--15-		-Textfeld für die Email
--16-		-Button "Zum Spiel"
--17-		-Textfeld Fehler2 (Wenn Passwörter nicht identisch)
--18-		-Textfeld Fehler3 (Wenn Spielername schon vergeben)
--19-		-Textfeld Fehler4 (Wenn Emailformat ungültig)
+view_Regist:	[Registrierungs-Seite]
+III.	-12-	-Hintergrundbild
+III.	-13-	-Textfeld Neuer Spielername
+III.	-14-	-Textfeld Neues Passwort
+III.	-15-	-Textfeld Neues Passwort wiederholen
+III.	-16-	-Textfeld für die Email
+III.	-17-	-Button "Zum Spiel"
+III.	-18-	-Textfeld Fehler2 (Wenn Passwörter nicht identisch)
+III.	-19-	-Textfeld Fehler3 (Wenn Spielername schon vergeben)
+III.	-20-	-Textfeld Fehler4 (Wenn Emailformat ungültig)
+
 		
-	Spielseite:
--20-		-Tabelle 3x3 für das Spielfeld
-			Das Spielfeld besteht aus 9 vers. Bereichen:
+view_Game:	[Spielseite]
+IV.	-21-	-Tabelle 3x3 für das Spielfeld
+	           	Das Spielfeld besteht aus 9 vers. Bereichen:
+
+IV.	-22-		-Markt für Turmbasis-Bauteile (7 TeileFelder / 5 AblageFelder für Einkäufer)
+IV.	-23-		-Markt für Turmspitzen (7 TeileFelder / 4 AblageFelder für Einkäufer)
+IV.	-24-		-Markt für Turmfenster (8 TeileFelder / 5 AblageFelder für Einkäufer)
+IV.	-25-		-Markt für Turmmittel-Bauteile (7 TeileFelder / 4 AblageFelder für Einkäufer)
 			
--21-			-Markt für Turmbasis-Bauteile (7 TeileFelder / 5 AblageFelder für Einkäufer)
--22-			-Markt für Turmspitzen (7 TeileFelder / 4 AblageFelder für Einkäufer)
--23-			-Markt für Turmfenster (8 TeileFelder / 5 AblageFelder für Einkäufer)
--24-			-Markt für Turmmittel-Bauteile (7 TeileFelder / 4 AblageFelder für Einkäufer)
+IV.	-26-		-Feld zum bauen von Türmen (7 AblageFelder für Einkäufer)
+IV.	-27-		-Die Bank (4 AblageFelder für Einkäufer)
+IV.	-28-		-Gunstfeld und nachzugmöglichkeit für vers. Turmteile (3 AblageFelder für Einkäufer)
 			
--25-			-Feld zum bauen von Türmen (7 AblageFelder für Einkäufer)
--26-			-Die Bank (4 AblageFelder für Einkäufer)
--27-			-Gunstfeld und nachzugmöglichkeit für vers. Turmteile (3 AblageFelder für Einkäufer)
-			
--28-			-Einkäufer werben (3 AblageFelder für Einkäufer)]
--29-			-Leuchtende Fenster Werkstatt (3 AblageFelder für Einkäufer)]
+IV.	-29-		-Einkäufer werben (3 AblageFelder für Einkäufer)]
+IV.	-30-		-Leuchtende Fenster Werkstatt (3 AblageFelder für Einkäufer)]
 
+IV.	-31-		-Menü für jedes Feld der Tabellen mit passenden Texteinträgen 
+			  (Eintrag für "Einkäufer Ablegen", "Turmteil kaufen", "2 verdeckte Einkäufer") 
+			  
+IV.	-32-		-Hintergrundmusik 
+  
+		[Menueleiste ingame]
+V.	-38-		    - Jahresangabe
+V.	-40-		    - Anzahl Guthaben Asari aller Spieler
+V.	-41-		    - Anzeige für den Besitz der "Gunst des Kalifen"
+V.	-2323-		    - Button "Inventar und Türme"
 
--30-		-Auflistung der eigenen Türme/ Türme aller Spieler
-
--31-		-Menü für jedes Feld der Tabellen mit passenden Texteinträgen 
-		  (Eintrag für "Einkäufer Ablegen", "Turmteil kaufen") 
-
-		-Listen für:
--32-		    - Einkäuferstapel
--33-		    - Bauteilestapel (je eine Liste für "Spitzen", "Mittelteile" , usw)
--34-		    - Derzeitiger Punktestand aller Spieler
--35-		    - Jahresangabe
--36-		    - Inventar des Spielers (Eine Auflistung aller Bauteile im Besitz des Spielers)
--37-		    - Anzahl Guthaben Asari aller Spieler
--38-		    - Anzeige für den Besitz der "Gunst des Kalifen"
-		    
-		-Textfelder für:
--39-		    - Fehlermeldung ("Turmteil kann nichtmehr gekauft werden" / "Nicht genug Asari", usw)
--40-		    - Ansagen ("Jahr 2 beendet" / "Spieler 3 Gewinnt mit 72 Punkten", usw)
--41-		    - Textfelder in Form von MouseOvers/Hilfetexten
+		[Hilfetexte]
+IX.	-42-		- Textfeld Fehler5 ("Turmteil kann nicht mehr gekauft werden")
+IX.	-44-		- Textfeld Fehler6 ("Nicht genug Asari")
+IX.	-44-		- Textfeld Fehler7 ("Falsche Einkäuferfarbe")
+IX.	-43-		- Ansagen ("Jahr 2 beendet" / "Spieler 3 Gewinnt mit 72 Punkten", usw)
+IX.	-44-		- Textfelder in Form von MouseOvers/Hilfetexten
 		       ("Die Bank tauscht Einkäufer gegen Asari" / "Sie können hier Einkäufer anwerben", usw )
-		       
--42-		-Hintergrundmusik 
--43-		-Link/Werbung am Ende des Spiels zur Brettspielversion
--44-		-Button "Zurück zur Startseite"
+
+
+view_Inventar:		[Eigene Turmbauteile und Einkäufer]
+VII.	-39-	        - Auflistung aller Bauteile im Besitz des Spielers
+VII.	-42-		- Auflistung der eigenen Einkäufer
+
+view_Score:
+VIII.	-44-		- Auflistung der fertigen Türme aller Spieler [pop-up]
+VIII.	-33-		- Derzeitiger Punktestand aller Spieler
+
+
+view_Gamefinished:
+X.	-46-		-Link/Werbung am Ende des Spiels zur Brettspielversion
+X.	-47-		-Button "Zurück zur Startseite"
+
+[Werden nicht angezeigt!]
+		-Listen für:
+VI.	-32-		- Einkäuferstapel
+VI.	-33-	  	- Bauteilestapel ("Spitzen")
+VI.	-33-	  	- Bauteilestapel ("Fenster")
+VI.	-33	  	- Bauteilestapel ("Mittelteile")
+VI.	-33-		- Bauteilestapel ("Basisteile")
     
     </body> 
 </html>
