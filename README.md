@@ -1,9 +1,9 @@
 # Projekt-A-SS16: Asara
 
-Asara – Land der 1000 Türme
+Asara – Land der 1000 Bugs
 
-Dieses Projekt widmet sich der Umsetzung einer
-digitalen Version von dem Brettspiel Asara.
+Als grobe Vorlage für mein digitales Projekt
+dient mir das Brettspiel Asara.
 
 Infos zum Brettspiel unter:
 http://www.brettspiele-report.de/asara/
