@@ -1,11 +1,17 @@
 //use your style here:
 
-	html, body {
-			height:100%;
-		}
+html, body {
+		height:100%;
+	}
 
-		body {
-			font: Verdana;
-			background: #fff;
-			color: #333;
-		}
+	body {
+		font: Verdana;
+		background: #fff;
+		color: #333;
+	}
+
+nav {
+		font-size: 1.5em;
+		margin: 5px 0;
+		padding: 20px 50px
+	}
