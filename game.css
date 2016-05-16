@@ -1,1 +1,11 @@
 //use your style here:
+
+	html, body {
+			height:100%;
+		}
+
+		body {
+			font: Verdana;
+			background: #fff;
+			color: #333;
+		}
