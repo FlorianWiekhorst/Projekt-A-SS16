@@ -1,0 +1,28 @@
+body {
+	background: black;
+}
+
+section {		
+    background: #144F54;
+  	border: 8px solid black;
+    float: auto;
+  	padding: auto;
+    text-align: center;
+	}
+
+h1 {
+    color: black;
+  	font-size: 35px;
+} 
+
+#indexButtons {
+  	color: white;
+  	font-size: 35px;
+  	text-decoration: none;
+  	background-color: #144F54;
+}
+
+img {
+  	width: 32%; 
+  	border: 2px solid black;	
+}
