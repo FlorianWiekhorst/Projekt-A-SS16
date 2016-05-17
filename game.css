@@ -4,13 +4,13 @@ html, body {
 	}
 
 section{
-  background: #144F54;
-  font: 30px;
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 2);
-  float: left;
-  width: 81%;
-  height: 85%;
-  background-image: url("http://file2.npage.de/014013/83/bilder/table.png");
+	 background: #144F54;
+	 font: 30px;
+	 box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 2);
+	 float: left;
+	 width: 81%;
+	 height: 85%;
+	 background-image: url("http://file2.npage.de/014013/83/bilder/table.png");
 }
 
 header{
