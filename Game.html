@@ -6,44 +6,75 @@
 	<link href="game.css" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-  	<a href="" id="menu">Hauptmenu</a>
-  	<h1>Asara - Land der 1000 Bugs</h1>
-  </header>
+<header>
+	<h1>Asara - Land der 1000 Bugs</h1>
+	<a href="Index.html" id="menu">Hauptmenu</a>
+</header>
 
-  <section>
-    <ul class="Spielfeld" style="list-style-type:none" id="feld">
-      <li>
-    		<a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basisteile.jpeg" id="basis"></a>
-    		<a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_arbeitermarkt.jpeg" id="arbeiter"></a>
-    		<a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_bank.jpeg" id="bank"></a>
-  	   </li>
-  	   
-      <li>
-    		<a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basar.jpeg" id="basar"></a>
-    		<a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_baufeld.jpeg" id="baufeld"></a>
-    		<a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_fenster.jpeg" id="fenster"></a>
-  		</li>
-  		
-  		<li>
-    		<a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_mittelteile.jpeg" id="mitten"></a>
-    		<a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_spitzen.jpeg" id="spitzen"></a>
-    		<a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_werkstatt.jpeg" id="werkstatt"></a>
-  		</li>
-    </ul>
-  </section>
+<section>
+   <ul class="Spielfeld" style="list-style-type:none" id="feld"> <!-- Neun Felder mit Bild, Tooltip und ModalFenster(kommt noch) -->
+       <li>
+		<!-- Basisteile-Markt -->
+		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basisteile.jpeg" id="basis"><span class="tooltiptext">
+			Kaufe hier Basisteile für deine Türme.</span></a>
+		</div>
+		<!-- Arbeiter-Markt -->
+		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_arbeitermarkt.jpeg" id="arbeiter"><span class="tooltiptext">
+			Für einige Asari kannsst du hier neue Einkäufer erwerben.</span></a>
+		</div>
+		<!-- Die Bank -->
+		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_bank.jpeg" id="bank"><span class="tooltiptext">
+			Verkaufe Einkäufer um Asari zu erhalten.</span></a>
+		</div>
+	</li>
+	   
+       	<li>
+	    <!-- Der Basar -->
+		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basar.jpeg" id="basar"><span class="tooltiptext">
+			Erwerbe hier die gunst des Kalifen oder eine zufällige Auswahl an Bauteilen.</span></a>
+		</div>
+		<!-- Das Baufeld -->
+		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_baufeld.jpeg" id="baufeld"><span class="tooltiptext">
+			Hier kannst du Türme erbauen.</span></a>
+		</div>
+		<!-- Fenster-Markt -->
+		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_fenster.jpeg" id="fenster"><span class="tooltiptext">
+			Auf diesem Markt werden Fenster verkauft.</span></a>
+		</div>
+	</li>
+		
+	<li>
+		<!-- Mittelteile-Markt -->
+		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_mittelteile.jpeg" id="mitten"><span class="tooltiptext">
+			Hier erhälst du Mittelteile für deine Türme.</span></a>
+		</div>
+		<!-- Turmspitzen-Markt -->
+		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_spitzen.jpeg" id="spitzen"><span class="tooltiptext">
+			Der Markt für Turmspitzen.</span></a>
+		</div>
+		<!-- Werkstatt -->
+		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_werkstatt.jpeg" id="werkstatt"><span class="tooltiptext">
+			Die Werkstatt produziert leuchtende Fenster.</span></a>
+		</div>
+	</li>
+   </ul>
+   
+
+   
+</section>
    
 <aside>
-	<h2>Punkte der Spieler</h2>
+	<h2>Punkte der Spieler</h2> <!-- Needs some php -->
 		<p>Frederick: 	  13</p>
 		<p>CS_Freak:	  26</p>
 		<p>Tabularasa: 	  11</p>
 		<p>420Pleb: 	  22</p><br>
 	<p id="gunst">Tabularasa ist im besitzt<br>der Gunst des Kalifen!</p><br>
-	<p id="jahr">Wir befinden uns im <php hier einbauen> 2. Jahr!</p><br><br><br>
-	<a href="" id="inventar">Inventar</a>
+	<p id="jahr">Wir befinden uns im 2. Jahr!</p><br><br><br> <!-- Needs some php -->
+	<a href="Inventar.html" id="inventar">Inventar</a>
 	<p><br></p>
 	
 </aside>
+
 </body>
 </html>
