@@ -14,13 +14,13 @@
 		<h1>Asara - Land der 1000 Bugs</h1>
 	</header>
 		
-<img src="https://cf.geekdo-images.com/images/pic745896.jpg" id="titleImg"><br>
+<img src="https://cf.geekdo-images.com/images/pic745896.jpg" id="titleImg"><br> <!-- Das TitelBild -->
 
-	<div id="buttonbox">
-		<button id="anmeldeButton" class="modalButton">Anmelden</button> 		<!-- name button 1  -->
-		<button id="registButton" class="modalButton">Register Mich!</button>		<!-- name button 2 -->
-		<button id="highscoreButton" class="modalButton">_HighScore_</button>		<!-- name button 3 -->
-		<button id="anleitungButton" class="modalButton">Anleitung</button>		<!-- name button 4 -->
+	<div id="buttonbox"> <!-- Die 4 Buttons des Hauptmenüs -->
+		<button id="anmeldeButton" class="modalButton">Anmelden</button> 	<!-- name button 1 - Anmeldung  -->
+		<button id="registButton" class="modalButton">Register Mich!</button>	<!-- name button 2 - Registrierung -->
+		<button id="highscoreButton" class="modalButton">_HighScore_</button>	<!-- name button 3 - Highscoreliste -->
+		<button id="anleitungButton" class="modalButton">Anleitung</button>	<!-- name button 4 - Anleitung -->
 	</div>
 	
 <!-- Das AnmeldeFenster  -->
@@ -31,10 +31,10 @@
 			<p>Bitte melde dich an um zu spielen.</p>
 			<form>
 				<i class="material-icons md-48">face</i> Spielername:<br>
-				<input type="text" name="Spielername" placeholder="Spielername" required autofocus><br>
+				<input type="text" name="Spielername" placeholder="Spielername" required autofocus><br>  <!-- Eingabe des Nutzernamens -->
 				<i class="material-icons md-48">vpn_key</i> Passwort:<br>
-				<input type="password" name="passwort" placeholder="Passwort" required ><br><br>
-				<input type="submit" value="Submit" id="subB">
+				<input type="password" name="passwort" placeholder="Passwort" required ><br><br>	 <!-- Eingabe des Passwortes -->
+				<input type="submit" value="Submit" id="subB">  <!-- Der BestätigungsButton -->
 			</form> 
 		</section>
 	</div>
@@ -48,22 +48,22 @@
                     <h1> Registrierung </h1> 
 			<p> 
                         <label for="usernamesignup" class="uname" >Name </label><i class="material-icons md-48">face</i>
-                        <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="justanotheruser69" />
+                        <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="justanotheruser69" /> <!-- Eingabe eines neuen Nutzernamens -->
                     	</p>
                 	<p> 
                         <label for="emailsignup" class="youmail">Email </label><i class="material-icons md-48">email</i>
-                        <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="besteemail@gmx.de"/> 
+                        <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="besteemail@gmx.de"/> <!-- Eingabe einer neuen Emailadresse -->
                     	</p>
                     	<p> 
                         <label for="passwordsignup" class="youpasswd">Passwort </label><i class="material-icons md-48">vpn_key</i>
-                        <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="zB. R7ap2MdU3"/>
+                        <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="zB. R7ap2MdU3"/> <!-- Eingabe eines neuen Passwortes -->
                     	</p>
                     	<p> 
                         <label for="passwordsignup_confirm" class="youpasswd">Passwort wiederholen </label><br><i class="material-icons md-48">vpn_key</i>
-                        <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="zB. R7ap2MdU3"/>
+                        <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="zB. R7ap2MdU3"/> <!-- Erneute eingabe des neuen Passwortes -->
                     	</p>
                     	<p class="regist_Button"> 
-			<input type="submit" value="Sign up" id="subB"/> 
+			<input type="submit" value="Sign up" id="subB"/> <!-- Bestätigungsbutton der Registration -->
 			</p>
                 </form>
         </div>
@@ -74,7 +74,7 @@
         <div class="modal-container">
 		<span class="close">x</span>
 			<h1>HighscoreListe</h1>
-			<video autoplay="autoplay" loop="loop" width="600" height="450" id="bg_vid">
+			<video autoplay="autoplay" loop="loop" width="600" height="450" id="bg_vid"> <!-- Hintergrundvideo der Highscoreliste -->
 			<source src="http://possumsednolo.npage.de/get_file.php?id=30827741&vnr=295487" type="video/mp4" />
 			<img src="http://possumsednolo.npage.de/get_file.php?id=30827741&vnr=295487" width="400" height="300" /></video>
         </div>
@@ -88,7 +88,7 @@
 			<h1>So wird gespielt:</h1>
 			<p>Bei Asara geht es darum...</p>
 			<ul id="rundenablauf">
-				<li>Einkäufer losschicken</li>
+				<li>Einkäufer losschicken</li>	<!-- Eine Anleitung zum Spielablauf (noch unvollständig) -->
 				<li>Teile erwerben
 					<ul>
 					    <li>sobald min. ein Basisteile und eine Turmspitze vorhanden sind kann gebaut werden!</li>
@@ -100,7 +100,7 @@
 </div>
 </section>
 
-<script>
+<script> 	// jeder Button öffnet ein eigenes Fenster (noch fehlerhaft) 
 	/*	Kleine Übersicht um nicht ein modales Chaos zu erzeugen  o0	
 	
 		Fenster 1: id="fenster1" , var modal + btn   , button: "anmeldeButton"
