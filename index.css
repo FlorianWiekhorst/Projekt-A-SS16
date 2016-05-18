@@ -1,3 +1,4 @@
+/* Standard CSS Shit */
 body {
 	background: black;
 }
@@ -5,55 +6,181 @@ body {
 section {		
     	background: #144F54;
 	border: 8px solid black;
-    	float: auto;
+    	float: middle;
 	padding: auto;
     	text-align: center;
 	}
 
 h1 {
-	color: black;
-	font-size: 35px;
+    	color: orange;
+	font-size: 70px;
 } 
 
-a {
-	color: white;
-	font-size: 35px;
-	text-decoration: none;
-	background-color: #144F54;
-}
-
 img {
-	width: 32%; 
-	border: 4px solid black;	
+	width: 28%; 
+	border: 3px solid black;	
 }
 
-aside {
-	float: right;
-	border-radius: 5px;
+#buttonbox {
+	float: middle;
+	border-radius: 15px;
+	height: 95px;
+	padding: 60px 0px 0px 0px; /*top right bottom left*/
 }
 
-#subB {
+
+/* Buttons */
+/* Bestätigungs-Button */
+#subB {					
 	height: 42px;
 	width: 90px;
 	border: 3px solid black;
 	font-size: 20px;
+	border-radius: 8px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    	transition-duration: 0.4s;
+    	cursor: pointer;
+}
+#subB:hover {
+	background-color: #4CAF50;
+    	color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/* die vier HauptmenüButton */
+
+#anmeldeButton,
+#registButton,
+#highscoreButton,
+#anleitungButton {
+	
+	height: auto;
+	width: auto;
+	border: 3px solid black;
+	font-size: 20px;
+	border-radius: 8px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
 }
 
 
 
+
+
+/* Modale Fenster */
 .modal {
-  display: none;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  padding: 10px;
-  margin-left: -100px;
-  margin-top: -100px;
-  background: #ccc;
+    	display: none; 		/* Hidden by default */
+	 position: fixed; 	/* Stay in place */
+    	z-index: 1; 		/* Sit on top */
+    	padding-top: 200px; /* Location of the box */
+    	left: 0;
+    	top: 0;
+    	width: 100%;		 /* Full width */
+    	height: 100%;		 /* Full height */
+	overflow: auto;		 /* Enable scroll if needed */
+    	background-color: rgb(0,0,0);		 /* Fallback color */
+	background-color: rgba(0,0,0,0.9);	 /* Black w/ opacity */
+	text-align: center;
 }
 
-.modalclose {
-  cursor: pointer;
+.close {
+    	color: black;
+    	float: right;
+    	font-size: 50px;
+    	font-weight: bold;
+	padding-right: 15px;
 }
+
+
+.close:hover {
+	color: red;
+	text-decoration: none;
+    	cursor: pointer;
+}
+
+
+/* Die Fenster selbst */
+#fenster1 {				/*Anmeldung*/
+	background-color: #ED8E0E;
+    	border: 2px solid black;
+    	width: 24%;
+	height: 30%;
+	font: 22px "Lucida Console";
+	padding: 10px 10px 10px 10px; 
+	border-radius: 8px;
+	
+}
+
+#fenster2 {				/*Register*/
+    	background-color: #ED8E0E;
+    	margin: auto;
+    	padding: 20px;
+    	border: 4px solid black;
+    	width: 29%;
+	height: 40%;
+	font: 22px "Lucida Console";
+	border-radius: 8px;
+}
+
+#fenster3 {				/*HighScore*/
+	background: #333333;
+	color: white;
+	border: 8px solid black;
+    	float: right;
+	padding: none;
+    	text-align: center;
+	width: 80%;
+	height: 89%;
+}
+
+
+#fenster4 {				/*Anleitung*/
+	background-color: #575433;
+	margin: auto;
+    	padding: 20px 0px 0px 200px; /*top right bottom left*/
+    	border: 6px solid black;
+    	width: 64%;
+	height: 80%;
+	font: 20px "Lucida Console";
+	
+}
+
+
+/* Hintergrund Video Highscore Screen */
+#bg_vid {				
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(http://possumsednolo.npage.de/get_file.php?id=30827741&vnr=295487) no-repeat;
+    background-size: cover; 
+}
+
+/* Schutzeinstellung für kleine Bildschirmdarstellungen */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+	html {
+         background: url(http://possumsednolo.npage.de/get_file.php?id=30827741&vnr=295487) #000 no-repeat center center fixed;
+    }
+    #bg_vid {
+        display: none;
+    }
+}
+
+
+
+
+
+
