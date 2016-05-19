@@ -4,56 +4,57 @@
   <meta charset="utf-8">
 	<title>Asara</title>
 	<link href="game.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Google Icons einbinden -->
 </head>
 <body>
 <header>
 	<h1>Asara - Land der 1000 Bugs</h1>
-	<a href="Index.html" id="menu">Hauptmenu</a> <!-- Button um ins Hauptmenu zurück zu kommen -->
+	<a href="Index.html" id=menu>Hauptmenu</a>
 </header>
 
 <section>
-   <ul class="Spielfeld" style="list-style-type:none" id="feld"> <!-- Neun Felder mit Bild, Tooltip und ModalFenster(kommt noch) -->
-       <li>
+   <ul class=Spielfeld style="list-style-type:none" id=feld> <!-- Neun Felder mit Bild, Tooltip und ModalFenster(kommt noch) -->
+       	<li>
 		<!-- Basisteile-Markt -->
-		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basisteile.jpeg" id="basis"><span class="tooltiptext">
+		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basisteile.jpeg" id=basis><span class=tooltiptext>
 			Kaufe hier Basisteile für deine Türme.</span></a>
 		</div>
 		<!-- Arbeiter-Markt -->
-		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_arbeitermarkt.jpeg" id="arbeiter"><span class="tooltiptext">
+		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_arbeitermarkt.jpeg" id=arbeiter><span class=tooltiptext>
 			Für einige Asari kannsst du hier neue Einkäufer erwerben.</span></a>
 		</div>
 		<!-- Die Bank -->
-		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_bank.jpeg" id="bank"><span class="tooltiptext">
+		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_bank.jpeg" id=bank><span class=tooltiptext>
 			Verkaufe Einkäufer um Asari zu erhalten.</span></a>
 		</div>
 	</li>
 	   
-       	<li>
+        <li>
 	    <!-- Der Basar -->
-		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basar.jpeg" id="basar"><span class="tooltiptext">
+		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basar.jpeg" id=basar><span class=tooltiptext>
 			Erwerbe hier die gunst des Kalifen oder eine zufällige Auswahl an Bauteilen.</span></a>
 		</div>
 		<!-- Das Baufeld -->
-		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_baufeld.jpeg" id="baufeld"><span class="tooltiptext">
+		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_baufeld.jpeg" id=baufeld><span class=tooltiptext>
 			Hier kannst du Türme erbauen.</span></a>
 		</div>
 		<!-- Fenster-Markt -->
-		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_fenster.jpeg" id="fenster"><span class="tooltiptext">
+		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_fenster.jpeg" id=fenster><span class=tooltiptext>
 			Auf diesem Markt werden Fenster verkauft.</span></a>
 		</div>
 	</li>
 		
 	<li>
 		<!-- Mittelteile-Markt -->
-		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_mittelteile.jpeg" id="mitten"><span class="tooltiptext">
+		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_mittelteile.jpeg" id=mitten><span class=tooltiptext>
 			Hier erhälst du Mittelteile für deine Türme.</span></a>
 		</div>
 		<!-- Turmspitzen-Markt -->
-		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_spitzen.jpeg" id="spitzen"><span class="tooltiptext">
+		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_spitzen.jpeg" id=spitzen><span class=tooltiptext>
 			Der Markt für Turmspitzen.</span></a>
 		</div>
 		<!-- Werkstatt -->
-		<div class="tooltip"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_werkstatt.jpeg" id="werkstatt"><span class="tooltiptext">
+		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_werkstatt.jpeg" id=werkstatt><span class=tooltiptext>
 			Die Werkstatt produziert leuchtende Fenster.</span></a>
 		</div>
 	</li>
@@ -63,17 +64,43 @@
    
 </section>
    
-<aside>  <!-- Hier fehlt noch einiges an php -->
-	<h2>Punkte der Spieler</h2> <!-- Tabelle der Punkteübersicht -->
-		<p>Frederick: 	  13</p>
-		<p>CS_Freak:	  26</p>
-		<p>Tabularasa: 	  11</p>
-		<p>420Pleb: 	  22</p><br>
-	<p id="gunst">Tabularasa ist im besitzt<br>der Gunst des Kalifen!</p><br> 	<!-- Infofeld für die Gunst -->
-	<p id="jahr">Wir befinden uns im 2. Jahr!</p><br><br><br> 			<!-- JahresZähler -->
-	<a href="Inventar.html" id="inventar">Inventar</a>			<!-- Button zum Inventar -->
-	<p><br></p>
+<aside>
+	<h2>Übersichtstafel</h2><hr> <!-- Needs some php -->
+	<table>
+			<tr id=tableHead>
+				<th>Spieler &nbsp;</th> <!-- " &nbsp; " = non breaking space. -->
+				<th>&nbsp; Asari  &nbsp;</th>
+				<th>&nbsp; Punkte  &nbsp;</th>
+			</tr>
+			<tr>
+				<td>User_2</td>
+				<td id=asari>13</td>
+				<td id=points>8</td>
+			<tr>
+			<tr>
+				<td>Tabularasa</td>
+				<td id=asari>60</td>
+				<td id=points>0</td>
+			</tr>
+			<tr>
+				<td>UnknownUser</td>
+				<td id=asari>34</td>
+				<td id=points>4</td>
+			</tr>
+			<tr>
+				<td>Cheater_1337</td>
+				<td id=asari>54</td>
+				<td id=points>21</td>
+			</tr>
+	</table>
+	<hr>
+	<p id=gunst><strong>Tabularasa</strong> ist im besitzt<br>der Gunst des Kalifen!</p>
+	<p id=jahr>Wir befinden uns im 2. Jahr!</p><hr> <!-- Needs some php -->
+	<br>
 	
+		<a href="Inventar.html" id=inventar>&nbsp;<i class="material-icons">reorder</i>&nbsp;Inventar</a>
+		<br>
+		<a href="Score.html" id=score>&nbsp;<i class="material-icons">account_balance</i>Landschaft</a>
 </aside>
 
 </body>
