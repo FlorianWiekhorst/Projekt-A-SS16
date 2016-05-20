@@ -14,7 +14,7 @@
 
 <section>
    <ul class=Spielfeld style="list-style-type:none" id=feld> <!-- Neun Felder mit Bild, Tooltip und ModalFenster(kommt noch) -->
-       	<li>
+       <li>
 		<!-- Basisteile-Markt -->
 		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basisteile.jpeg" id=basis><span class=tooltiptext>
 			Kaufe hier Basisteile für deine Türme.</span></a>
@@ -23,13 +23,19 @@
 		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_arbeitermarkt.jpeg" id=arbeiter><span class=tooltiptext>
 			Für einige Asari kannsst du hier neue Einkäufer erwerben.</span></a>
 		</div>
-		<!-- Die Bank -->
-		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_bank.jpeg" id=bank><span class=tooltiptext>
+		
+		
+		
+		<!-- Die Bank   ### Erster Test mit Button-Script zum Fenster öffnen ### -->
+		<button onclick="myOpener()"><div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_bank.jpeg" id=bank><span class=tooltiptext>
 			Verkaufe Einkäufer um Asari zu erhalten.</span></a>
-		</div>
-	</li>
+		</div></button>
+		
+		
+		
+	   </li>
 	   
-        <li>
+       <li>
 	    <!-- Der Basar -->
 		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basar.jpeg" id=basar><span class=tooltiptext>
 			Erwerbe hier die gunst des Kalifen oder eine zufällige Auswahl an Bauteilen.</span></a>
@@ -42,9 +48,9 @@
 		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_fenster.jpeg" id=fenster><span class=tooltiptext>
 			Auf diesem Markt werden Fenster verkauft.</span></a>
 		</div>
-	</li>
+		</li>
 		
-	<li>
+		<li>
 		<!-- Mittelteile-Markt -->
 		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_mittelteile.jpeg" id=mitten><span class=tooltiptext>
 			Hier erhälst du Mittelteile für deine Türme.</span></a>
@@ -57,7 +63,7 @@
 		<div class=tooltip><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_werkstatt.jpeg" id=werkstatt><span class=tooltiptext>
 			Die Werkstatt produziert leuchtende Fenster.</span></a>
 		</div>
-	</li>
+		</li>
    </ul>
    
 
@@ -103,5 +109,10 @@
 		<a href="Score.html" id=score>&nbsp;<i class="material-icons">account_balance</i>Landschaft</a>
 </aside>
 
+	<script>
+		function myOpener() {		//Spielbrettbereiche im eigenen Fenster öffnen 
+			window.open("Inventar.html","_blank","width=600,height=600,left=400,top=200,location=0,resizable=0,titlebar=0,menubar=0,directories=0");
+		}
+	</script>
 </body>
 </html>
