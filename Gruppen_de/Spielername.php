@@ -1,10 +1,10 @@
 
 <?php
 
-$spielerName = 'Gustav'; 
+$spielername = 'Gustav'; 
 
 if (isset($_POST['action'])) {
-    $username = $_POST['username'];
+    $spielername = $_POST['spielername'];
     }
 
 ?>
