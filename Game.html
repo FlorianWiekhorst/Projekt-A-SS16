@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
+	 <meta charset="utf-8">
 	<title>Asara</title>
 	<link href="game.css" rel="stylesheet"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Google Icons einbinden -->
+	
+	<?php
+	session_start();
+	$userid = $_SESSION['userid'];
+ 	echo "Hallo User: ".$userid; 
+	?>
 </head>
 <body>
 <header>
