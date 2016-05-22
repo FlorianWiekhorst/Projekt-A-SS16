@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
-  	<meta charset="utf-8">
+  	<meta name="description" content="Simple WebGame">
+  	<meta name="author" content="Florian Wiekhorst">
+  	<meta charset="UTF-8">	
+  	<title>Asara Ende</title>
+  	<link href="index.css" rel="stylesheet"/>
   </head>
   
-    <body>
-    
-    </body>
-
+  <body>
+    <section>
+      <header> 
+        <h1><?php (if $userpoints > $otherpoints {
+              echo 'Glückwunsch! Sie haben das Spiel mit $userpoints Punkten gewonnen!<br>';
+              }
+            else {
+              echo 'Schade, einer der Gegenspieler hatte mehr Punkte als Sie!<br>';
+            }
+        </h1>
+      </header>
+      
+        <!-- Übersicht der Punktetafel -->
+      
+        <!-- Werbung zum Brettspiel -->
+        
+        <!-- Logoutbutton -->
+        
+    </section>
+  </body>
 </html>
