@@ -1,24 +1,4 @@
-=== Projektidee FlorianWiekhorst, 5.April.2016 ===
 
-Projekt A 
-Der Studienplaner
-
-Wir möchten einen Planer für Studenten erstellen. 
-Der User kann sich einloggen und seine Vorlesungen eintragen.
-Dazu kommen Daten der Arbeiten und regelmäßige persönliche Termine.
-Unsere Software ermöglicht dann eine gute Übersicht.
-Dem User stehen eine Reihe von Anpassungsmöglichkeiten zur Verfügung.
-
-### Update der Spielidee - 02.05.2016 ###
-Da meine urprüngliche Idee zu simple und zu wenig interaktiv im Sinne dieses Projektes war,
-widme ich mein Projekt A nun dem Ziel ein webbasiertes Softwareprojekt auf der Basis des Brettspiels "Asara" zu erstellen.
-
-Genau wie bei dem klassischen Brettspiel Asara wird auch in meinem Softwareprojekt mit 2-4 Spielern gespielt.
-Ziel ist es die verschiedenen Möglichkeiten und Abläufe des Brettspiels sinnvoll zu einem interaktiven digitalen 
-Spiel umzuwandeln.
-
-Eine Beschreibung zum Brettspiel findet man unter:
-http://www.brettspiele-report.de/asara/
 
 
 
@@ -26,21 +6,19 @@ http://www.brettspiele-report.de/asara/
 
 Titel:			Asara Digital
 
-Inhalt:			100 TurmBauteile verteilt auf 5 Bereiche und unterteilt in 5 Farben
+Inhalt:			100 TurmBauteile verteilt auf 5 Arrays und unterteilt in 5 Farben
 			   -20 Basisteile
 			   -20 Mittelteile
 			   -25 Fenster 
 			   -15 leuchtende Fenster
 			   -20 Spitzen
 
-		   	Asari-Münzen (Zahlungsmittel)
+		   	Asari (Zahlungsmittel)
 		  	Jahreszähler (Rundenzähler)
 		  	Prestigepunktezähler
     			Spielanleitung (pdf)
 		  	45 Einkäufer (zum erwerbt von Bauteilen auf dem Markt)
    			Die Gunst des Kalifen (ein kaufbarer Punkte-Buff)
-    			Ein Zeitlimit pro Runde (Die Märkte haben nicht ewig geöffnet)
-
 
 Bereiche:		9 Stück:
       			   - Die 4 Märkte (für Bauteile)
@@ -82,20 +60,15 @@ Kurzbeschreibung:
 			Die Punkte und der Name des menschl. Spielers werden in die Highscoreliste eingetragen.
 
 
-			
 Ablauf:			
-
 			Der Nutzer erblickt die Titelseite.
 			Er kann sich einloggen oder neu anmelden.
 
-			Daraufhin wählt er seinen Namen und eine Spielerfarbe.
-			Er kann sich seine GegnerAnzahl aussuchen.
-			
 			Der Startspieler wird zufällig ermittelt.
 			Er erhält die Gunst des Kalifen.
 			Alle Spieler erhalten Asari und Einkäufer.
 			
-			Sobald der Spieler an der Reihe ist wählt er unter Zeitdruck ein Feld.
+			Sobald der Spieler an der Reihe ist wählt er ein Bereich aus.
 			Je nachdem welches Feld er wählt, ändern sich seine Aktionsmöglichkeiten:
 				
 				- Wählt er einen Markt für Bauteile, kann er dort ein Bauteil erwerben.			
