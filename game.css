@@ -1,54 +1,63 @@
+
+
 html, body {
-	height:100%;
-	background: black;
+			height:99%;
+			background: black;
 		}
 
-section{
-	background: #144F54;
-	font: 30px;
-	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 2);
-	float: left;
-	width: 81%;
-	height: 85%;
-	background-image: url("http://file2.npage.de/014013/83/bilder/table.png");
+section{  /* Spielfeld */
+  background: #144F54;
+  font: 20px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 2);
+  float: left;
+  width: 81%;
+  height: 88%;
+  background-image: url("http://file2.npage.de/014013/83/bilder/table.png");
 }
 
-header{
-	background: #0B3549;
+nav {
+	float: left;
+	padding-left: 200px;
+}
+
+
+header {
 	color: white;
-	font: 22px "Lucida Console";
-	padding: 24px 15px;
-	float: left;
-	width: 99%;
-	height: 6%;
-	
+	font: 16px "Lucida Console";
+	padding: 20px 15px;
+	float: right;
+	width: 98%;
+	height: 5%;
+	background-image: url("http://file2.npage.de/014013/83/bilder/4238051-background.jpg");
 }
 
-#menu {
+
+
+#menu { /* hauptmenüButton */
 	position: relative;
-	transform: translateY(-100%);
-	border-radius: 8px;
-    	background: #0C2951;
-	height: 30px;   
+	transform: translateY(-250%);
+	border-radius: 9px;
+    background: #0C2951;
+    height: 30px;   
 	font-size: 30px;
 	color: white;
 	text-decoration: none;
-	padding: 5px 6px 5px 4px; /*top right bottom left*/
+	padding: 2px 6px 5px 4px; 
 	
 }
 
-aside {
-	background: #0C3A1A;
-	float: left;
+aside {  /* Übersichtstafel */ 
+	background: #0E1A20;
+	float: right;
 	border-radius: 5px;
 	color: white;
 	font: 14px/24px "Lucida Console";
-	padding: 24px 15px;
+	padding: 20px 15px;
 	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 	display:block;
-	height: 80%;
+	height: 82%;
 	width: 17%;
-	background-image: url("http://file2.npage.de/014013/83/bilder/4238051-background.jpg");
+	
 }
 
 /* Buttons: Inventar und fertige Türme(score) */
@@ -56,8 +65,8 @@ aside {
 	border-radius: 8px;
 	height: 80px;
 	width: 300px;
-	background: #0C2951;
-	font-size: 40px;
+    background: #2D260C;
+	font-size: 38px;
 	color: white;
 	text-decoration: none;
 	padding: 6px 16px 6px 6px;
@@ -68,57 +77,89 @@ aside {
 }
 
 
-
-#feld {
-	padding: 50px 0px 0px 600px;
+#feld { /* neun Felder */
+	padding: 10px 0px 0px 30px;
+	list-style-type:none;
+	text-align: center;
 }
 			
 a {
-	display: inline-block;
-	border: 1px solid black;
-	border-radius: 3px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 
 img {
 	margin: auto;
 	display: block;
 	max-width: 700px;
-	height: 220px;
+	height: 110px;
 }
 
 h1,h2 {
 	text-align: center;
-	padding: -40px 0px 0px 0px; /*top right bottom left*/
 }
 
-#gunst {
-	background-color: #0C2951;
-	text-align: center;
-}
 
-#jahr {
-	background-color: #270849;
-	text-align: center;
-}
 
 /* Auflistung: Spieler, Asara, punkte. */
 table {
 	color: white;
-	border: 3px solid orange;
+	border: 3px solid #7E6C22;
 	font-size: 20px;
 	text-align: center;
 	text-shadow: 2px 2px black;
 }
 #tableHead {
-	background-color: orange;
+	background-color: #D6A83B;
 }
-#asari{
+
+#asari {
 	color: yellow;
 }
+
 #points {
 	color: cc6600;
 }
 
+#gunst {
+	background-color: #7E6C22;
+	text-align: center;
+}
+
+#jahr {
+	background-color: #5A4D18;
+	text-align: center;
+}
+
+iframe {
+	width: 1100px;
+	height: 500px;	
+	margin: top;
+}
+
+#aktionsfenster {
+	position: relative;
+	padding: 200px 0px 0px 200px;
+	width: 1100px;
+	height: 600px;
+	z-index: 1;
+}
+
+footer {
+  background: #0B3549;
+  position: absolute;
+  text-align: right;
+  background: #0B3549;
+  color: white;
+  font: 12px "Lucida Console";
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2%;
+  background-image: url("http://file2.npage.de/014013/83/bilder/4238051-background.jpg");
+  padding: 40px 0px 0px 0px; /*top right bottom left*/
+}
 
 
 
@@ -126,33 +167,39 @@ table {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
+    
 }
 
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 150px;
-    background-color: black;
+    background-color: #333;
     color: #fff;
     text-align: center;
-    border-radius: 9px;
+    border-radius: 8px;
     padding: 30px 10px;
     position: absolute;
-    z-index: 1;
-    top: -40px;
-    right: 110%;
+    z-index: 2;
+    left: -50px;
+	bottom: 102%;
+	text-shadow: 2px 2px black;
 }
 
 .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 100%;
     margin-top: -5px;
     border-width: 1px;
     border-style: solid;
-    border-color: transparent transparent transparent black;
+    border-color: black transparent transparent transparent;
 }
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+
+
+
+
+
+
