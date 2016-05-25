@@ -1,0 +1,19 @@
+/* CSS für die Felder */
+
+body {
+	width: 100%;
+	background: black;
+}
+
+section {		
+  background: white;
+	border: 8px solid black;
+  float: middle;
+	padding: auto;
+  text-align: center;
+}
+
+h2 {
+  color: orange;
+	font-size: 40px;
+} 
