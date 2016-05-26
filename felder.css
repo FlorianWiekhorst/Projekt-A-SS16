@@ -1,19 +1,43 @@
 /* CSS für die Felder */
 
 body {
-	width: 100%;
+	width: 99%;
 	background: black;
 }
 
 section {		
-  background: white;
+	background: white;
 	border: 8px solid black;
-  float: middle;
+	float: middle;
 	padding: auto;
-  text-align: center;
+    	text-align: center;
 }
 
 h2 {
-  color: orange;
+    	color: orange;
 	font-size: 40px;
 } 
+
+p {
+	color: black;
+	font-size: 22px;
+}
+
+nav {
+	background: black;
+	height: 200px;
+	text-align: justify;
+}
+
+/* turmteil = ein kaufbares teil, egal welcher art */
+.turmteil {
+	float: left;
+	background: #35465C;
+	height: 196px;
+	width: 200px;
+	border: 3px solid green;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	border-radius: 17px;
+}
