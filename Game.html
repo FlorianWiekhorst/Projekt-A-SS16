@@ -1,55 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
 	<title>Asara</title>
-	<link href="game.css" rel="stylesheet"/>
+	<link href="game.css" rel="stylesheet"/>	<!--  CSS -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Google Icons einbinden -->
 </head>
-<body onload="startMusic()">
+<body onload="startMusic()">	<!-- BG-Musik beim Seitenladen starten -->
 <header>
-	<h1>Asara - Land der 1000 Bugs</h1>
-	<a href="Index.html" id=menu>Hauptmenu</a>
+	<h1>Asara - Land der 1000 Bugs</h1>			<!-- GameTitle überschrift -->
+	<a href="Index.html" id=menu>Hauptmenu</a>  <!-- Button 'Zurück zum Hauptmenü' -->
 </header>
 <section>
 <nav>
-   <ul class=Spielfeld id=feld> <!-- Neun Felder mit Bild, Tooltip und extraFenster(kommt noch) -->
+   <ul class=Spielfeld id=feld> <!-- Neun Felder mit Bild, Tooltip und extraFenster im Iframe(kommt noch) -->
       <li>
 		<!-- Basisteile-Markt -->
-		<div class=tooltip onclick="plsOpen('basis')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basisteile.jpeg" id=basis><span class=tooltiptext>
+		<div class=tooltip onclick="plsOpen('basisteile.html')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basisteile.jpeg" id=basis><span class=tooltiptext>
 			Kaufe hier Basisteile für deine Türme.</span></a> 
 		&nbsp;</div>
 		<!-- Arbeiter-Markt -->
-		<div class=tooltip onclick="plsOpen('arbeiter')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_arbeitermarkt.jpeg" id=arbeiter><span class=tooltiptext>
+		<div class=tooltip onclick="plsOpen('arbeitsmarkt.html')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_arbeitermarkt.jpeg" id=arbeiter><span class=tooltiptext>
 			Für einige Asari kannsst du hier neue Einkäufer erwerben.</span></a>
 		&nbsp;</div>
 		<!-- Die Bank -->
-		<div class=tooltip onclick="plsOpen('bank')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_bank.jpeg" id=bank><span class=tooltiptext>
+		<div class=tooltip onclick="plsOpen('bank.html')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_bank.jpeg" id=bank><span class=tooltiptext>
 			Verkaufe Einkäufer um Asari zu erhalten.</span></a>
 		&nbsp;</div>
 		 <!-- Der Basar -->
-		<div class=tooltip onclick="plsOpen('basar')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basar.jpeg" id=basar><span class=tooltiptext>
+		<div class=tooltip onclick="plsOpen('gunst.html')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_basar.jpeg" id=basar><span class=tooltiptext>
 			Erwerbe hier die gunst des Kalifen oder eine zufällige Auswahl an Bauteilen.</span></a>
 		&nbsp;</div>
 		<!-- Das Baufeld -->
-		<div class=tooltip onclick="plsOpen('baufeld')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_baufeld.jpeg" id=baufeld><span class=tooltiptext>
+		<div class=tooltip onclick="plsOpen('baubereich.html')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_baufeld.jpeg" id=baufeld><span class=tooltiptext>
 			Hier kannst du Türme erbauen.</span></a>
 		&nbsp;</div>
 		<!-- Fenster-Markt -->
-		<div class=tooltip onclick="plsOpen('fenster')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_fenster.jpeg" id=fenster><span class=tooltiptext>
+		<div class=tooltip onclick="plsOpen('turmfenster.html')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_fenster.jpeg" id=fenster><span class=tooltiptext>
 			Auf diesem Markt werden Fenster verkauft.</span></a>
 		&nbsp;</div>
 		<!-- Mittelteile-Markt -->
-		<div class=tooltip onclick="plsOpen('mitten')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_mittelteile.jpeg" id=mitten><span class=tooltiptext>
+		<div class=tooltip onclick="plsOpen('mittelteile.html')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_mittelteile.jpeg" id=mitten><span class=tooltiptext>
 			Hier erhälst du Mittelteile für deine Türme.</span></a>
 		&nbsp;</div>
 		<!-- Turmspitzen-Markt -->
-		<div class=tooltip onclick="plsOpen('spitzen')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_spitzen.jpeg" id=spitzen><span class=tooltiptext>
+		<div class=tooltip onclick="plsOpen('turmspitzen.html')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_spitzen.jpeg" id=spitzen><span class=tooltiptext>
 			Der Markt für Turmspitzen.</span></a>
 		&nbsp;</div>
 		<!-- Werkstatt -->
-		<div class=tooltip onclick="document.getElementById('werkstatt_W').style.visibility='visible'"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_werkstatt.jpeg" id=werkstatt><span class=tooltiptext>
+		<div class=tooltip onclick="plsOpen('werkstatt.html')"><a href=""><img src="http://file2.npage.de/014013/83/bilder/markt_werkstatt.jpeg" id=werkstatt><span class=tooltiptext>
 			Die Werkstatt produziert leuchtende Fenster.</span></a>
 		</div> 
 	  </li>
@@ -57,22 +56,22 @@
      
 </nav>
 
-		<div id=aktionsfenster ><iframe id=myIframe src="Inventar.html"></iframe></div>
+	<div id=aktionsfenster ><iframe id=myIframe src="basisteile.html"></iframe></div>  <!-- Das Iframe für die verschiedenen Bereiche -->
 		
 </section>
    
 <aside>
-	<h2>Übersichtstafel</h2><hr> <!-- Needs some php -->
+	<h2>Übersichtstafel</h2><hr> <!-- ### Braucht noch php ### -->
 	<table>
 			<tr id=tableHead>
-				<th>Spieler &nbsp;</th> <!-- " &nbsp; "  =  non breaking space. -->
+				<th>Spieler &nbsp;</th> 	<!-- '&nbsp;' = non breaking space. -->
 				<th>&nbsp; Asari  &nbsp;</th>
 				<th>&nbsp; Punkte  &nbsp;</th>
 			</tr>
 			<tr>
-				<td>User_2</td>
-				<td id=asari>13</td>
-				<td id=points>8</td>
+				<td><?php echo "$spielerName"; ?>spieler</td>
+				<td id=asari><?php echo "$spielerAsari"; ?>4</td>
+				<td id=points><?php echo "$spielerPunkte"; ?>5</td>
 			<tr>
 			<tr>
 				<td>Tabularasa</td>
@@ -91,70 +90,33 @@
 			</tr>
 	</table>
 	<hr>
-	<p id=gunst><strong>Tabularasa</strong> ist im besitzt<br>der Gunst des Kalifen!</p>
-	<p id=jahr>Wir befinden uns im 2. Jahr!</p><hr> <!-- Needs some php -->
+	<p id=gunst><strong>Tabularasa</strong> ist im besitzt<br>der Gunst des Kalifen!</p> <!-- benötigt noch php -->
+	<p id=jahr>Wir befinden uns im 2. Jahr!</p><hr> <!-- benötigt noch php -->
 
 	
-	<a href="Inventar.html" id=inventar>&nbsp;<i class="material-icons">reorder</i>&nbsp;Inventar</a>
+	<a href="Inventar.html" id=inventar>&nbsp;<i class="material-icons">reorder</i>&nbsp;Inventar</a>	<!-- Der Button zum Inventar -->
 	<br>
-	<a href="Score.html" id=score>&nbsp;<i class="material-icons">account_balance</i>Landschaft</a>
+	<a href="Score.html" id=score>&nbsp;<i class="material-icons">account_balance</i>Landschaft</a>		<!-- Der Button zu Punkte-Übersichts-Seite -->
 </aside>
 
 <footer>
 	<address>
-		Erstellt von <a href="https://github.com/FlorianWiekhorst">Florian Wiekhorst</a> &#169; 2016  &nbsp; 
+		Erstellt von <a href="https://github.com/FlorianWiekhorst">Florian Wiekhorst</a> &#169; 2016  &nbsp; 	<!-- unnötiger Footerkram -->
 	</address>
 </footer>
 
 	<script>
-		// Game Musik
+		// Game Musik   ### wird noch nicht wiedergegeben ###
 		var myMusic;
 		function startMusic() {
 		    new sound("bg_music.mp3");
 		    myMusic.play();
 		}
 		
-		// Funktion zum öffnen der Fenster
-		var source = "Inventar.html";
-		function plsOpen(name) { 
-		    switch(name) {
-			    case "basis":
-				getElementById /* Wird noch bearbeitet >:-C  */
-			    source ="Index.html";
-			    break;
-				
-				case "arbeiter":
-				
-				break;
-				
-				case "bank":
-				
-				break;
-				
-				case "basar":
-				
-				
-				case "baufeld":
-				
-				break;
-				
-				case "fenster":
-				
-				break;
-				
-				case "mitten":
-				
-				break;
-				
-				case "spitzen":
-				
-				break;
-				
-				case "werkstatt":
-				
-				break;
-				
-			}
+		// Funktion zum öffnen der verschiedenen Fenster im Iframe 	### funktioniert leider noch nicht ###
+		function plsOpen(url) { 
+		    var loc = url;
+		    document.getElementById('myIframe').setAttribute('src', loc);
 		}
 	</script>
 </body>
