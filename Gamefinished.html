@@ -19,13 +19,37 @@
             } ?>
         </h1>
       </header>
-      
         <!-- Übersicht der Punktetafel -->
-      
-        <!-- Werbung zum Brettspiel -->
-        
-        <!-- Logoutbutton -->
-        
+		<h2>Punktestand zum Ende des Spiels</h2>
+			<table>
+				<tr id=tableHead>
+				<th>Spieler &nbsp;</th> 	<!-- '&nbsp;' = non breaking space. -->
+				<th>&nbsp; Punkte  &nbsp;</th>
+			</tr>
+			<tr>
+				<td><?php echo "$spielerName"; ?>spieler</td>				
+				<td id=points><?php echo "$spielerPunkte"; ?>5</td>
+			<tr>
+			<tr>
+				<td>Tabularasa</td>
+				<td id=points>0</td>
+			</tr>
+			<tr>
+				<td>UnknownUser</td>
+				<td id=points>4</td>
+			</tr>
+			<tr>
+				<td>Cheater_1337</td>
+				<td id=points>21</td>
+			</tr>
+			</table><br> 
     </section>
+		<aside>
+			<!-- Werbung zum Brettspiel -->
+			<h3>Testen Sie auch die Brettspiel-Version von Asara!</h3>
+			<a href="http://www.brettspiele-report.de/asara/">Zur Website vom Brettspiel</a><br>
+			<!-- Logoutbutton -->
+			<a href="Index.html" id=menu>Logout</a>
+		</aside>
   </body>
 </html>
