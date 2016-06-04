@@ -1,6 +1,8 @@
+
+----------------------
+Stand: 04.Juni.2016
+ 
 Kein Zugriffsrecht:
-// Stand: 30.Mai.2016
-
-giuliano1991
-
-hamidoc2
+  - giuliano1991
+  - hamidoc2
+----------------------
