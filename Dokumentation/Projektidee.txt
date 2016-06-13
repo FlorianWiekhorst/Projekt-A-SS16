@@ -1,7 +1,3 @@
-
-
-
-
 ### Projektidee FlorianWiekhorst, 4.Mai.2016 ###
 
 Titel:			Asara Digital
@@ -104,95 +100,10 @@ Ablauf:
 
 
 
-=== Feedback Alpers, 2016-04-07 ===
-
-Wichtig: Sie haben bereits eine Datei strukt.html erstellt. Das sollen Sie aber erst tun, nachdem Sie die vorigen Aufgaben abgeschlossen haben. Denn nur dann wissen Sie, was Sie tun sollen.
-
-Leider beschreibt Ihr Vorschlag keine gute Projektidee im Sinne einer interaktiven Anwendung, weil es sich um eine Datenbankanwendung handelt. Das bedeutet, dass es bei der Umsetzung Ihres Projekts vorrangig darum geht, das NutzerInnen Texte (und ggf. andere Dateien) hochladen können und sich diese anzeigen lassen können.
-
-Außerdem sollte es etwas sein, dass es noch nicht gibt. Diese Art von Anwendungen (Terminplaner u.ä.) gibt es dagegen bereits in Massen.
-
-Was Sie dagegen ausarbeiten sollten war eine Projektidee mit verschiedenen Interaktionsmöglichkeiten. Das bedeutet, dass es etwas sein soll, bei dem NutzerInnen Eingaben machen, Schaltflächen anwählen usw. usf. und das Programm reagiert dann darauf in abwechselungsreicher und interessanter Art und Weise. Spiele sind hierfür die anschaulichsten Beispiele.
-
-Bitte erstellen Sie deshalb eine Projektbeschreibung, bei der Sie das folgende Spiel umsetzen: Asara http://www.brettspiele-report.de/asara/
-
-Besonders wichtig: Bearbeiten Sie diese Aufgabe alleine. Momentan haben wir noch keine Gruppenarbeit, so wie das im letzten Semester der Fall war.
-
+===============================================================
 === Zweiter Aufgabenblock (identisch für alle Studierenden) ===
-
-Sie haben jetzt gezeigt, dass Sie einfache Arbeiten mit einem Git-Repository beherrschen.
-Als Teil der letzten Aufgabe sollten Sie beschreiben, was Ihre Anwendung tun soll, also was für Funktionalitäten Ihre Anwendung bieten soll.
-Wenn Sie hier nichts angegeben haben, dann werde ich Ihnen einen Vorschlag hochladen, mit dem Sie weiterarbeiten können.
-In der Veranstaltung haben Sie außerdem gelernt, was Markup Languages sind.
-
-Die nächste Aufgabe besteht aus den folgenden Teilen:
-
-1.) Lesen Sie mein Feedback durch und setzen Sie die beschriebenen Aufgaben um.
-
-Für die folgende Aufgabe sollten Sie mindestens eine halbe Stunde investieren. Zwei Stunden wäre aber etwas zu viel des guten.
-Bearbeiten Sie die Aufgaben 2. und 3. bitte innerhalb von 48 Stunden, weil andere Studierende davon abhängen, dass Sie sie beendet haben.
-Bearbeiten Sie die Aufgaben auf jeden Fall in der vorgegebenen Reihenfolge.
-Und bearbeiten Sie eine Aufgabe nicht nachträglich nochmal. (Wenn Sie also z.B. Aufgabe 3. bearbeiten, dann ändern Sie bitte nichts an Aufgabe 1. nachträglich ab. Dafür wird später noch genug Zeit sein.)
-
-2.) Bennen Sie die strukturellen Elemente, aus denen Ihre Anwendung bestehen soll.
-Es ist dabei egal, ob es diese Elemente in HTML gibt.
-Es ist auch egal, ob Sie sich schon in HTML eingearbeitet haben.
-Wichtig ist nur, dass Sie die strukturellen Elemente benennen, aus der die Anwendung bestehen soll.
-Speichern Sie diese Aufstellung als HTML-Kommentar in einer Datei mit dem Namen
-
-strukt.html
-
-, die Sie in Ihrem Repository abspeichern. Wichtig: Die Datei soll nicht im Unterverzeichnis Dokumentation des Repositories gespeichert werden, weil sie die Basis für das erste HTML-Dokument werden wird.
-
-Wenn Sie noch unsicher sind: Strukturelle Elemente können alles mögliche sein:
-- Tabellen
-- Listen
-- Schaltflächen
-- Textfelder
-- Bildbereiche
-- Hintergrundmusik
-- Absätze
-- ...
-
-In anderen Worten: Ein strukturelles Element ist etwas, das ein abgegrenzter Teil der Anwendung ist.
-Notieren Sie kurz, welche Funktion jedes der von Ihnen genannten Elemente haben soll.
-
-Hier einige Beispiele:
-- Schaltfläche (Nutzer können per Klick bestätigen, dass eine Eingabe abgeschickt werden soll.)
-- Textfeld für Namen (Nutzer können Ihren Nachnamen eintragen.)
-- Log-In-Maske (Bereich, in dem Nutzer sich einloggen können.)
-- - Teile der Log-In-Maske:
-- - Textfeld für Username
-- - Textfeld, das die Eingabe nicht anzeigt, fürs Passwort
-- Tabelle, 7 x 5 Felder (Jedes Feld soll ein Bild anzeigen, das ein Feld des Spielbretts ist. Wenn Nutzer ein Feld anwählen, soll ein Menü erscheinen.)
-- - Menü für jedes Feld der Tabelle mit Texteinträgen (Eintrag für "Gebäude abreißen", "Feld kaufen")
-- Hintergrundbild (Hier sollen einzelne Bilder als Diashow eingeblendet werden.)
-- Werbebanner
-- Schaltfläche für die Maskierung von NSFW (NSFW = Not safe for work)(NutzerInnen können über diese Schaltfläche eine andere Anwendung in der Vordergrund einblenden lassen, damit der Chef nicht sieht, dass sie gerade spielen.)
-
-3.) Schauen Sie jetzt in der Liste der Repositories (nicht in der Tabelle der Accounts) nach, welche zehn Repositories vor und nach Ihrem Repository aufgeführt sind und geben Sie den Besitzern dieser Repositories Zugriffsrechte auf Ihr Repository.
-
-Bsp.: Sie haben das Repository BerndStromberg. Dann folgen die zehn Repositories der Nutzer BlackWolf63, Cantinaband, CaptainWeasle, ColePfeiffer, CurvLietzau,
-DangerDulf, dnbdel, Domsche, Eldinox und Eupuco und vor Ihnen gibt es die fünf Repositories der Nutzer 2238867, amelie-beh, Anger21, anita1997 und Asphalon. all diesen Accounts geben Sie jetzt Zugriffsrechte auf Ihr Repository, so wie Sie das schon für mich getan haben. Wenn Sie, wie BerndStrommberg zu weit am Anfang der Liste stehen (hier gibt es ja nur fünf andere Accounts bis zum Anfang der Liste), dann geben Sie zusätzlich noch den Besitzern der letzten fünf Repositories Zugriffsrechte. Es sollten insgesamt 20 Accounts Zugriffsrecht haben.
-
-Für die nächsten zwei Aufgaben sollten Sie pro Repository zwischen zehn Minuten und einer Stunde aufwenden. Weniger ist zu wenig und mehr ist zu viel.
-Beachten Sie dabei bitte, dass Sie hier letzten Endes Kritik an der Arbeit eines/einer anderen üben und das einige von Ihnen noch nie programmiert haben. Arbeiten Sie deshalb bitte daran, alles, was Sie ergänzen so neutral und höflich wie möglich zu formulieren, denn Unwissenheit und mangelndes Verständnis fürs Programmieren sind eben nicht das selbe wie Dummheit oder Faulheit.
-
-Bitte erledigen Sie diese Aufgaben innerhalb der nächsten sieben Tage.
-
-4.) Als nächstes greifen Sie auf die nach Ihrem Repository nachfolgenden fünf Repositories zu und bearbeiten hier die folgende Aufgabe. (Hier hängen Sie also davon ab, dass andere Kommilitonen Aufgabe 3. erledigt haben.) 
-
-Lesen Sie sich die Projektidee durch und machen Sie sich ähnlich wie bei 2. einfache Stichpunkte über strukturelle Elemente, die Sie bei dieser Projektidee sinnvoll finden. (Hier erstmal nur Stichpunkte, Details arbeiten Sie unter 5. aus.)
-
-5.) Öffnen Sie jetzt die Datei strukt.html des Repositories, das Sie gerade bearbeiten. Ergänzen Sie Elemente, die Sie unter 4. notiert haben und die noch nicht eingetragen sind in der unter 2. beschriebenen Form.
-
-Abschließender Hinweis zu 4. und 5.:
-
-Auch wenn das nirgends explizit steht sollen Sie Änderungen in das Repository pushen, aus dem sie die Datei strukt.html gepullt haben.
-Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst später während der Projektbearbeitung) einen merge durchführen müssen. Wenn Sie sich noch nicht angesehen haben, wie das geht, dann tun Sie es jetzt.
-
-Viele Grüße,
-Markus Alpers
+===============================================================
+(gelöscht, da im Lernraum für alle einsehbar)
 
 ===================================
 === Feedback Alpers, 2016-05-03 ===
@@ -211,6 +122,23 @@ Wertung 2: Projektbeschreibung: gesamt: -5 / 10
 - Designaspekte: 0
 - Voraussetzung bekannten Wissens: -5
 
-=====================
-=== Feedback Ende ===
-=====================
+===================================
+=== Feedback Alpers, 2016-05-03 ===
+===================================
+
+Die Beschreibung ist zwar streckenweise nicht direkt nachvollziehbar, so z.B. wenn Sie schreiben, dass "... durch Asari die Gunst" erhalten werden kann, aber das sind Details, die wir uns für den Moment sparen können. Deshalb: Gute Beschreibung als Grundlage für die Programmierung.
+
+Momentan klingt die Beschreibung, als wenn Spieler ausschließlich gegen computergesteuerte Gegner antreten können. Das wäre nicht gut.
+
+Wichtig ist, dass die Anwendung tatsächlich netzbasiert ist, dass also das Zusammenspiel über ein Netzwerk stattfindet.
+
+Bezüglich der Computergegner haben Sie zurzeit aufgeführt, dass diese die gleichen Aktionen wie die menschlichen Spieler durchführen, aber Sie haben noch nicht ausgeführt, wie sie dabei vorgehen. Sollen sie zufallsbasiert Aktionen starten? Welche Strategien könnten computergesteuerte Spieler anwenden?
+
+Bei den Bereichen oben haben Sie bislang lediglich diejenigen Bereiche aufgeführt, die sich direkt aus dem Brettspiel ergeben. Dinge wie Foren, Administrationsoberflächen, Log-In, Registrierung usw. usf. fehlen noch. Bitte tragen Sie nach, was für Ihre Spielumsetzung nötig oder sinnvoll ist. (Zur Erinnerung: Es geht nicht darum, dass Sie die komplette Beschreibung umsetzen, sondern darum, dass Sie sich überlegen, was alles machbar und für dieses Spiel sinnvoll sein könnte. Es geht auch nicht darum, dass Sie Ihre Umsetzung so nahe wie möglich am Original halten, sondern darum, dass Sie sich überlegen, was es noch alles an Regeln geben könnte.)
+
+Wertung 2: Projektbeschreibung: gesamt: 4 / 10
+- Pro Interaktionsmöglichkeit: 0
+- Knappe aber klare Beschreibung: 4
+- Werbeslogans u.ä.: 0
+- Designaspekte: 0
+- Voraussetzung bekannten Wissens: 0 

@@ -126,10 +126,10 @@ view_Gamefinished:
 	Alles Andere, was ich mir notiert habe, haben meine Vorredner und du selbst schon eingebracht.
   -->
 
-
-
-
+<!--
+===================================
 === Feedback Alpers, 2016-05-03 ===
+===================================
 
 Zunächst zwei Hinweise zur Übersichtlichkeit: 
 	(1) Bitte notieren Sie die Einträge alle gesammelt; wenn wie in diesem Fall zwei Bereiche in einem Dokument existieren, in denen mehrere strukturelle Elemente gesammelt sind, dann ist das unübersichtlich.
@@ -148,108 +148,126 @@ Wertung 3: Ausarbeitung der strukt. Elem.: gesamt: 3 / 10
 ======================================================
 === Aufgabe 3, identisch für alle, die soweit sind ===
 ======================================================
+(gelöscht, da im Lernraum für alle einsehbar)
+-->
 
-ACHTUNG! Bearbeiten Sie diese Aufgaben dann und NUR DANN, wenn ich Sie in Ihr Repository geladen habe.
-
-Sie haben jetzt eine Grundstruktur für Ihre Anwendung ausgearbeitet. Genauer gesagt haben Sie die Elemente der Struktur Ihrer Anwendung ausgearbeitet. Jetzt geht es um die folgenden Aufgaben, die Sie bitte wieder alleine bearbeiten. (Bitte werfen Sie außerdem in Projekte anderer Studierender, wie das schon bei der letzten Aufgabe der Fall war. Es ist durchaus möglich, dass die nochmal zurück zur ersten Aufgabe gehen und das Projekt massiv ändern mussten. In dem Fall unterstützen Sie dann bitte wieder mit Ergänzungen zur strukt.html.)
-
+<!--
 ===================================
-== (1) Strukturierung von Ansichten
+=== Feedback Alpers, 2016-05-03 ===
 ===================================
 
-Für die folgende Aufgabe gilt: Arbeiten Sie hier mit der Datei strukt.html weiter.
-Lassen Sie die bisher erstellen Notizen zu jedem strukturellen Element am Anfang stehen und nummerieren Sie sie fortlaufend. Wenn Sie weitere Element hinzufügen, dann ändern Sie keinesfalls die bisherige Nummerierung ab, sondern fügen Sie neue Elemente ans Ende der fortlaufenden Nummerierung an. Sie können jedoch (um deutlich zu machen, das später eine Ergänzung folgt) kleine Hinweise verfassen.
+In der Aufgabenstellung zur Ausarbeitung war es vielleicht nicht deutlich formuliert: Die Aufteilung in die drei Schritte [(1) Ausarbeitung der strukt. Elem., (2) Ausarbeitung der Gruppen und (3) Ausarbeitung der Ansichten] hat folgenden Sinn: Sie können Sie leicht erkennen, wenn eines der Elemente mehrfach vorkommt und sich dadurch sowohl Programmieraufwand sparen als auch die Fehleranfälligkeit bei Änderungen reduzieren.
 
-Hier ein Beispiel: Bislang haben Sie 97 strukturelle Elemente definiert:
+Führen Sie deshalb die drei Bereiche bitte getrennt auf und prüfen Sie nach jeder Aufstellung zuerst, welche Elemente jeder Aufstellung mehrfach vorkommen. Löschen Sie diese dann und arbeiten Sie mit den so erstellten Elementen, Gruppen und Ansichten weiter.
 
--01- Interaktionsmöglichkeit / laufen nach links
--02- Interaktionsmöglichkeit / laufen nach rechts
--03- Textfeld / Eingabe Nutzername
-...
--97- Schaltfläche / Submit
+Besonders wichtig ist aber folgendes: Momentan benennen Sie jede Änderung mit dem Titel "Update Dateiname". Das ist leider für eine Teamarbeit sehr schlecht, denn die Titel der Änderungen sollen deutlich machen, was sich jeweils geändert hat.
 
-Jetzt fällt Ihnen ein, dass Sie eine Interaktion "springen" gut wäre. Fügen Sie die jetzt nicht als Nr. 3 ein, sondern ans Ende. Wenn Sie sicher gehen wollen, können Sie einen Kommentar hinter dem strukturellen Element einfügen, zu dem es Ihrer Ansicht nach am besten passt.)
+Deshalb hier für Sie eine Sonderaufgabe: 
 
--01- Interaktionsmöglichkeit / Spielfigur: Laufen nach links
--02- Interaktionsmöglichkeit / Spielfigur: Laufen nach rechts (Ergänzung: springen siehe -98-)
--03- Textfeld / Eingabe Nutzername
-...
--97- Schaltfläche / Submit
--98- Interaktionsmöglichkeit / Spielfigur: springt
+(1) Erstellen Sie eindeutige Titel für die folgenden Updates:
 
-=======================
-== (1.1) Gruppen bilden
-=======================
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/7d12cb20757c4c687cddcb45cac159a5bf5b10ea
 
-Nehmen Sie nun Ihre strukturellen Elemente und stellen Sie jeweils diejenigen zusammen, die ein sinnvolles Ganzes ergeben. Ein einfaches Beispiel dafür wäre eine Log-In-Maske: Darin hätten Sie ein Eingabefeld für den Username und das Passwort, aber ggf. auch weitere Elemente (denken Sie an so etwas wie ein Captcha, oder eine Eingabefläche, in der Nutzer ein Muster eingeben müssen anstelle eines Passworts.)
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/98b5db524505876a5a889c8122c52326a66a581a
 
-Nummerieren Sie die resultierenden Gruppen bitte mit römischen Ziffern.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/d6c32d90b546b0fc71d177d15c9aa6c14b296e64
 
-Denken Sie dabei daran, dass es Elemente geben wird, die in mehreren Gruppen sinnvoll sein. Z.B. kann die Anzeige des Username nach dem Log-In an mehreren Stellen genutzt werden. Deswegen ist es wichtig, dass Sie die Elemente nummerieren und Ihnen einen kurzen Namen geben. Der Name ist gleichzeitig eine Vorbereitung auf die Verwendung durch PHP. Die Nummer ist nur da, weil es in aller Regel einfacher ist, nach Zahlen zu sortieren als alphbetisch nach Namen.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/5ba93750b268b0299e6c16a5e4c4d676c6bfe995
 
-=========================
-== (1.2) Ansichten bilden
-=========================
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/6433bcd8038ea316c05e7c1bcfab280285a95f33
 
-Gruppieren Sie nun die erhaltenen Gruppen so zusammen, dass Sie Ansichten erhalten. Mit einer Ansicht ist hier gemeint, dass es sich um eine Ansammlung von strukturellen Elementen handelt, die gleichzeitig angezeigt werden. Sie werden unter Umständen feststellen, dass Ihre Anwendung nur eine einzige Ansicht hat, aber das ist im Moment in Ordnung. Ggf. werde ich Ihnen Hinweise geben, was für Ansichten Sie noch erstellen sollten.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/3bb429c24624720b4c8428307fa37ee8e4286f5d
 
-Auch die Ansichten sollten einen Namen bekommen. Hier brauchen wir aber keine Zahlen. Benennen Sie die Ansichten als 
------------------
---- view_name ---
------------------
-, wobei name der Name ist, den Sie der Ansicht geben wollen. (Tipp: Wenn bei Ihnen eines oder mehrere Elemente tatsächlich view_name... heißen, haben Sie das missverstanden.) Es sollte sich dabei um einen Namen handeln, der ohne Internationalisierung auf jedem Rechner angezeigt werden kann. (Ersetzen Sie Umlaute ggf. durch mehrere Buchstaben.)
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/b562ad53f39017b948c9d757881df19e806e93dd
 
-Unterhalb notieren Sie dann ohne Hinweis auf die Anordnung die strukturellen Elemente.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/0b82d0a0f9bb39c613fe02830e2389056e7f4559
 
-Prüfen Sie erst am Ende, welche der Ansichten als allererstes angezeigt werden soll und bennen Sie die in view_index um.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/a3d6e50784374bf25339f7744404140f8cacafc4
 
-====================
-== (2.) Erstes HTML
-====================
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/d2e0163206d4aa6fdc5be9951d19b4ae4b06517f
 
-Erstellen Sie jetzt für jede view_name ein HTML-Dokument mit dem Namen einer Ansicht.
-Programmieren Sie darin die Container, die den strukturellen Elementen entsprechen und tragen Sie jeweils als kurzen Kommentar ein, welcher Inhalt/welche Funktionalität usw. mit diesem Container verbunden werden soll. Erweitern Sie jedes Dokument so, dass es internationalisiert und lokalisiert ist. Nutzen Sie ausschließlich Container, die für HTML5 vorgesehen sind. 
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/30900370b7953c104ff232590ec26d82616760b8
 
-Wenn Sie sich bereits in HTML4.01 eingearbeitet hatte: Im Skript können Sie anhand der Beispiele leicht prüfen, ob Ihre Programmierung passt. Ich kann Ihnen jedoch sagen, dass die meisten HTML4.01-Programmierer beim Umstieg auf Version 5 vergessen, dass Anführungszeichen weitgehend überflüssig sind und <div>-Container nicht ohne Grund nur ganz kurz in der Veranstaltung behandelt wurden: In 19 von 20 Fällen wir jetzt ein anderer Container für die gleiche Aufgabe verwendet. Auch das style-Attribut hat in HTML5 so gut wie nichts mehr verloren.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/ccc05678356b73f2617da14b927bf06fe8d425d0
 
--- Bsp.: --
-<input id=username name=username><!-- Eingabe des Nutzernamens -->
-<img><!-- Hier das Logo der Seite einfügen -->
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/ccc05678356b73f2617da14b927bf06fe8d425d0
 
--- Wichtig: --
-Wenn Sie das Gefühl haben, Sie könnten eine Struktur z.B. mit einer for-Schleife ganz schnell programmieren, dann schreiben Sie diese Schleife (oder was auch immer Sie aus Java/PHP kennen) in einen <?php ?> Container. Es ist nicht wichtig, ob die Syntax und Semantik stimmt. Darum kümmern wir uns später. Wichtig ist nur, dass Sie sich keine unnötige Arbeit machen.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/ed520d9a9c954a76961bb061b8aec40b9d9ce1b8
 
--- Ebenfalls wichtig: --
-Erstellen Sie ein Verzeichnis Gruppen_de in Ihrem Repository.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/cbd80ca1407823246d5c62e77a0b63a85800dc56
 
-Erstellen Sie für jede Gruppe, die Sie bei Schritt (1.1) gebildet haben und die in mehreren Ansichten vorkommt ein eigenständiges Dokument, das Sie unter dem Namen der Gruppe (ohne Nummer) im Verzeichnis Gruppen_de speichern. Nutzen Sie <?php include(url zur datei) ?>, um die entsprechenden Codefragmente an allen Stellen einzubinden, wo das nötig ist.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/0812fef24a7ca9e1fa10bcc71808b84decb8af14
 
-=================================
-== (3.) Erste Schritte hin zu PHP
-=================================
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/1ec26bd71355f0af052c38b5b0117cefcc1f6721
 
-Sie haben in Programmieren 1 grundlegende imperative Programmiermethoden kennen gelernt. Und auch wenn die Syntax in PHP anders ist als in Java, können Sie doch vieles mit wenig Anpassung weiterverwenden, müssen "nur" daran denken, dass PHP dynamisch typisiert ist.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/2e399f12f0b1e43709558c27afdfff37c96ba949
 
-Jetzt, wo Sie eine erste Struktur in HTML geschaffen haben, Formulare und interaktive Elemente programmiert haben, können Sie dazu übergehen, den Programmablauf bzw. die Logik bzw. die Interaktion zu programmieren. Und auch wenn das im Moment natürlich nicht funktionieren wird, machen Sie jetzt bitte folgendes: 
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/1efe6f1447d1656c4a1177030628ca97603291f5
 
-Erstellen Sie jetzt eine Datei mit dem Namen php_code.php im Repository im Wurzelverzeichnis (also da, wo auch die HTML-Dokumente liegen). Ggf. werden Sie später zusätzliche PHP-Dateien erstellen, das müssen wir noch sehen.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/c8b1e64cb7f65d769c659c22e408642825a4fd10
 
-Wenn Sie mehrere Formulare entworfen haben, dann erstellen Sie ein Verzeichnis mit dem Namen Formulare im Repository und speichern Sie dort für jedes Formular (das ja eine Gruppe ist) unter dem Namen form_eval_gruppenname.php
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/04948e6907d030801ee0000bdf466e0090720f69
 
-Und nun programmieren Sie so ähnlich wie Sie in Java programmieren würden. Wenn Sie sich nicht sicher sind, dann programmieren Sie genauso, als wenn es Java wäre; die PHP-Syntax lernen Sie ja in der Veranstaltung kennen und können dann den Code nach und nach anpassen.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/8ecce8d90c779ca5720c4c5d8f43941d9becc732
 
-Wenn Sie nicht wissen, wie Sie etwas programmieren sollen (z.B. weil Sie keine Idee haben, wie Sie das Bild einer Schaltfläche per PHP austauschen sollen), dann tragen Sie das als Kommentar in den PHP/Java-Code ein.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/12bf3796d87b7941e4745bd02bd66f215f813ad2
 
-Denken Sie bitte daran, dass Variablen in PHP mit einem $ am Anfang geschrieben werden. Die Java-Variable summe wird also in PHP $summe notiert. Benutzen Sie für eigenen Variablen bitte vorrangig Kleinbuchstaben.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/399e2c61cc896cd742993d41f6619d007f7ca315
 
-Wenn Sie ein Formular auswerten, dann erzeugt PHP einen Dictionary mit dem Namen $POST, dessen Einträge die Namen der Formularfelder sind. Wenn Sie nicht wissen, was ein Dictionary ist: Das ist etwas, das so ähnlich wie ein Array funktioniert, nur dass die Einträge nicht nummeriert sind, sondern mit beliebigen Variablen bezeichnet werden können.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/bdda4267aefe9e85f17354eb956c422bc1353749
 
-Nehmen wir an, Sie hätten im HTML-Formular ein Feld mit dem Namen username und eines mit dem Namen password erstellt. Dann können Sie im zugehörigen PHP-Formular die Eingaben von Nutzern durch $POST[$username] bzw. $POST[$password] auslesen. Aber keine Sorge, wenn Ihnen das jetzt noch nicht ganz klar ist, warten Sie die nächsten zwei Veranstaltungen ab, dann werden wir das besprechen.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/ecc8595ed95d428f5142cc676449ba3048a17c86
 
-===============================
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/640e5d082a5bb35a6293504bc595c304453ecde8
 
-Wie gesagt sind das alles Aufgaben, die Sie wieder alleine bearbeiten sollen.
-Bei der nächsten Aufgabe werden Sie dann wieder an Projekten anderer Studierender arbeiten und so ein weiters Mal die geforderte Gruppenarbeit im Projekt leisten.
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/33fefb5473c43e810a7dc4b40e326cbdd9f186f0
 
-Viele Grüße und viel Erfolg,
-Markus Alpers
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/f0b3dff466d4ab81847541610bca6c5ebb2b4507
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/e503bdc18e07827b6c88395aba13bf0855dcd8dd
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/982da631680ba77b599e9e7b98f87ccbb93d02c3
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/0762b65f2cd9e22aca04b9c7a43df4367779d15e
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/239cd45baa0deb71a0c79c14494551cd056d1269
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/99da498f324ef6f3914fdd153df2a71d3a090700
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/5d2c233645cbb4079a11f709305f70e8abb6881e
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/8afe8d936d8dfd5dcc28593d34b2d3decf5da111
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/b96dcb6d91029dda9d30c7c89dc24f8fcd6478fd
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/2f5cdd877a58b05111ac6aa9fbf1e56f924a467d
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/9b0367bc9a862bf9380a6c8962624a2304c1bd49
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/f4aa09116aaaeaceb42c4c3c6e6fa5680e4f4863
+
+
+(2) Notieren Sie jetzt, wie viele dieser commits überflüssig sind und notieren Sie zusätzlich, warum diese commits überflüssig sind.
+
+=== Feedback bezüglich der Ansichten: ===
+
+Sie haben in dieser Datei die folgenden Ansichten definiert:
+
+view_Index:	[Startseite]
+view_Login:	[Login-Seite]
+view_Regist:	[Registrierungs-Seite]
+view_Game:	[Spielseite]
+view_Inventar:		[Eigene Turmbauteile und Einkäufer]
+view_Score:
+view_Gamefinished:
+
+Also befinden sich in Ihrem Wurzelverzeichnis mehrere HTML-Dokumente, die dort nicht hingehören und umgekehrt fehlen einige HTML-Dokumente. Ändern Sie die Inhalte des Wurzelverzeichnisses Ihres Projekts so ab, dass die Dateien und die in strukt.html definierten views konsistent sind.
+
+Wertung 3: Ausarbeitung der strukt. Elem.: gesamt: n / 10
+Wertung 4: Gruppierungen: n / 5
+Wertung 5: Ansichten: n / 5
+
+Zurzeit nicht bewertbar, da die sinnvolle Nutzung der drei Bereiche zur Fehlervermeidung und Redundanzkorrektur nicht klar erkennbar ist.
+
+Es ist zum Teil erkennbar, wie die Struktur aus der Beschreibung folgt. Gut.
+-->
