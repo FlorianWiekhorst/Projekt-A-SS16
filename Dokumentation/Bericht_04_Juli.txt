@@ -1,0 +1,7 @@
+
+Die Klausurenphase ist nun bald abgeschlossen.
+Danach widme ich mich wieder Projekt-A zu.
+ -Abarbeitung der Aufgaben aus dem letzten Feedback.
+ -php
+ -sql
+ 
