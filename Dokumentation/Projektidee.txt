@@ -123,7 +123,7 @@ Wertung 2: Projektbeschreibung: gesamt: -5 / 10
 - Voraussetzung bekannten Wissens: -5
 
 ===================================
-=== Feedback Alpers, 2016-05-03 ===
+=== Feedback Alpers, 2016-06-13 ===
 ===================================
 
 Die Beschreibung ist zwar streckenweise nicht direkt nachvollziehbar, so z.B. wenn Sie schreiben, dass "... durch Asari die Gunst" erhalten werden kann, aber das sind Details, die wir uns für den Moment sparen können. Deshalb: Gute Beschreibung als Grundlage für die Programmierung.
@@ -142,3 +142,9 @@ Wertung 2: Projektbeschreibung: gesamt: 4 / 10
 - Werbeslogans u.ä.: 0
 - Designaspekte: 0
 - Voraussetzung bekannten Wissens: 0 
+
+===================================
+=== Feedback Alpers, 2016-07-14 ===
+===================================
+
+Keine Änderungen an der Beschreibung seit letztem Feedback.

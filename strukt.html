@@ -1,12 +1,3 @@
-<!doctype html>
-<html>
-	<head>
-        <meta charset="utf-8">
-        <title>Asara</title>
-        <meta name="author" content="FloW">
-    </head>
-    <body>
-
 <!-- Die strukturellen Elemente aus denen Asara Digital bestehen soll: 
 	Stand 12.05.2016
 
@@ -372,4 +363,58 @@ Wertung 5: Ansichten: n / 5
 Zurzeit nicht bewertbar, da die sinnvolle Nutzung der drei Bereiche zur Fehlervermeidung und Redundanzkorrektur nicht klar erkennbar ist.
 
 Es ist zum Teil erkennbar, wie die Struktur aus der Beschreibung folgt. Gut.
+-->
+
+<!--
+===================================
+=== Feedback Alpers, 2016-06-13 ===
+===================================
+
+Zunächst etwas bezüglich der Bezeichnungen von den commits, bzw. überhaupt zu dieser "Aufgabe". Am Ende folgt aber noch eine Aufgabenstellung, die Sie beim letzten Mal übersehen hatten.
+
+=== Teil 1 ===
+
+Wenn wir einen commit bei einer Versionierungssoftware durchführen, dann sagen wir damit aus, dass sich etwas Relevantes am Projekt geändert hat. Natürlich gibt es hier Fälle, bei denen wir uns drüber streiten können, ob ein commit nun Sinn macht oder nicht. Das liegt aber schlicht daran, dass wir hier über Projektarbeit reden: Da gibt es viele Grauzonen.
+
+Eine weitere Möglichkeit für einen commit ist quasi so etwas wie ein Speicherstand, wenn man etwas ausprobieren will, bei dem nicht sicher ist, ob es funktioniert. (Die besser Möglichkeit dafür sind die sogenannten Forks. In professionellen Projekten sollten Sie die auf jeden Fall nutzen.)
+
+Bei der Beschriftung eines Commits müsen wir uns gleichzeitig sehr kurz fassen, damit andere in der Übersicht schnell erkennen, worum es jeweils ging. Die Beschränkung liegt deshalb bei ca. 30 Zeichen. Damit umgehen zu können ist eine der Fähigkeiten, die Sie für Teamarbeiten verbessern bzw. erlernen müssen. (Hoffe, dass das nicht zu oberlehrerhaft klingt...) Im folgenden werde ich einzelne Beispiele herausgreifen, um Ihnen das zu veranschaulichen:
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/7d12cb20757c4c687cddcb45cac159a5bf5b10ea
+- Entfernung der älteren Struktur um Missverständnisse zu verringern.
+- Gruppierung der Kommentare zur Strukt.
+
+Gleich vorweg: Das ist ein sinnvoller commit. Wegen der Beschränkung der Länge des Kommentars zum commit wäre hier ein sinnvoller Text: 
+"Entf. von Kommentaren aus strukt.html",
+denn genau das ist es ja, was Sie hier getan haben. (Also einfach nur eine kürzere Fassung dessen, was Sie oben schon geschrieben haben.)
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/3bb429c24624720b4c8428307fa37ee8e4286f5d 
+- Protokoll mit Datum zur Bestätigung des Versuches der Zugriffsberechtigungsermittlung.
+[ Wie in der Projektbeschreibung des Studienmoduls aufgeführt sollte ich in regelmäßigen Abständen erneut testen, 
+ob ich Zugriff auf die 5 nachfolgenden Projekte habe. Einfach nur zu sagen "Hab ich voll oft versucht." 
+erschien mir nicht ausreichend dokumentiert. ]
+
+Hier wäre es gut, wenn Sie durch den Kommentar zum commit deutlich machen, dass der commit für das eigentliche Projekt irrelevant ist. Bsp.:
+"[Keine Änd. am Projekt] Aktualis. eines Datums."
+
+Grundsätzlich ist es an Stellen, wo eine knappe Form erzwungen wird sinnvoll, Sonderzeichen und Abkürzungen zu verwenden. Themen am besten in eckige Klammern.
+
+https://github.com/FlorianWiekhorst/Projekt-A-SS16/commit/f4aa09116aaaeaceb42c4c3c6e6fa5680e4f4863
+- Die Buttons für die Bereiche "Highscore" und "Anleitung" hinzugefügt.
+
+Hier sieht es ganz ähnlich aus: Besser wäre ein schlichtes "Buttons hinzugefügt."
+Wobei es so noch wesentlich besser wäre, wenn Sie solche simplen Änderungen (Sie haben ja keine umfangreiche Funktion/Methode erstellt) gemeinsam mit anderen Änderungen als einen commit pushen.
+
+Auch hier gilt wieder: Bei der Frage, wann Sie einen commit durchführen sollten und wann nicht gibt es unterschiedliche Philosophien. Letzten Endes müssen Sie in jedem Team gemeinsam eine Konvention vereinabaren, wie Sie hier vorgehen wollen, bzw. sich die Konvention eines Teams aneignen, in das Sie einsteigen.
+
+Das einzige, was in jedem Fall gilt ist, dass ein commit sehr kurz und dennoch verständlich kommentiert werden muss.
+
+=== Teil 2 ===
+
+Leider haben Sie aber den anderen Teil des letzten Feedbacks nicht umgesetzt und der ist für die Arbeit am aktuellen Projekt sehr relevant. Deshalb habe ich ihn hier nochmal aufgeführt:
+
+In der Aufgabenstellung zur Ausarbeitung war es vielleicht nicht deutlich formuliert: Die Aufteilung in die drei Schritte [(1) Ausarbeitung der strukt. Elem., (2) Ausarbeitung der Gruppen und (3) Ausarbeitung der Ansichten] hat folgenden Sinn: Sie können Sie leicht erkennen, wenn eines der Elemente mehrfach vorkommt und sich dadurch sowohl Programmieraufwand sparen als auch die Fehleranfälligkeit bei Änderungen reduzieren.
+
+Führen Sie deshalb die drei Bereiche bitte getrennt auf und prüfen Sie nach jeder Aufstellung zuerst, welche Elemente jeder Aufstellung mehrfach vorkommen. Löschen Sie diese dann und arbeiten Sie mit den so erstellten Elementen, Gruppen und Ansichten weiter.
+
 -->
