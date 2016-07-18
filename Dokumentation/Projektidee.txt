@@ -9,7 +9,7 @@ Inhalt:			100 TurmBauteile verteilt auf 5 Arrays und unterteilt in 5 Farben
 			   -15 leuchtende Fenster
 			   -20 Spitzen
 
-		   	Asari (Zahlungsmittel)
+		   	Gold (Zahlungsmittel)
 		  	Jahreszähler (Rundenzähler)
 		  	Prestigepunktezähler
     			Spielanleitung (pdf)
@@ -18,16 +18,16 @@ Inhalt:			100 TurmBauteile verteilt auf 5 Arrays und unterteilt in 5 Farben
 
 Bereiche:		9 Stück:
       			   - Die 4 Märkte (für Bauteile)
-      			   - Die Bank (Einkäufer zu Asari)
-      			   - Das Haus der Spione (Gunst, gezielt Teilestapel durchsuchen)
+      			   - Die Bank (Einkäufer zu Gold)
+      			   - Palast (Gunst, gezielt Teilestapel durchsuchen)
       			   - Der Baubereich 
-      			   - Die Werkstatt der leuchtenden Fenster (zusätzliche Fenster erwerben)
+      			   - Die Werkstatt (Fenster erwerben)
       			   - Das Zelt (Einkäufer rekrutieren)
 
 
 Kurzbeschreibung: 	
 
-      			Der Spieler tritt gegen CPU-Gegner an.
+      			Der Spieler tritt gegen andere Spieler und/oder CPU-Gegner an.
 			Es geht darum Türme zu errichten.
 			Nach 4 Runden gewinnt derjenige mit den meisten Punkten.
 
@@ -35,7 +35,7 @@ Kurzbeschreibung:
 			Türme geben unterschiedlich viele Punkte, jenachdem welche Teile benutzt wurden.
 			Bauteile erwirbt man auf Märkten mit Einkäufern.
 			Preis der Bauteile wird durch ihre Farbe bestimmt. 
-			(Weiss 8, Schwarz 6, Rot 5, Grün 4, Braun 3) [Alle Preise in Asari]
+			(Weiss 8, Schwarz 6, Rot 5, Grün 4, Braun 3) 
 
 			Einkäufer gibt es in 5 Farben.
 			Alle Bereiche (Märkte, Bank, Baubereich,usw) passen ihre Farbe dem erstem Einkäufer an.
@@ -45,11 +45,12 @@ Kurzbeschreibung:
 			Ein Turm muss mindesstens aus einem Basisteil und einer Spitze bestehen.
 			Ein Turm kann nur aus Teilen derselben Farbe gebaut werden.
 			
-			Die Gunst des Kalifen erhält zu Spielbegin der züfällig ermittelte Beginner.
-			Im Spielverlauf kann man durch Asari die Gunst erhalten/stehlen.
+			Die Gunst des Kalifen(Bonus:Beginnt Runde/erhält mehr Punkte) 
+			erhält zu Spielbegin der züfällig ermittelte Beginner.
+			Im Spielverlauf kann man durch Zahlungsmittel diesen Bonus stehlen.
 			
 			Ein Jahr endet sobald kein Spieler mehr Einkäufer besitzt.
-			Im Anschlussjahr startet der Spieler mit der Gunst.
+			Im Anschlussjahr startet der Spieler mit dem Bonus (Gunst).
 
 			Am Ende von Jahr 4 gibt es eine umfangreiche Berechnung der Punkte.
 			Der Spieler mit den meisten Punkten gewinnt.
@@ -58,37 +59,40 @@ Kurzbeschreibung:
 
 Ablauf:			
 			Der Nutzer erblickt die Titelseite.
-			Er kann sich einloggen oder neu anmelden.
+			Er kann sich einloggen, neu anmelden,
+			die Anleitung lesen oder die Highscoreliste einsehen.
 
 			Der Startspieler wird zufällig ermittelt.
-			Er erhält die Gunst des Kalifen.
-			Alle Spieler erhalten Asari und Einkäufer.
+			Er erhält den StartBonus (Gunst des Kalifen).
+			Alle Spieler erhalten Gold und Einkäufer.
 			
 			Sobald der Spieler an der Reihe ist wählt er ein Bereich aus.
-			Je nachdem welches Feld er wählt, ändern sich seine Aktionsmöglichkeiten:
+			Je nachdem welchen er wählt, ändern sich seine Aktionsmöglichkeiten:
 				
 				- Wählt er einen Markt für Bauteile, kann er dort ein Bauteil erwerben.			
 				
-				- Wählt er die Bank, kann er Einkäufer verkaufen um Asari zu erhalten.
+				- Wählt er die Bank, kann er Einkäufer verkaufen um Gold zu erhalten.
 
 				- Wählt er den Baubereich, kann er, solange er über die richtigen 
-				  Bauteile einer Farbe verfügt, für einige Asari bauen.
+				  Bauteile einer Farbe verfügt, für einige Gold bauen.
 
-				- Wählt er das Zelt, kann er neue Einkäufer gegen Asari anwerben.
+				- Wählt er das Zelt, kann er neue Einkäufer für Gold anwerben.
 
-				- Wählt er das Haus der leuchtenden Fenster, kann er, solange er die vier/zehn Asari 
-				  aufbringen kann, sich 3/5 Fenstern ansehen, und sich davon ein/zwei nehmen.
+				- Wählt er das Haus der leuchtenden Fenster, kann er, solange er Gold 
+				  aufbringen kann, sich Fenster ansehen, und sich davon nehmen.
 
-				- Wählt er das Haus der Spione, kann er sich die Gunst erkaufen, oder gegen Asari
+				- Wählt er den Palast, kann er sich den Bonus erkaufen, oder gegen Gold
 				  ein Bauteil aus einem der Arrays wählen.
 
 				Wichtig: All diese Aktionen setzten natürlich vorraus, dass der Spieler über die
-					 nötigen Ressourcen vefügt. z.b.: Anzahl/Farbe Einkäufer, genug Asari, usw,
+					 nötigen Ressourcen vefügt. z.b.: Anzahl/Farbe Einkäufer, genug Gold, usw,
 					 sowie das noch freie Felder zum Ablegen von Einkäufern vorhanden sind.
 
 
-			Solange der Nutzer nicht am Zug ist, laufen die Züge der CPU Gegner ab.
+			Solange der Nutzer nicht am Zug ist, laufen die Züge der CPU-/menschlichen Gegner ab.
 			Auch diese erwerben Bauteile, bauen Türme, besuchen die Bank oder einen der anderen Bereiche.
+			Die computergesteuerten Mitspieler wählen anhand der Farben ihrer Einkäufer welche Teile sie zuerst
+			erweben. Besitzen sie schon Bauteile einer Farbe versuchen sie weitere dieser Farbe zu bekommen.
 
 			Dadurch können geplante Spielzüge des Nutzers vernichtet werden, bzw ihm Bauteile fehlen.
 			Oder der Zugang zu einem Markt wird teurer, da er die Marktfarbe nicht bedienen kann.
