@@ -1,0 +1,29 @@
+
+- Umfangreiche Anpassung der strukt.Elemente
+- Auflistung der einzelnden Bereiche: Elemente/Gruppen/Sichten.
+
+
+Meine Vorbereitung zu den Elementen habe ich auf mehreren DIN-A4 Seiten handschriftlich gemacht,
+dadurch entstand die Aufteilung der Elemente nach Typ.
+
+Auch meine gruppen haben ich schon in hinblick auf die Sichten konzipiert, dadurch haben viele Sichten nur eine Gruppe.
+
+Die große Anzahl an Sichten wollte ich umgehen, habe aber keine Lösung gefunden die für mich zufriedenstellend war.
+Auch fehlt bei einigen Gruppen noch Inhalt, da ich nicht sicher bin ob mein Ansatz sinnig ist:
+
+Da es viele vers. Bauteile gibt und jeder Markt seine "Aufmerksamkeit" dem ersten Einkäufer pro jahr widmet, 
+um daraufhin dessen Farbe als seine zu definieren, brauche ich pro Markt die möglichkeit diesen farbig anzupassen.
+Da meine Bauteile aber auch vers. Farben haben (und damit vers. Kosten und Punktewertigkeit), brauche ich pro Marktbereich
+zig Felder für Bauteile und alle diese Bauteile hängen mit der Einkäuferfarbe ab.
+  
+Meine Idee war es pro Markt und Bauteil ein Button zu erstellen welcher das Bauteil anzeigt.
+Dazu Bereiche die Anzeigen was für Einkäufer schon auf dem Markt waren ( = Mit welcher Farbe man günstiger einkaufen kann)
+  
+Wird nun ein Bauteil erworben, würde ich den dazugehörigen Button passiv schalten, dem Spieler Gold abziehen, die Anzeige 
+für Einkäufer auf dem Markt anpassen, (und wenn er der erste Käufer auf dem Markt war, die Marktfarbe anpassen).
+  
+Bei 4 Märkten mit je 7 Teilen hätte ich dann aber eine enorme Menge an buttons.
+Nun frage ich mich, ob es sinnvoler wäre eine Auswahl-Leiste zu benutzen oder ob es einen anderen Weg gibt das effektiver zu gestalten.
+  
+Die Anzahl der Teile zu verringern würde einen enormen Einbruch der Spielvielfalt bedeuten.
+  
