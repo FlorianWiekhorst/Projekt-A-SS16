@@ -1,7 +1,6 @@
 
 
 html, body {
-			height:99%;
 			background: black;
 		}
 
@@ -10,8 +9,6 @@ section{  /* Spielfeld */
   font: 20px;
   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 2);
   float: left;
-  width: 81%;
-  height: 88%;
   background-image: url("http://file2.npage.de/014013/83/bilder/table.png");
 }
 
@@ -26,8 +23,6 @@ header {
 	font: 16px "Lucida Console";
 	padding: 20px 15px;
 	float: right;
-	width: 98%;
-	height: 5%;
 	background-image: url("http://file2.npage.de/014013/83/bilder/4238051-background.jpg");
 }
 
@@ -37,8 +32,8 @@ header {
 	position: relative;
 	transform: translateY(-250%);
 	border-radius: 9px;
-    background: #0C2951;
-    height: 30px;   
+	background: #0C2951;
+	height: 30px;   
 	font-size: 30px;
 	color: white;
 	text-decoration: none;
@@ -55,17 +50,13 @@ aside {  /* Übersichtstafel */
 	padding: 20px 15px;
 	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 	display:block;
-	height: 82%;
-	width: 17%;
 	
 }
 
 /* Buttons: Inventar und fertige Türme(score) */
 #inventar, #score {
 	border-radius: 8px;
-	height: 80px;
-	width: 300px;
-    background: #2D260C;
+	background: #2D260C;
 	font-size: 38px;
 	color: white;
 	text-decoration: none;
@@ -132,17 +123,10 @@ table {
 	text-align: center;
 }
 
-iframe {
-	width: 1100px;
-	height: 500px;	
-	margin: top;
-}
 
 #aktionsfenster {
 	position: relative;
 	padding: 200px 0px 0px 200px;
-	width: 1100px;
-	height: 600px;
 	z-index: 1;
 }
 
@@ -156,7 +140,6 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 2%;
   background-image: url("http://file2.npage.de/014013/83/bilder/4238051-background.jpg");
   padding: 40px 0px 0px 0px; /*top right bottom left*/
 }
