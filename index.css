@@ -17,7 +17,6 @@ h1 {
 } 
 
 img {
-	width: 28%; 
 	border: 3px solid black;	
 }
 
@@ -77,8 +76,6 @@ img {
     	padding-top: 200px; /* Location of the box */
     	left: 0;
     	top: 0;
-    	width: 100%;		 /* Full width */
-    	height: 100%;		 /* Full height */
 	overflow: auto;		 /* Enable scroll if needed */
     	background-color: rgb(0,0,0);		 /* Fallback color */
 	background-color: rgba(0,0,0,0.9);	 /* Black w/ opacity */
@@ -101,51 +98,7 @@ img {
 }
 
 
-/* Die Fenster selbst */
-#fenster1 {				/*Anmeldung*/
-	background-color: #ED8E0E;
-    	border: 2px solid black;
-    	width: 24%;
-	height: 30%;
-	font: 22px "Lucida Console";
-	padding: 10px 10px 10px 10px; 
-	border-radius: 8px;
-	
-}
 
-#fenster2 {				/*Register*/
-    	background-color: #ED8E0E;
-    	margin: auto;
-    	padding: 20px;
-    	border: 4px solid black;
-    	width: 29%;
-	height: 40%;
-	font: 22px "Lucida Console";
-	border-radius: 8px;
-}
-
-#fenster3 {				/*HighScore*/
-	background: #333333;
-	color: white;
-	border: 8px solid black;
-    	float: right;
-	padding: none;
-    	text-align: center;
-	width: 80%;
-	height: 89%;
-}
-
-
-#fenster4 {				/*Anleitung*/
-	background-color: #575433;
-	margin: auto;
-    	padding: 20px 0px 0px 200px; /*top right bottom left*/
-    	border: 6px solid black;
-    	width: 64%;
-	height: 80%;
-	font: 20px "Lucida Console";
-	
-}
 
 
 /* Hintergrund Video Highscore Screen */
