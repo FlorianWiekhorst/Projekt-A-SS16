@@ -9,6 +9,7 @@ section {
     	float: middle;
 	padding: auto;
     	text-align: center;
+    	float: middle;
 	}
 
 h1 {
@@ -20,12 +21,7 @@ img {
 	border: 3px solid black;	
 }
 
-#buttonbox {
-	float: middle;
-	border-radius: 15px;
-	height: 95px;
-	padding: 60px 0px 0px 0px; /*top right bottom left*/
-}
+
 
 
 /* Buttons */
@@ -48,7 +44,6 @@ img {
 
 
 /* die vier HauptmenüButton */
-
 #anmeldeButton,
 #registButton,
 #highscoreButton,
@@ -59,8 +54,6 @@ img {
 	border: 3px solid black;
 	font-size: 20px;
 	border-radius: 8px;
-	-webkit-transition-duration: 0.4s; /* Safari */
-	transition-duration: 0.4s;
 	cursor: pointer;
 }
 
@@ -117,19 +110,6 @@ img {
     transform: translateX(-50%) translateY(-50%);
     background: url(http://possumsednolo.npage.de/get_file.php?id=30827741&vnr=295487) no-repeat;
     background-size: cover; 
-}
-
-/* Schutzeinstellung für kleine Bildschirmdarstellungen */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-	html {
-         background: url(http://possumsednolo.npage.de/get_file.php?id=30827741&vnr=295487) #000 no-repeat center center fixed;
-    }
-    #bg_vid {
-        display: none;
-    }
 }
 
 
