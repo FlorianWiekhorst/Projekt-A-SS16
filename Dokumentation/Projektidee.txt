@@ -152,3 +152,29 @@ Wertung 2: Projektbeschreibung: gesamt: 4 / 10
 ===================================
 
 Keine Änderungen an der Beschreibung seit letztem Feedback.
+
+===================================
+=== Feedback Alpers, 2016-07-27 ===
+===================================
+
+== I ==
+
+Leider fehlen in der Beschreibung immer noch die Teile, in denen es um die Interaktion zwischen Mensch und Computer geht.
+
+== II ==
+
+Außerdem müssten Sie noch an der Reihenfolge in der Beschreibung arbeiten: Es muss leicht erkennbar sein, wie aus der Beschreibung die Struktur folgt und umgekehrt. Denn wenn Sie später Änderungen in die Beschreibung oder die Struktur oder einen anderen Bereich des Projekts einarbeiten, dann müssen Sie auch die anderen Teile anpassen.
+
+Nehmen wir den Anfang Ihrer Beschreibung als Beispiel:
+
+Inhalt:			
+-100 TurmBauteile verteilt auf 5 Arrays und unterteilt in 5 Farben
+-20 Basisteile
+-20 Mittelteile
+-25 Fenster 
+-15 leuchtende Fenster
+-20 Spitzen
+
+Da diese Punkte am Anfang Ihrer Beschreibung auftauchen (und es sich um keine Zusammenfassung handelt), würden andere Projektmitglieder erwarten, dass diese Teile auch relativ am Anfang der strukt.html zu finden sind. Wenn Sie sich diese Teile der Beschreibung ansehen, dann werden Sie dagegen feststellen, das nichts hiervon zur Struktur gehört.
+
+Es ist richtig: Die nötige Umstellung der Beschreibung wird eine Menge Zeit erfordern, aber ohne diese Umstellung ist die Beschreibung für die weitere Projektarbeit leider nicht sinnvoll einsetzbar.

@@ -685,3 +685,79 @@ In der Aufgabenstellung zur Ausarbeitung war es vielleicht nicht deutlich formul
 Führen Sie deshalb die drei Bereiche bitte getrennt auf und prüfen Sie nach jeder Aufstellung zuerst, welche Elemente jeder Aufstellung mehrfach vorkommen. Löschen Sie diese dann und arbeiten Sie mit den so erstellten Elementen, Gruppen und Ansichten weiter.
 
 -->
+
+<!--
+===================================
+=== Feedback Alpers, 2016-07-27 ===
+===================================
+
+== I ==
+
+Schauen wir uns zunächst die strukturellen Elemente an, die Sie definiert haben:
+
+= I.a =
+
+-04-	-Button "Anleitung" 	(Pop-up-Window)
+Pop-up-Windows sind kein strukturelles Element und lassen sich mit den Mitteln, die wir besprochen haben auch nicht umsetzen.
+
+-05-	-Button "HighScore" 	(Link zur HighscoreSeite)
+Ein Link ist ein Link und ein Button ein Button. Sie können zwar einen Link so programmieren, dass er wie ein Button aussieht, aber es ist dann immer noch ein Link und kein Button. (Das trifft für eine Vielzahl von Elementen zu, die Sie definiert haben.)
+
+= I.b =
+
+Bitte achten Sie darauf, die Elemente nach der Nummerierung anzuordnen. Denn sonst ist es unmöglich, die Elemente zu Gruppen nachzuschlagen.
+
+= I.c =
+
+Leider haben Sie diese Aufgabe nicht richtig verstanden: Es geht nicht darum, für jeden Text einen Container zu definieren, sondern darum, zu definieren, wie viele Container benötigt werden, um Texte anzuzeigen. Nehmen wir als Beispiel die folgenden von Ihnen definierten Elemente:
+
+-30-	-Textfeld "Fehler1" (Wenn Name/Passwort falsch)
+-31-	-Textfeld "Fehler2" (Wenn Passwörter nicht identisch)
+-32-	-Textfeld "Fehler3" (Wenn Spielername schon vergeben)
+-33-	-Textfeld "Fehler4" (Wenn Emailformat ungültig)
+
+Offensichtlich handelt es sich bei allen Fehlermeldungen um Fehlermeldungen, die einem Nutzer anzeigen, dass er/sie beim Ausfüllen eines Formulars Fehler gemacht hat. Und damit handelt es sich um ein einziges strukturelles Element.
+
+Bitte gehen Sie die von Ihnen definierten Elemente durch und löschen Sie alle Duplikate, die ähnlich wie diese sind.
+
+= I.d =
+
+Ebenfalls bezüglich dieser Elemente: Ein strukturelles Element Text gibt es nicht. Es gibt Absätze, Aufzählungen usw. die Text enthalten. Dann gibt es noch verschiedene Eingabefelder, in denen NutzerInnen Texte eintragen können.
+
+== II ==
+
+Damit auf zu den Gruppen:
+
+I. Start
+Hier vermischen Sie die Navigation und einige grafische Elemente. Im Grunde haben Sie hier keine Gruppe, sondern eine Ansicht definiert.
+
+II. Login und III. Regist
+sind weitgehend identisch, gerade wenn Sie die Korrekturen unter den strukturellen Elementen durchgeführt haben. Auch hier drängt sich der Eindruck auf, dass Sie zuerst die Ansichten definiert und dann daraus die Gruppen abgeleitet haben und nicht umgekehrt.
+
+Bei beiden definieren Sie außerdem tatsächlich Formulare, ohne das entsprechend zu kennzeichnen bzw. zu definieren. Sie verwenden beispielsweise Eingabefelder und zu denen gehören keine Textfelder. Lesen Sie sich dazu im Skript nochmal durch, wie ein Formular erstellt wird und überarbeiten Sie die entsprechenden Teile der Gruppen.
+
+IV. Game Menu
+So wie Sie diese Gruppe definiert haben handelt es sich nicht um ein Menü, sondern um eine Gruppe von Gruppen, denn vieles, was Sie hier aufgeführt haben (z.B. Listen) sind bereits Gruppen. Das ist in Ordnung, aber anhand der Bezeichnung Menü gehe ich davon aus, dass Sie etwas anderes meinen.
+
+VIII. Baufeld (und ca. sieben weitere Gruppen)
+Wenn Sie die Überarbeitung der strukturellen Elemente abgeschlossen haben, werden Sie feststellen, dass all diese Gruppen tatsächlich eine Gruppe sind.
+
+XIV. Inventar [Auflistung Teile+Türme]
+-51-	-Textfeld "Inventar"    ("Beschreibung des Inventars")
+Hier definieren Sie, dass ein einzelnes strukturelles Element eine Gruppe ist, wobei Sie bereits in Klammern hinter dem Bezeichner der Gruppe deutlich machen, dass diese aus mehereren Elementen bestehen soll.
+
+= III =
+
+Und zu den Ansichten:
+
+Wenn Sie all die Punkte oben umgesetzt haben, werden Sie feststellen, dass vielleicht noch drei Ansichten übrig bleiben.
+
+= Fazit =
+
+Die Arbeit an der Struktur des Projekts haben Sie leider zum Großteil vermieden und werden jetzt feststellen, dass wenigstens die Hälfte der Programmierung in HTML vollkommen überflüssig war. Für zukünftige Projekte kann ich Ihnen nur wärmstens empfehlen, ausreichend Zeit in Planung und Konzeption zu legen, denn sonst programmieren Sie unter Umständen tagelang Code, der dann von Ihrem Projektleiter wieder gelöscht wird.
+
+Da sie somit die zentrale Aufgabe bei der Struktur leider verfehlt haben, kann ich für diese momentan keine Wertung notieren. (Für die Programmierung in HTML natürlich erst recht nicht.)
+
+Doch bevor Sie hier anfangen setzen Sie bitte zunächst die Punkte um, die ich bezüglich Ihrer Beschreibung notiert habe.
+
+-->
