@@ -1,0 +1,29 @@
+
+Puh. Schwer sinnvoll an einer (eigenen) Projektvorstellung zu arbeiten,
+wenn sich die Erwartungen und Angaben so oft verändern.
+
+In dem Feedback vom 3.Mai steht z.B. als Aufgabe:
+
+""  Hier ein Beispiel: Bislang haben Sie 97 strukturelle Elemente definiert:
++
++-01- Interaktionsmöglichkeit / laufen nach links
++-02- Interaktionsmöglichkeit / laufen nach rechts
++-03- Textfeld / Eingabe Nutzername
+
+... ""
+
+Dort wird also ein Textfeld als strukturelles Element bestimmt.
+Wenn ich dasselbe nun aber in meiner Strukt anwende ist es falsch?!
+
+Auch das die Beschreibung von meiner Spielidee für mein Projekt aufeinmal
+diesselbe Reihenfolge wie meine Strukt haben muss ist mir neu.
+
+Das eine Beschreibt das Spiel-
+das andere stellt die struk.Elemente dar.
+
+Wenn sich die Teamkollegen nicht mit unserem Spiel auseinander setzen werden sie
+da länger die Zusammenhänge suchen müssen.
+Oder alternativ sollten diese sich dann auch einen neuen Job suchen.
+Jedes Teammitglied, dass ernsthaft mitarbeiten möchte, wird den Zusammenhang zwischen
+Strukt und Beschreibung schon sehen, bzw war sogar daran beteiligt...
+
