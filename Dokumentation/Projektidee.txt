@@ -1,29 +1,6 @@
-### Projektidee FlorianWiekhorst, 4.Mai.2016 ###
+### Projektidee FlorianWiekhorst, 28.August.2016 ###
 
-Titel:			Asara Digital
-
-Inhalt:			100 TurmBauteile verteilt auf 5 Arrays und unterteilt in 5 Farben
-			   -20 Basisteile
-			   -20 Mittelteile
-			   -25 Fenster 
-			   -15 leuchtende Fenster
-			   -20 Spitzen
-
-		   	Gold (Zahlungsmittel)
-		  	Jahreszähler (Rundenzähler)
-		  	Prestigepunktezähler
-    			Spielanleitung (pdf)
-		  	45 Einkäufer (zum erwerbt von Bauteilen auf dem Markt)
-   			Die Gunst des Kalifen (ein kaufbarer Punkte-Buff)
-
-Bereiche:		9 Stück:
-      			   - Die 4 Märkte (für Bauteile)
-      			   - Die Bank (Einkäufer zu Gold)
-      			   - Palast (Gunst, gezielt Teilestapel durchsuchen)
-      			   - Der Baubereich 
-      			   - Die Werkstatt (Fenster erwerben)
-      			   - Das Zelt (Einkäufer rekrutieren)
-
+Asara Digital
 
 Kurzbeschreibung: 	
 
@@ -45,8 +22,21 @@ Kurzbeschreibung:
 			Ein Turm muss mindesstens aus einem Basisteil und einer Spitze bestehen.
 			Ein Turm kann nur aus Teilen derselben Farbe gebaut werden.
 			
+			Welche Teile die Mitspieler erwerben sieht man in dem Moment des Kaufes kurz.
+			Dadurch entsteht die Interaktion zwischen den Spielern.
+			Auch die computergesteuerten Mitspieler merken sich welche Teile alle anderen gekauft haben.
+			Ausserdem kann man alle fertigen Türme einsehen.
+			Es gibt die Möglichkeit des Handels untereinander. Man kann also andere Spieler fragen, 
+			ob diese Teil X gegen Teil Y oder gegen Gold tauschen würden.
+			
+			Auch die Computergegner nutzen diese Anfragen, wenn der Spieler ein Teil besitzt, dass sie brauchen,
+			aber auf den Märkten aber nicht finden können.
+			Ebenfalls reagieren sie auf Anfragen von anderen Mitspielern (egal ob menschl. oder CPU)
+			in dem Ausmaß, dass sie nicht wahllos Teile weggeben, sondern sich daran orientieren welche
+			Teile sie besitzen, welche Teile sie brauchen, und welche Teile die anderen brauchen.
+			
 			Die Gunst des Kalifen(Bonus:Beginnt Runde/erhält mehr Punkte) 
-			erhält zu Spielbegin der züfällig ermittelte Beginner.
+			erhält zu Spielbegin der zufällig ermittelte Beginner.
 			Im Spielverlauf kann man durch Zahlungsmittel diesen Bonus stehlen.
 			
 			Ein Jahr endet sobald kein Spieler mehr Einkäufer besitzt.
