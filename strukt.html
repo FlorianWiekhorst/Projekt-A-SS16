@@ -1,363 +1,82 @@
 <!-- Die strukturellen Elemente aus denen Asara Digital bestehen soll: 
-	Stand 22.07.2016	
+	Stand 07.09.2016	
 Aufgeteilt in die drei Schritte [(1) Ausarbeitung der strukt. Elem., 
 (2) Ausarbeitung der Gruppen und (3) Ausarbeitung der Ansichten]:
 
 _________________
 ### Elemente ### 
 
-		-01-	-Hintergrundbild "StartScreen"
-		-02-	-Hintergrundbild "GameScreen"
-		-03-	-Hintergrundbild "Marktplatz"
-		-87-	-Hintergrundbild "Help"
+		-01-	-Hintergrundbild (3x)
+		-02-	-Link (9x)	
+		-03-	-Beschriftung (21x)
+		-04-	-Tabelle (2x)
+		-05-	-Liste (12x)
+		-06-	-Eingabefeld (6x)
 	
-		-04-	-Button "Anleitung" 	(Pop-up-Window)
-		-05-	-Button "HighScore" 	(Link zur HighscoreSeite)
-		-06-	-Button "Login" 	(leitet zur Login-Seite)
-		-07-	-Button "Registrierung" (leitet zur Regist-Seite)
-		-08-	-Button "Zum_Spiel"	(leitet zur Game_Help Seite, wenn kein Fehler erzeugt wurde)
-		-09-	-Button "Inventar" 	(leitet zur Game_Inventar-Seite)	
-		-10-	-Button "Baufeld" 	(leitet zur Game_Baufeld-Seite)
-		-11-	-Button "Marktplatz" 	(leitet zur Game_Marktplatz-Seite)
-		-12-	-Button "Bank" 		(leitet zur Game_Bank-Seite)	
-		-13-	-Button "Palast" 	(leitet zur Game_Palast-Seite)	
-		-14-	-Button "Werkstatt" 	(leitet zur Game_Werkstatt-Seite)	
-		-15-	-Button "Zelt" 		(leitet zur Game_Zelt-Seite)
-		-16-	-Button "Help" 		(leitet zur Game_Help-Seite)
-		-17-	-Button "Übersicht" 	(leitet zur Game_Übersicht-Seite)
-		-18-	-Button "Zum_Start"	(leitet zur Game_Index-Seite) (für nicht eingeloggte user - rückweg von der anleitung, etc)
-		-19-	-Button "Logout" 	(Fragt nach/loggt aus/leitet zur Game_Index-Seite)	
-		-20-	-Button "RundenEnde" 	(Beendet Runde)
-		
-		
-		-21-	-Textfeld "Anleitung" (kompl. Text der Anleitung)
-		-22-	-Textfeld "Spielername"
-	 	-23-	-Textfeld "Passwort"
-		-24-	-Textfeld "Spieltitel" 
-		-25-	-Textfeld "BonusStatus" (Gunst)
-		-26-	-Textfeld "Neuer_Spielername"
-		-27-	-Textfeld "Neues_Passwort"
-		-28-	-Textfeld "Neues_Passwort_wiederholen"
-		-29-	-Textfeld "Email"
-		-30-	-Textfeld "Fehler1" (Wenn Name/Passwort falsch)
-		-31-	-Textfeld "Fehler2" (Wenn Passwörter nicht identisch)
-		-32-	-Textfeld "Fehler3" (Wenn Spielername schon vergeben)
-		-33-	-Textfeld "Fehler4" (Wenn Emailformat ungültig)
-		-34-	-Textfeld "Fehler5" ("Turmteil kann nicht mehr gekauft werden")
-		-35-	-Textfeld "Fehler6" ("Nicht genug Gold")
-		-36-	-Textfeld "Fehler7" ("Falsche Einkäuferfarbe")
-		-37-	-Textfeld "Fehler8" ("Sie brauchen min. 2 Einkäufer für diese Aktion")
-		-38-	-Textfeld "Jahresangabe" (Gibt Jahreszahl an)
-		-39-	-Textfeld "Ansage1" ("Jahr x beendet") 
-		-40-	-Textfeld "Ansage2" ("Spieler x Gewinnt mit y Punkten")
-		-41-	-Textfeld "Ansage3" ("Alle Bauteile für dieses Jahr verkauft")
-		-42-	-Textfeld "Ansage4" ("Sie sind am Zug!") 
-		-43-	-Textfeld "Ansage5" ("Mitspieler noch Zug! Bitte Warten.") 
-		-44-	-Textfeld "Hilfe1" 	("Die Bank tauscht Einkäufer gegen Gold")
-		-45-	-Textfeld "Hilfe2" 	("Sie können hier Einkäufer anwerben")
-		-46-	-Textfeld "Hilfe3"	("Hier werden Türme erbaut")
-		-47-	-Textfeld "Hilfe4" 	("Der Markt für Turmteile")
-		-48-	-Textfeld "Hilfe5" 	("Der Hilfebereich")
-		-49-	-Textfeld "Hilfe6"	("Zeigt ihre Einkäufer und Turmteile")
-		-50-	-Textfeld "Hilfe7" 	("Zeigt alle fertigen Türme")
-		-51-	-Textfeld "Inventar"    ("Beschreibung des Inventars")
-		-52-	-Textfeld "Zelt"	("Beschreibung Einkäufer anwerben")
-		-53-	-Textfeld "Werkstatt"   ("Beschreibung der Werkstatt")
-		-54-	-Textfeld "Palast"	("Beschreibung des Palastes")
-		-55-	-Textfeld "Bank"	("Beschreibung der Bank")
-		-56-	-Textfeld "Marktplatz"  ("Beschreibung des Marktplatzes")
-		-57-	-Textfeld "Baufeld"	("Beschreibung vom Baubereich")	
-		-73-	-Textfeld "Login"	("Titel der Loginseite")
-		-74-	-Textfeld "Regist"	("Titel der Registseite")
-		-81-	-Textfeld "HighScore"	("Titel der HighScoreseite")
-		-82-	-Textfeld "GameOver"	("End-text mit erreichten Punkten")
-		-84-	-Textfeld "Hilfe8"	("Zum erwerben der gunst und anderen Vorzügen")
-		-85-	-Textfeld "Hilfe9"	("Zum kauf von edlen fenstern")
-		-86-	-Textfeld "Info"	("Beschreibung des Übersichtsbereiches")
-		
-		
-		-58-	-Tabelle "Übersicht" (Punkte/Gold/Bonusmarke x SpielerNamen)
-		-59-	-Tabelle "HighScore" (SpielerNamen/Die besten erreichten Punkte x Platzierung)
-		
-		
-		-60-	-Liste Bauteile"Spitzen"
-		-61-	-Liste Bauteile"Fenster"
-		-62-  	-Liste Bauteile"Mittelteile"
-		-63-	-Liste Bauteile"Basisteile"
-		-64- 	-Liste Einkäufer 	  ("Alle Einkäufer")
-		-65-	-Liste "Eigene Bauteile"  (Alle Teile im Besitz des Spielers)
-		-66-	-Liste "Eigene Einkäufer" (Alle Einkäufer des Spielers)
-		-67-	-Liste "Türme" 		(Auflistung der fertigen Türme aller Spieler)
-		-68-	-Liste "SpielerNamen	("Auflistung aller teilnehm. Spieler")
-		-69-	-Liste "SpielerPunkte"	("Punkte aller Spieler")
-		-70-	-Liste "StandFarbe" 	("Marktstände nehmen Farbe des ersten Einkäufers an")
-		-83-	-Liste "SpielerGold"	("Gold aller Spieler")
-		
-		-75-	-Eingabefeld "login_name"
-		-76-	-Eingabefeld "login_pw"
-		-77-	-Eingabefeld "regist_name"
-		-78-	-Eingabefeld "register_pw_1"
-		-79-	-Eingabefeld "register_pw_2"
-		-80-	-Eingabefeld "email"
-		
-		-71-	-Link (Werbung) "Zur Brettspielversion"
-		-72-	-Hintergrundmusik 
-		
-		
 _________________		
 ### Gruppen ###
 
-		I. Start
-			-01-	-Hintergrundbild "StartScreen"
-			-24-	-Textfeld "Spieltitel" 
-			-71-	-Link (Werbung) "Zur Brettspielversion"
-			-06-	-Button "Login" 	(leitet zur Login-Seite)
-			-07-	-Button "Registrierung" (leitet zur Regist-Seite)
-			-05-	-Button "HighScore" 	(Link zur HighscoreSeite)
-			-04-	-Button "Anleitung" 	(Pop-up-Window)
-			-21-	-Textfeld "Anleitung" (kompl. Text der Anleitung)
-			-72-	-Hintergrundmusik 
-			
-			
-		II. Login
-			-73-	-Textfeld "Login"	("Titel der Loginseite")
-			-22-	-Textfeld "Spielername"
-			-75-	-Eingabefeld "login_name"
-			-23-	-Textfeld "Passwort"
-			-76-	-Eingabefeld "login_pw"
-			-08-	-Button "Zum_Spiel"	(leitet zur Game_Help Seite, wenn kein Fehler erzeugt wurde)
-			-07-	-Button "Registrierung" (leitet zur Regist-Seite)
-			-18-	-Button "Zum_Start"	(leitet zur Game_Index-Seite) (für nicht eingeloggte user - rückweg von der anleitung, etc)			
-			-30-	-Textfeld "Fehler1" 	(Wenn Name/Passwort falsch)
-			-01-	-Hintergrundbild "StartScreen"
+		I. Login
+			-01-	-Hintergrundbild
+			-06-	-Eingabefeld [Logindaten]
+			-02-	-Link [Logindaten abschicken]
 	
 	
-		III. Regist
-			-74-	-Textfeld "Regist"	("Titel der Registseite")
-			-26-	-Textfeld "Neuer_Spielername"
-			-77-	-Eingabefeld "regist_name"
-			-27-	-Textfeld "Neues_Passwort"
-			-78-	-Eingabefeld "register_pw_1"
-			-28-	-Textfeld "Neues_Passwort_wiederholen"
-			-79-	-Eingabefeld "register_pw_2"
-			-29-	-Textfeld "Email"
-			-80-	-Eingabefeld "email"
-			-31-	-Textfeld "Fehler2" (Wenn Passwörter nicht identisch)
-			-32-	-Textfeld "Fehler3" (Wenn Spielername schon vergeben)
-			-33-	-Textfeld "Fehler4" (Wenn Emailformat ungültig)
-			-08-	-Button "Zum_Spiel"	(leitet zur Game_Help Seite, wenn kein Fehler erzeugt wurde)
-			-06-	-Button "Login" 	(leitet zur Login-Seite)
-			-18-	-Button "Zum_Start"	(leitet zur Game_Index-Seite) (für nicht eingeloggte user - rückweg von der anleitung, etc)
-			-01-	-Hintergrundbild "StartScreen"
-			
-			
-		IV. GameMenu
-			-68-	-Liste "SpielerNamen"   ("Auflistung aller teilnehm. Spieler")
-			-69-	-Liste "SpielerPunkte"	("Punkte aller Spieler")
-			-83-	-Liste "SpielerGold"	("Gold aller Spieler")
-			-58-	-Tabelle "Übersicht" 	(Punkte/Gold/Bonusmarke x SpielerNamen)
-			-25-	-Textfeld "BonusStatus" (Gunst)
-			-09-	-Button "Inventar" 	(leitet zur Game_Inventar-Seite)
-			-49-	-Textfeld "Hilfe6" 	("Zeigt ihre Einkäufer und Turmteile")
-			-17-	-Button "Übersicht" 	(leitet zur Game_Übersicht-Seite)
-			-50-	-Textfeld "Hilfe7" 	("Zeigt alle fertigen Türme")
-			-38-	-Textfeld "Jahresangabe"(Gibt Jahreszahl an)
-			-20-	-Button "RundenEnde" 	(Beendet Runde)
-			-19-	-Button "Logout" 	(Fragt nach/loggt aus/leitet zur Game_Index-Seite)	
-			
+		II. Regist
+			-06-	-Eingabefeld [Registerdaten]
+			-02-	-Link [Registerdaten abschicken]
 	
-		V. GameFootbar
-			-10-	-Button "Baufeld" 	(leitet zur Game_Baufeld-Seite)
-			-46-	-Textfeld "Hilfe3" 	("Hier werden Türme erbaut")
-			-11-	-Button "Marktplatz" 	(leitet zur Game_Marktplatz-Seite)
-			-47-	-Textfeld "Hilfe4" 	("Der Markt für Turmteile")
-			-12-	-Button "Bank" 		(leitet zur Game_Bank-Seite)	
-			-44-	-Textfeld "Hilfe1" 	("Die Bank tauscht Einkäufer gegen Gold")
-			-13-	-Button "Palast" 	(leitet zur Game_Palast-Seite)	
-			-84-	-Textfeld "Hilfe8"	("Zum erwerben der gunst und anderen Vorzügen")
-			-14-	-Button "Werkstatt" 	(leitet zur Game_Werkstatt-Seite)
-			-85-	-Textfeld "Hilfe9"	("Zum kauf von edlen fenstern")
-			-15-	-Button "Zelt" 		(leitet zur Game_Zelt-Seite)
-			-45-	-Textfeld "Hilfe2" 	("Sie können hier Einkäufer anwerben")
-			-16-	-Button "Help" 		(leitet zur Game_Help-Seite)
-			-48-	-Textfeld "Hilfe5" 	("Der Hilfebereich")
+			
+		III. GameMenu
+			-03-	-Beschriftung [Spielernamen,Gold,Punkte]
+			-04-	-Tabelle 
+			-05-	-Liste 
+	
+	
+		IV. Highscore
+			-01-	-Hintergrundbild 
+			-03-	-Beschriftung [HighScore]
+			-04-	-Tabelle [Übersicht]
 			
 			
-		VI. Highscore
-			-81-	-Textfeld "HighScore"	("Titel der HighScoreseite")
-			-59-	-Tabelle "HighScore" 	(SpielerNamen/Die besten erreichten Punkte x Platzierung)
-			-18-	-Button "Zum_Start"	(leitet zur Game_Index-Seite) (für nicht eingeloggte user - rückweg von der anleitung, etc)
-			-01-	-Hintergrundbild "StartScreen"
-			
-			
-		VII. GameFinished  
-			-24-	-Textfeld "Spieltitel" 
-			-40-	-Textfeld "Ansage2" 	("Spieler x Gewinnt mit y Punkten")
-			-82-	-Textfeld "GameOver"	("End-text mit erreichten Punkten")
-			-59-	-Tabelle "HighScore" 	(SpielerNamen/Die besten erreichten Punkte x Platzierung)
-			-71-	-Link (Werbung)		("Zur Brettspielversion")
-			-19-	-Button "Logout" 	(Fragt nach/loggt aus/leitet zur Game_Index-Seite)	
-			-01-	-Hintergrundbild "StartScreen"
+		V. GameFinished  
+			-01-	-Hintergrundbild 
+			-02-	-Link 	
+			-03-	-Beschriftung 
 		
 		
-		VIII. Baufeld
-			-57-	-Textfeld "Baufeld"	    ("Beschreibung vom Baubereich")	
-			-02-	-Hintergrundbild "GameScreen"
-		
-		
-		IX. Marktplatz
-			-56-	-Textfeld "Marktplatz"  ("Beschreibung des Marktplatzes")
-			-03-	-Hintergrundbild "Marktplatz"
-			-60-	-Liste Bauteile"Spitzen"
-			-61-	-Liste Bauteile"Fenster"
-			-62-  	-Liste Bauteile"Mittelteile"
-			-63-	-Liste Bauteile"Basisteile"
-			-70-	-Liste "StandFarbe" 	("Marktstände nehmen Farbe des ersten Einkäufers an")
-			-83-	-Liste "SpielerGold"	("Gold aller Spieler")
-		
-		
-		X. Bank
-			-55-	-Textfeld "Bank"    ("Beschreibung der Bank")
-			-02-	-Hintergrundbild "GameScreen"
-		
-		
-		XI. Palast
-			-54-	-Textfeld "Palast"    ("Beschreibung des Palastes")
-			-02-	-Hintergrundbild "GameScreen"
-		
-		
-		XII. Werkstatt
-			-53-	-Textfeld "Werkstatt"   ("Beschreibung der Werkstatt")
-			-02-	-Hintergrundbild "GameScreen"
-		
-		
-		XIII. Zelt
-			-52-	-Textfeld "Zelt"    ("Beschreibung Einkäufer anwerben")
-			-02-	-Hintergrundbild "GameScreen"
-		
-		
-		XIV. Inventar [Auflistung Teile+Türme]
-			-51-	-Textfeld "Inventar"    ("Beschreibung des Inventars")
-			
-			
-		XV. Info [Übersicht alle Türme]
-			-86-	-Textfeld "Info" ("Beschreibung des Übersichtsbereiches")
-			-67-	-Liste "Türme" (Auflistung der fertigen Türme aller Spieler)
-			-68-	-Liste "SpielerNamen" ("Auflistung aller teilnehm. Spieler")
-			
-			
-		XVI. Help 
-			-87-	-Hintergrundbild "Help"
-		
-		
-		XVII. Anleitung
-			-21-	-Textfeld "Anleitung" (kompl. Text der Anleitung)
-
-			
+		VI. Spielbereiche (Marktplatt,Bank,etc)
+			-01-	-Hintergrundbild
+			-02-    -Beschriftung [der jeweiligen Bereiche]
+			-02-	-Link 	
+			-04-	-Tabelle [Bauteile]
+	
 _________________
 ### Ansichten ###
 
-	--= view_index =-----	
-	--------------------------
-	|    I. Start		 |
-	|    XVII. Anleitung	 |
-	--------------------------
-	
-	
-	--= view_login =--
+	--= view_index =-	
 	------------------
-	|    II.Login	 |
+	|    I.Login	 |
+	|    II.Regist   |
 	------------------
-	
-	
-	--= view_regist =--
-	-------------------
-	|   III. Regist	  |
-	-------------------
 	
 	
 	--= view_highscore =--
 	----------------------
-	|    VI. Highscore   |
+	|    IV.Highscore    |
 	----------------------
 	
 	
-	--= view_gamefinished =--
+	--= view_game =--
 	-------------------------
-	|   VII. GameFinished	|
+	|   VI.Spielbereiche    |
+	|   III.GameMenu        |
+	|   V.GameFinished	|
 	-------------------------
 
-
-	--= view_baufeld =---
-	---------------------
-	|  VIII. Baufeld    |
-	|  IV. GameMenu	    |
-	|  V. GameFootbar   |
-	---------------------
-	
-	
-	--= view_marktplatz =--
-	-----------------------
-	|    IX. Marktplatz   |
-	|    IV. GameMenu     |
-	|    V.GameFootbar    |
-	-----------------------
-	
-	
-	--= view_bank =------
-	---------------------
-	|    X. Bank        |
-	|    IV. GameMenu   |
-	|    V.	GameFootbar |
-	---------------------
-	
-	
-	--= view_palast =----
-	---------------------
-	|    XI. Palast	    |
-	|    IV. GameMenu   |
-	|    V.	GameFootbar |
-	---------------------
-
-	
-	--= view_werkstatt =--
-	----------------------
-	|   XII. Werkstatt   |
-	|   IV. GameMenu     |
-	|   V. GameFootbar   |
-	----------------------
-
-	
-	--= view_zelt =-------
-	----------------------
-	|  XIII. Zelt        |
-	|  IV. GameMenu	     |
-	|  V. GameFootbar    |
-	----------------------	
-
-	
-	--= view_help =------
-	---------------------
-	|   XVI. Help	    |
-	|   IV. GameMenu    |
-	|   V. GameFootbar  |
-	---------------------
-
-
-	--= view_inventar =--
-	---------------------
-	|   XIV. Inventar   |
-	---------------------
-
-	
-	--= view_info =---
-	------------------
-	|    XV. Info    |
-	------------------
-
-
-
-### Ende strukt-Update vom 22.07.2016 ###
+### Ende strukt-Update vom 07.09.2016 ###
+  
+  
     
     
     </body> 
