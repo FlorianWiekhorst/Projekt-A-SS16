@@ -1,8 +1,61 @@
-### Projektidee FlorianWiekhorst, 28.August.2016 ###
+###########################################################
+##### Projektidee FlorianWiekhorst, 12.September.2016 #####
 
-Asara Digital
+Anwendungstitel:	-Asara Digital
 
-Kurzbeschreibung: 	
+
+Struktureller Aufbau:	-Startseite mit 3 wählbaren Bereichen (Hintergrundbild-/musik, AnwendungsTitel)
+				- 1. Login (Eingabe Username/PW, SubmitButton, Fehlermeldungen)
+				- 2. Registrierung (Eingabe Email/UserName/PW/PW-repeat, Submitbutton, Fehlermeldungen)
+				- 3. Highscore (Auslistung HighscoreNamen/-punkte)
+				
+				- Spielseite:
+					- Titel des aktiven Bereiches (Beschriftung im Header)
+					- Übersichtstabelle:
+						- Namen/Gold/Punkte aller Spieler
+						- Anzeige für aktiven Spieler (fabrlich veränderter Hintergrund)
+						- Anzeige für Besitz einer BonusMarke (eigene Tabellenspalte)
+							
+					- Chatfenster
+					- (Footer)Leiste mit Buttons welche den aktiven Bereich wechseln:
+						- Überischtsseite:
+							- Auflistung der fertigen Türme aller Spieler
+						
+							- Inventar:
+								- Auslistung der eigenen Einkäufer/Turmteile
+		
+							- RundeBeenden
+								- beendet die eigene Runde, nächster Spieler wird zum Aktiven
+								
+							- Logout
+								- "Wirklich ausloggen: Y/N" / Loggt den Nutzer aus
+							
+							- HowToPlay
+								- Hilfebereich der mit einem Absatztext und verweisen die Bereiche und Möglichkeiten aufzeigt
+								
+							- Alle Baubereiche:
+								- Baufeld
+									- 7 Baubereiche [Wert 1-7]
+								- Marktplatz
+									- Preistafel als Tabelle [Farbe/Goldkosten]
+									- Basisteile [7 Teile / 5 Einkäufer]
+									- Mittelteile [7 Teile / 4 Einkäufer]
+									- Spitzen [7 Teile / 4 Einkäufer]
+									- Fenster [8 Fenster / 5 Einkäufer]
+								- Bank
+									- [4 Einkäufer: +12,+10,+8,+5 (+5 merhfach nutzbar)]
+								- Palast
+									- Gunsterwerb [1 Einkäufer, mehrfach nutzbar]
+									- Nachzug von Teilen [2 Einkäufer]
+								- Werkstatt
+									- Leuchtende Fenster [3 Einkäufer]
+								- Zelt
+									- Einkäufer werben [3 Einkäufer]
+									
+
+
+
+Kurzbeschreibung der Anwendung: 	
 
       			Der Spieler tritt gegen andere Spieler und/oder CPU-Gegner an.
 			Es geht darum Türme zu errichten.
@@ -47,7 +100,8 @@ Kurzbeschreibung:
 			Die Punkte und der Name des menschl. Spielers werden in die Highscoreliste eingetragen.
 
 
-Ablauf:			
+Ablauf einer Runde Asara Digital:
+
 			Der Nutzer erblickt die Titelseite.
 			Er kann sich einloggen, neu anmelden,
 			die Anleitung lesen oder die Highscoreliste einsehen.
@@ -74,9 +128,9 @@ Ablauf:
 				- Wählt er den Palast, kann er sich den Bonus erkaufen, oder gegen Gold
 				  ein Bauteil aus einem der Arrays wählen.
 
-				Wichtig: All diese Aktionen setzten natürlich vorraus, dass der Spieler über die
-					 nötigen Ressourcen vefügt. z.b.: Anzahl/Farbe Einkäufer, genug Gold, usw,
-					 sowie das noch freie Felder zum Ablegen von Einkäufern vorhanden sind.
+			Wichtig: All diese Aktionen setzten natürlich vorraus, dass der Spieler über die
+				 nötigen Ressourcen vefügt. z.b.: Anzahl/Farbe Einkäufer, genug Gold, usw,
+				 sowie das noch freie Felder zum Ablegen von Einkäufern vorhanden sind.
 
 
 			Solange der Nutzer nicht am Zug ist, laufen die Züge der CPU-/menschlichen Gegner ab.
@@ -89,9 +143,11 @@ Ablauf:
 
 			Am Ende vom vierten Jahr werden anhand der erbauten Türme nocheinmal viele Punkte vergeben.
 			Es folgt eine Endauflistung der Mitspieler mit ihren erreichten Punkten.
+			
+			
 
-## Ende Projektbeschreibung ###
-
+##### Ende Projektbeschreibung - 12.September.2016 #####
+########################################################
 
 
 ===============================================================
