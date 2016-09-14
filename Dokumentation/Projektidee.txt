@@ -1,152 +1,95 @@
 ###########################################################
-##### Projektidee FlorianWiekhorst, 12.September.2016 #####
+###########################################################
+##### Projektidee FlorianWiekhorst, 14.September.2016 #####
 
-Anwendungstitel:	-Asara Digital
+Anwendungstitel:	Asara Digital
 
+Beschreibung:		Bei Asara tretten Spieler gegeneinander und gegen Computergegner an.
+			Jeder Spieler ist ein Bauherr, welcher durch den erwerb und handel von Bauteilen,
+			Türme errichtet und Punkte dafür sammelt.
 
-Struktureller Aufbau:	-Startseite mit 3 wählbaren Bereichen (Hintergrundbild-/musik, AnwendungsTitel)
-				- 1. Login (Eingabe Username/PW, SubmitButton, Fehlermeldungen)
-				- 2. Registrierung (Eingabe Email/UserName/PW/PW-repeat, Submitbutton, Fehlermeldungen)
-				- 3. Highscore (Auslistung HighscoreNamen/-punkte)
 				
-				- Spielseite:
-					- Titel des aktiven Bereiches (Beschriftung im Header)
-					- Übersichtstabelle:
-						- Namen/Gold/Punkte aller Spieler
-						- Anzeige für aktiven Spieler (fabrlich veränderter Hintergrund)
-						- Anzeige für Besitz einer BonusMarke (eigene Tabellenspalte)
-							
-					- Chatfenster
-					- (Footer)Leiste mit Buttons welche den aktiven Bereich wechseln:
-						- Überischtsseite:
-							- Auflistung der fertigen Türme aller Spieler
-						
-							- Inventar:
-								- Auslistung der eigenen Einkäufer/Turmteile
-		
-							- RundeBeenden
-								- beendet die eigene Runde, nächster Spieler wird zum Aktiven
-								
-							- Logout
-								- "Wirklich ausloggen: Y/N" / Loggt den Nutzer aus
-							
-							- HowToPlay
-								- Hilfebereich der mit einem Absatztext und verweisen die Bereiche und Möglichkeiten aufzeigt
-								
-							- Alle Baubereiche:
-								- Baufeld
-									- 7 Baubereiche [Wert 1-7]
-								- Marktplatz
-									- Preistafel als Tabelle [Farbe/Goldkosten]
-									- Basisteile [7 Teile / 5 Einkäufer]
-									- Mittelteile [7 Teile / 4 Einkäufer]
-									- Spitzen [7 Teile / 4 Einkäufer]
-									- Fenster [8 Fenster / 5 Einkäufer]
-								- Bank
-									- [4 Einkäufer: +12,+10,+8,+5 (+5 merhfach nutzbar)]
-								- Palast
-									- Gunsterwerb [1 Einkäufer, mehrfach nutzbar]
-									- Nachzug von Teilen [2 Einkäufer]
-								- Werkstatt
-									- Leuchtende Fenster [3 Einkäufer]
-								- Zelt
-									- Einkäufer werben [3 Einkäufer]
-									
-
-
-
-Kurzbeschreibung der Anwendung: 	
-
-      			Der Spieler tritt gegen andere Spieler und/oder CPU-Gegner an.
-			Es geht darum Türme zu errichten.
-			Nach 4 Runden gewinnt derjenige mit den meisten Punkten.
-
-			Punkte werden durch errichtete Türme ermittelt.
-			Türme geben unterschiedlich viele Punkte, jenachdem welche Teile benutzt wurden.
-			Bauteile erwirbt man auf Märkten mit Einkäufern.
-			Preis der Bauteile wird durch ihre Farbe bestimmt. 
-			(Weiss 8, Schwarz 6, Rot 5, Grün 4, Braun 3) 
-
-			Einkäufer gibt es in 5 Farben.
-			Alle Bereiche (Märkte, Bank, Baubereich,usw) passen ihre Farbe dem erstem Einkäufer an.
-			Jeder Spieler erhält 7 züfallige Einkäufer bei Jahresstart.
+			Zu Beginn erblickt der Spieler den Titelbildschirm mit dem Spieltitel, 
+			der Geschichte von Asara und seiner Hintergrundmusik.
+				
+			Zusätzlich hat er die Wahl sich einzuloggen, sich zu registrieren,
+			oder die Highscorelisten anzusehen.
 			
-			Am Ende eines Zuges hat man die Möglichkeit einen oder mehrere Türme zu bauen.
-			Ein Turm muss mindesstens aus einem Basisteil und einer Spitze bestehen.
-			Ein Turm kann nur aus Teilen derselben Farbe gebaut werden.
+			Die Highscoreliste zeigt eine Tabelle mit Spielernamen und Punkten der besten
+			Spieler. Über einen Link kann der Spieler wieder zur Titelseite zurückkehren.
+				
+			Wählt er Registrierung erscheint ein Bereich in welchem er seine Daten eingeben kann.
+			Benötigt werden eine gültige Emailadresse, dazu Name und Passwort.
+			Über die Registrierungsschaltfläche gelangt er, solange alle Eingaben in Ordnung waren,
+			zum Spiel. Sollte eine Eingabe falsch gewesen sein, wird der Spieler darüber informiert.
+				
+			Hat er bereits ein Spielkonto so kann er sich direkt einloggen.
+			Hier erscheint wie beim Registrierungsvorgang ein Bereich dafür.
+			Auch dieser überprüft die Eingaben und leitet bei Erfolg weiter zum Spiel.
+				
+			Die Spielseite verfügt über eine Überschrift, welche dem Spieler anzeigt in welchem
+			Gebiet von Asara er sich aufhält. Es gibt eine Übersichtstabelle mit Namen, Gold und
+			Punkten aller Spieler. Ausserdem sieht der Spieler die aktuelle Rundennummer und der derzeit
+			aktive Spieler ist markiert. Ein Symbol zeigt an welcher Spieler derzeit die BonusMarke trägt.
+			Über ein Fenster zum chatten kann man mit anderen Spielern kommunizieren.
+				
+			In der Fußleiste findet man eine Auflistung der verfügbaren Orte, ein Klick auf den Namen
+			eines Ortes bringt einen direkt dorthin.
 			
-			Welche Teile die Mitspieler erwerben sieht man in dem Moment des Kaufes kurz.
-			Dadurch entsteht die Interaktion zwischen den Spielern.
-			Auch die computergesteuerten Mitspieler merken sich welche Teile alle anderen gekauft haben.
-			Ausserdem kann man alle fertigen Türme einsehen.
-			Es gibt die Möglichkeit des Handels untereinander. Man kann also andere Spieler fragen, 
-			ob diese Teil X gegen Teil Y oder gegen Gold tauschen würden.
-			
+			Zusätzlich gibt es Schaltflächen welche: die eigene Runde beenden, das Inventar oder die
+			Übersichtsseite anzeigen oder um sich auszuloggen.
+				
+			Alle Spieler erhalten zu Beginn Einkäufer mit welchen Sie Bauteile kaufen können.
+				
+			Ein zufälliger Spieler wird zum Beginner ernannt. Er erhält zusätzlich die BonusMarke.
+				
+			Alle Spieler erhalten Gold und Einkäufer.
+				
+			Der aktive Spieler bekommt 60 Sekunden für seinen Zug.
+				
+			Wenn der Spieler am Zug ist, hat er die Möglichkeit andere Spieler anzuhandeln indem
+			er auf ihre Namen in der Übersichtstabelle klickt.
+			Bei beiden Spielern erscheint dann eine Auswahl ihrer Bauteile,
+			eine "Annehmen" und eine "Ablehnen" Schaltfläche.
+			Sowie ein Handels-Countdown welche nach 20 Sekunden den Handel abbricht, 
+			wenn bis dahin nicht beide Spieler auf "Annehmen" geklickt haben.
+				
 			Auch die Computergegner nutzen diese Anfragen, wenn der Spieler ein Teil besitzt, dass sie brauchen,
 			aber auf den Märkten aber nicht finden können.
 			Ebenfalls reagieren sie auf Anfragen von anderen Mitspielern (egal ob menschl. oder CPU)
 			in dem Ausmaß, dass sie nicht wahllos Teile weggeben, sondern sich daran orientieren welche
 			Teile sie besitzen, welche Teile sie brauchen, und welche Teile die anderen brauchen.
-			
-			Die Gunst des Kalifen(Bonus:Beginnt Runde/erhält mehr Punkte) 
-			erhält zu Spielbegin der zufällig ermittelte Beginner.
-			Im Spielverlauf kann man durch Zahlungsmittel diesen Bonus stehlen.
-			
-			Ein Jahr endet sobald kein Spieler mehr Einkäufer besitzt.
-			Im Anschlussjahr startet der Spieler mit dem Bonus (Gunst).
-
-			Am Ende von Jahr 4 gibt es eine umfangreiche Berechnung der Punkte.
-			Der Spieler mit den meisten Punkten gewinnt.
-			Die Punkte und der Name des menschl. Spielers werden in die Highscoreliste eingetragen.
-
-
-Ablauf einer Runde Asara Digital:
-
-			Der Nutzer erblickt die Titelseite.
-			Er kann sich einloggen, neu anmelden,
-			die Anleitung lesen oder die Highscoreliste einsehen.
-
-			Der Startspieler wird zufällig ermittelt.
-			Er erhält den StartBonus (Gunst des Kalifen).
-			Alle Spieler erhalten Gold und Einkäufer.
-			
-			Sobald der Spieler an der Reihe ist wählt er ein Bereich aus.
-			Je nachdem welchen er wählt, ändern sich seine Aktionsmöglichkeiten:
 				
-				- Wählt er einen Markt für Bauteile, kann er dort ein Bauteil erwerben.			
+			Alternativ kann der Spieler die verschiedenen Bereiche besuchen:
+			-Baufeld, dient dem Bau von Türmen.
+			-Marktplatz, Einkäufer erwerben hier Bauteile.
+			-Bank, Einkäufer für Gold verkaufen.
+			-Palast, Die BonusMarke erwerben.
+			-Werstatt, Einkäufer erweben hier leuchtende Fenster.
+			-Zelt, Einköufer anwerben gegen Gold.
 				
-				- Wählt er die Bank, kann er Einkäufer verkaufen um Gold zu erhalten.
-
-				- Wählt er den Baubereich, kann er, solange er über die richtigen 
-				  Bauteile einer Farbe verfügt, für einige Gold bauen.
-
-				- Wählt er das Zelt, kann er neue Einkäufer für Gold anwerben.
-
-				- Wählt er das Haus der leuchtenden Fenster, kann er, solange er Gold 
-				  aufbringen kann, sich Fenster ansehen, und sich davon nehmen.
-
-				- Wählt er den Palast, kann er sich den Bonus erkaufen, oder gegen Gold
-				  ein Bauteil aus einem der Arrays wählen.
-
-			Wichtig: All diese Aktionen setzten natürlich vorraus, dass der Spieler über die
-				 nötigen Ressourcen vefügt. z.b.: Anzahl/Farbe Einkäufer, genug Gold, usw,
-				 sowie das noch freie Felder zum Ablegen von Einkäufern vorhanden sind.
-
-
-			Solange der Nutzer nicht am Zug ist, laufen die Züge der CPU-/menschlichen Gegner ab.
+			Oder er wählt die "HowToPlay"-Schaltfläche und bekommt eine Übersicht 
+			über die Bereiche, ihre funktionen, und seinen Aktionsmöglichkeiten.
+				
+			Solange der Spieler nicht am Zug ist, laufen die Züge der CPU-/menschlichen Gegner ab.
 			Auch diese erwerben Bauteile, bauen Türme, besuchen die Bank oder einen der anderen Bereiche.
+				
 			Die computergesteuerten Mitspieler wählen anhand der Farben ihrer Einkäufer welche Teile sie zuerst
 			erweben. Besitzen sie schon Bauteile einer Farbe versuchen sie weitere dieser Farbe zu bekommen.
 
 			Dadurch können geplante Spielzüge des Nutzers vernichtet werden, bzw ihm Bauteile fehlen.
 			Oder der Zugang zu einem Markt wird teurer, da er die Marktfarbe nicht bedienen kann.
-
-			Am Ende vom vierten Jahr werden anhand der erbauten Türme nocheinmal viele Punkte vergeben.
-			Es folgt eine Endauflistung der Mitspieler mit ihren erreichten Punkten.
+				
+			Hat ein Spieler keine Einkäufer zum losschicken mehr, endet die Runde.
+				
+			Nach 4 Runden werden alle erworbenen Punkte zusammengezählt.
 			
+			Die Punkte und der Name des Spielers werden in die Highscoreliste eingetragen.
+
+
 			
 
-##### Ende Projektbeschreibung - 12.September.2016 #####
+##### Ende Projektbeschreibung - 14.September.2016 #####
 ########################################################
 
 
