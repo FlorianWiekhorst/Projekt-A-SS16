@@ -176,17 +176,189 @@ _________________
 
 			
 			
-_________________		
+===========================================================================	
 ### Gruppen ###
+	_____________________________
+	
+		I. Index
+			-001- Hintergrundbild ("Startseite")
+			-002- Überschrift ("Spieltitel")
+			-003- Absatz ("Geschichte vom Spiel")
+			-004- Hintergrundmusik ("Titelmusik")
 
+			-005- Schaltfläche (Login)
+			-006- Schaltfläche (Registrierung)
+			-007- Schaltfläche (Highscore)
+	_____________________________
+	
+		II. Login
+			-028- Überschrift ("Login")
+			-029- Container (Formular)
+				-030- Label (Spielername)
+				-031- Eingabefeld (Für Spielernamen)
+				-032- Label (Passwort)
+				-033- Eingabefeld (Für Passwort)
+				-034- (x3) Fehlermeldung (Zeigt dem User eine der passenden Login-Fehlermeldungen an)
+				-035- Label ("Logindaten abschicken")
+				-036- Schaltfläche (Login abschicken)
+				-037- Link zur Spielseite (Nur bei erfolgreichem Login)
+			-013- Schaltfläche (Zurück zum Titel)
+	_____________________________	
+	
+		III. Registrierung
+			-014- Überschrift ("Registrierung")
+			-015- Container (Formular)
+				-016- Label (Spielername)
+				-017- Eingabefeld (Für Spielernamen)
+				-018- Label (Passwort)
+				-019- Eingabefeld (Für Passwort)
+				-020- Label (Email)
+				-021- Eingabefeld (Für Email-adresse)
+				-022- Label (Email Wiederholen)
+				-023- Eingabefeld (Für Email-adressen Wiederholung)
+				-024- (x4) Fehlermeldung (Zeigt dem User eine der passenden Register-Fehlermeldungen an)
+				-025- Label (Jetzt Registrieren)
+				-026- Schaltfläche (Registrierung abschicken)
+				-027- Link zur Spielseite (Nur bei erfolgreicher Registrierung)
+			-013- Schaltfläche (Zurück zum Titel)	
+	_____________________________	
+	
+		IV. Uebersichtstabelle
+			-039- Tabelle (Spielernamen/Gold/Punkte/aktiv/Marke)
+				-040- Zelle für Spaltenüberschrift ("Spielernamen")
+				-041- Zelle für Spaltenüberschrift ("SpielerGold")
+				-042- Zelle für Spaltenüberschrift ("SpielerPunkte")
+				-043- Zelle für Spaltenüberschrift ("AktiverSpieler")
+				-044- Zelle für Spaltenüberschrift ("BesitztBonusMarke")
+				-045- (xAnzahlAktiverSpieler) "Schaltfläche Spielername"-Zelle für Spielername (Die Spielernamen der Übersichtstabelle sind klickbar um einen handel zu starten)
+				-046- (xAnzahlAktiverSpieler) Zelle für Spielergold
+				-047- (xAnzahlAktiverSpieler) Zelle für SpielerPunkte
+				-048- (xAnzahlAktiverSpieler) Zelle für Aktiv/Inaktiv-Feld
+				-049- (xAnzahlAktiverSpieler) Zelle für BomusmarkeFeld
+			-050- Schriftzug (Zeigt aktuelle Rundennummer an)
+	_____________________________	
+	
+		V. Chatfenster
+			-051- Chatfenster
+				-052- (x12) Zeile für Chatnachrichten
+				-053- Eingabefeld (Für Chatnachricht)
+				-054- Schaltfläche (Chatnachricht abschicken)
+	_____________________________	
+	
+		VI. Menueleiste
+			-038- Überschrift (Zeigt aktiven Bereich an)
+			-055- (x8)Link (Zum entsprechenden Bereich)
+			-056- (x8)Label (Beschriftung des Links:z.b."Marktplatz","Baufeld" usw)
+			-057- Schaltfläche (Runde Beenden)
+				-058- Label (Runde beenden)
+			-059- Schaltfläche (Inventar anzeigen)
+				-060- Label (Mein Inventar)
+			-061- Schaltfläche (Zur Übersichtsseite)
+				-062- Label (Zur Übersichtsseite)
+			-063- Schaltfläche (Ausloggen)
+				-064- Label (Ausloggen)
+				-065- Textfeld (Y/N Logoutfrage)
+					-066- Schaltfläche (Entgültig Ausloggen)
+						-067- Label (bestätigung)
+					-068- Schaltfläche (Cancel)
+						-069- Label (Logout abbrechen)
+	_____________________________
+	
+		VII. Highscoreliste
+			-008- Tabelle  (Spielernamen/Punkte)
+				-009- Zelle für Spaltenüberschrift ("Spielernamen")
+					-010- (x10) Zelle für (Namen von Spielern) (Top-10-Highscoreliste)
+				-011- Zelle für Spaltenüberschrift (Punkte)
+					-012- (x10) Zelle für (Punkte von Spielern)
+			-013- Schaltfläche (Zurück zum Titel)
+	_____________________________	
+	
+		VIII. Spielbereiche
+			-106- Überschrift ("Baufeld")
+				-107- Liste (Baufelder)
+				-108- Fehlermeldung (Hinweis auf belegtes Baufeld)
+				-109- Textfeld (Wirklich kaufen Y/N)
+				-110- Schaltfläche (Kaufen)
+				-111- Label (Kaufen)
+				-112- Schaltfläche (Kauf abbrechen)
+				-113- Label (Kauf Abbrechen)
+			
+			-114- Überschrift ("Marktplatz")
+				-115- Liste (Basisteile)
+				-116- Liste (Mittelteile)
+				-117- Liste (Spitzen)
+				-118- Liste (Fenster)
+				-119- Fehlermeldung (wenn zuwenig Gold/falsche Einkäuferfarbe)
+				-120- Schaltfläche (Mit 2 Einkäufern kaufen)
+				-121- Label (Kauf mit 2 Einkäufern)
+				-122- Schaltfläche (Kauf mit Einkäufer der richtigen Farbe)
+				-123- Label (Mit Einkäufer der Farbe $Farbe kaufen)
+				-124- Textfeld (Kaufbestätigung an alle Spieler)
+			
+			-125- Überschrift ("Bank")
+				-126- Liste (Eigene Einkäufer)
+			
+			-127- Überschrift ("Palast")
+				-128- Schaltfläche (Um Bonusmarke mit Gold zu erwerben)
+			
+			-129- Überschrift ("Werkstatt")
+				-130- Liste (Leuchtende_Fenster)
+				-131- Fehlermeldung (wenn zuwenig Gold/falsche Einkäuferfarbe)
+				-132- Schaltfläche (Mit 2 Einkäufern kaufen)
+				-133- Label (Kauf mit 2 Einkäufern)
+				-134- Schaltfläche (Kauf mit Einkäufer der richtigen Farbe)
+				-135- Label (Mit Einkäufer der Farbe $Farbe kaufen)
+				-136- Textfeld (Kaufbestätigung an alle Spieler)
+			
+			-137- Überschrift ("Zelt")
+				-138- Liste (Array für Einkäufer)
+				-139- Fehlermeldung (wenn zuwenig Gold)
+				-140- Schaltfläche (Einkäufer für Gold anwerben)
+				-141- Label (Einkäufer der Farbe $Farbe mit Gold kaufen)
+				-142- Textfeld (Kaufbestätigung an alle Spieler)
+			
+			-143- Überschrift ("HowToPlay")
+				-144- Image (Mit Pfeilen und Hilfetext einbinden)
+	_____________________________
+	
+		IX. Timer
+			-095- Label Countdown (Zeigt verbleibende Zeit an) 
+			 
+		
+	*** Die PHP-Elemente erstelle ich gesondert, und binde die mit include() dann ein. ***
 
-
-
-_________________
+===========================================================================
 ### Ansichten ###
 	
 	
+	________view_index__________
+	|			   |
+	|   I. Index	    	   |
+	|    II. Login	           |
+	|     III. Registrierung   |
+	|__________________________|
+
 	
+	
+	________view_game___________
+	|			   |
+	| IV. Uebersichtstabelle   |
+	|  V. Chatfenster	   |
+	|   VI. Menueleiste	   |
+	|    VIII. Spielbereiche   |
+	|     IX. Timer		   |
+	|__________________________|
+	
+	
+	
+	______view_highscore________
+	|			   |
+	|   VII. Highscoreliste	   |
+	|__________________________|
+	
+	
+	
+===========================================================================	
 	
 	
 ### Ende strukt-Update vom 17.09.2016 #####
