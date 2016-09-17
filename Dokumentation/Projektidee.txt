@@ -1,65 +1,75 @@
 ###########################################################
 ###########################################################
-##### Projektidee FlorianWiekhorst, 14.September.2016 #####
+##### Projektidee FlorianWiekhorst, 17.September.2016 #####
 
 Anwendungstitel:	Asara Digital
 
-Beschreibung:		Bei Asara tretten Spieler gegeneinander und gegen Computergegner an.
+Inhalt:		Bei Asara tretten Spieler gegeneinander und gegen Computergegner an.
 			Jeder Spieler ist ein Bauherr, welcher durch den erwerb und handel von Bauteilen,
 			Türme errichtet und Punkte dafür sammelt.
 
-				
+	
 			Zu Beginn erblickt der Spieler den Titelbildschirm mit dem Spieltitel, 
 			der Geschichte von Asara und seiner Hintergrundmusik.
-				
+			
 			Zusätzlich hat er die Wahl sich einzuloggen, sich zu registrieren,
 			oder die Highscorelisten anzusehen.
 			
 			Die Highscoreliste zeigt eine Tabelle mit Spielernamen und Punkten der besten
 			Spieler. Über einen Link kann der Spieler wieder zur Titelseite zurückkehren.
-				
+			
 			Wählt er Registrierung erscheint ein Bereich in welchem er seine Daten eingeben kann.
 			Benötigt werden eine gültige Emailadresse, dazu Name und Passwort.
 			Über die Registrierungsschaltfläche gelangt er, solange alle Eingaben in Ordnung waren,
 			zum Spiel. Sollte eine Eingabe falsch gewesen sein, wird der Spieler darüber informiert.
-				
+			
 			Hat er bereits ein Spielkonto so kann er sich direkt einloggen.
 			Hier erscheint wie beim Registrierungsvorgang ein Bereich dafür.
 			Auch dieser überprüft die Eingaben und leitet bei Erfolg weiter zum Spiel.
-				
+			
 			Die Spielseite verfügt über eine Überschrift, welche dem Spieler anzeigt in welchem
 			Gebiet von Asara er sich aufhält. Es gibt eine Übersichtstabelle mit Namen, Gold und
 			Punkten aller Spieler. Ausserdem sieht der Spieler die aktuelle Rundennummer und der derzeit
 			aktive Spieler ist markiert. Ein Symbol zeigt an welcher Spieler derzeit die BonusMarke trägt.
 			Über ein Fenster zum chatten kann man mit anderen Spielern kommunizieren.
-				
-			In der Fußleiste findet man eine Auflistung der verfügbaren Orte, ein Klick auf den Namen
-			eines Ortes bringt einen direkt dorthin.
+			
+			In der Fußleiste findet der Spieler eine Auflistung der verfügbaren Orte, ein Klick auf den Namen
+			eines Ortes bringt ihn direkt dorthin.
 			
 			Zusätzlich gibt es Schaltflächen welche: die eigene Runde beenden, das Inventar oder die
 			Übersichtsseite anzeigen oder um sich auszuloggen.
-				
+			
 			Alle Spieler erhalten zu Beginn Einkäufer mit welchen Sie Bauteile kaufen können.
-				
+			
 			Ein zufälliger Spieler wird zum Beginner ernannt. Er erhält zusätzlich die BonusMarke.
-				
+			
 			Alle Spieler erhalten Gold und Einkäufer.
-				
+			
+			Hat kein Spieler mehr Einkäufer zum losschicken , endet die derzeitige Runde.	
+			Nach 4 Runden werden alle erworbenen Punkte zusammengezählt.
+			Punkte und der Name des Spielers werden in die Top-10-Highscoreliste eingetragen,
+			wenn ihr Punkte dafür ausreichen.	
+			
 			Der aktive Spieler bekommt 60 Sekunden für seinen Zug.
-				
+			
 			Wenn der Spieler am Zug ist, hat er die Möglichkeit andere Spieler anzuhandeln indem
 			er auf ihre Namen in der Übersichtstabelle klickt.
 			Bei beiden Spielern erscheint dann eine Auswahl ihrer Bauteile,
 			eine "Annehmen" und eine "Ablehnen" Schaltfläche.
-			Sowie ein Handels-Countdown welche nach 20 Sekunden den Handel abbricht, 
+			Sowie ein Handels-Countdown welcher nach 20 Sekunden den Handel abbricht, 
 			wenn bis dahin nicht beide Spieler auf "Annehmen" geklickt haben.
-				
-			Auch die Computergegner nutzen diese Anfragen, wenn der Spieler ein Teil besitzt, dass sie brauchen,
-			aber auf den Märkten aber nicht finden können.
+			
+			Auch die Computergegner nutzen diese Anfragen, wenn der Spieler ein Teil besitzt, 
+			dass sie brauchen, aber auf den Märkten nicht finden können.
 			Ebenfalls reagieren sie auf Anfragen von anderen Mitspielern (egal ob menschl. oder CPU)
 			in dem Ausmaß, dass sie nicht wahllos Teile weggeben, sondern sich daran orientieren welche
-			Teile sie besitzen, welche Teile sie brauchen, und welche Teile die anderen brauchen.
-				
+			Teile sie besitzen, welche Teile sie brauchen.
+			Die computergesteuerten Mitspieler können genau wie der Spieler in ihren Runden Bauteile erwerben,
+			Türme bauen, oder einen der Bereiche besuchen. Dabei wählen sie anhand der Farben ihrer Einkäufer 
+			welche Teile sie zuerst	erweben. Besitzen sie schon Bauteile einer Farbe versuchen sie weitere dieser 
+			Farbe zu bekommen. Dadurch können geplante Spielzüge des Nutzers vernichtet werden, bzw ihm Bauteile 
+			fehlen.	Oder der Zugang zu einem Markt wird teurer, da er die Marktfarbe nicht bedienen kann.
+			
 			Alternativ kann der Spieler die verschiedenen Bereiche besuchen:
 			-Baufeld, dient dem Bau von Türmen.
 			-Marktplatz, Einkäufer erwerben hier Bauteile.
@@ -67,30 +77,16 @@ Beschreibung:		Bei Asara tretten Spieler gegeneinander und gegen Computergegner 
 			-Palast, Die BonusMarke erwerben.
 			-Werstatt, Einkäufer erweben hier leuchtende Fenster.
 			-Zelt, Einköufer anwerben gegen Gold.
-				
-			Oder er wählt die "HowToPlay"-Schaltfläche und bekommt eine Übersicht 
-			über die Bereiche, ihre funktionen, und seinen Aktionsmöglichkeiten.
-				
-			Solange der Spieler nicht am Zug ist, laufen die Züge der CPU-/menschlichen Gegner ab.
-			Auch diese erwerben Bauteile, bauen Türme, besuchen die Bank oder einen der anderen Bereiche.
-				
-			Die computergesteuerten Mitspieler wählen anhand der Farben ihrer Einkäufer welche Teile sie zuerst
-			erweben. Besitzen sie schon Bauteile einer Farbe versuchen sie weitere dieser Farbe zu bekommen.
-
-			Dadurch können geplante Spielzüge des Nutzers vernichtet werden, bzw ihm Bauteile fehlen.
-			Oder der Zugang zu einem Markt wird teurer, da er die Marktfarbe nicht bedienen kann.
-				
-			Hat ein Spieler keine Einkäufer zum losschicken mehr, endet die Runde.
-				
-			Nach 4 Runden werden alle erworbenen Punkte zusammengezählt.
 			
-			Die Punkte und der Name des Spielers werden in die Highscoreliste eingetragen.
-
-
+			Oder er wählt die "HowToPlay"-Schaltfläche und bekommt ein Übersichtsbild 
+			über die Bereiche, ihre funktionen, und seinen Aktionsmöglichkeiten angezeigt.
 			
+			
+		
 
-##### Ende Projektbeschreibung - 14.September.2016 #####
+##### Ende Projektbeschreibung - 17.September.2016 #####
 ########################################################
+
 
 
 ===============================================================

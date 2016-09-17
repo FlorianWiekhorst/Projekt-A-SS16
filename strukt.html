@@ -1,9 +1,9 @@
 <!-- Die strukturellen Elemente aus denen Asara Digital bestehen soll: 
-	Stand 16.09.2016	
+	Stand 17.09.2016	
 Aufgeteilt in die drei Schritte [(1) Ausarbeitung der strukt. Elem., 
 (2) Ausarbeitung der Gruppen und (3) Ausarbeitung der Ansichten]:
-__________________________
-####### Elemente ######
+_________________
+### Elemente ### 
 
 		-001- Hintergrundbild ("Startseite")
 		-002- Überschrift ("Spieltitel")
@@ -16,7 +16,7 @@ __________________________
 
 		-008- Tabelle  (Spielernamen/Punkte)
 			-009- Zelle für Spaltenüberschrift ("Spielernamen")
-				-010- (x10) Zelle für (Namen von Spielern)
+				-010- (x10) Zelle für (Namen von Spielern) (Top-10-Highscoreliste)
 			-011- Zelle für Spaltenüberschrift (Punkte)
 				-012- (x10) Zelle für (Punkte von Spielern)
 		-013- Schaltfläche (Zurück zum Titel)
@@ -50,80 +50,146 @@ __________________________
 		-013- Schaltfläche (Zurück zum Titel)
 
 		-038- Überschrift (Zeigt aktiven Bereich an)
-		-039- Tabelle (Spielernamen/Gold/Punkte)
-			-00- Zelle für Spaltenüberschrift ("Spielernamen")
-			-00- Zelle für Spaltenüberschrift ("SpielerGold")
-			-00- Zelle für Spaltenüberschrift ("SpielerPunkte")
-			-00- Zelle für Spaltenüberschrift ("AktiverSpieler")
-			-00- Zelle für Spaltenüberschrift ("BesitztBonusMarke")
-			-00- (xAnzahlAktiverSpieler) "Schaltfläche Spielername"-Zelle für Spielername (Die Spielernamen der Übersichtstabelle sind klickbar um einen handel zu starten)
-			-00- (xAnzahlAktiverSpieler) Zelle für Spielergold
-			-00- (xAnzahlAktiverSpieler) Zelle für SpielerPunkte
-			-00- (xAnzahlAktiverSpieler) Zelle für Aktiv/Inaktiv-Feld
-			-00- (xAnzahlAktiverSpieler) Zelle für BomusmarkeFeld
-		-00- Schriftzug (Zeigt aktuelle Rundennummer an)
-		-00- Chatfenster
-			-00- (x12) Zeile für Chatnachrichten
-			-00- Eingabefeld (Für Chatnachricht)
-			-00- Schaltfläche (Chatnachricht abschicken)
+		-039- Tabelle (Spielernamen/Gold/Punkte/aktiv/Marke)
+			-040- Zelle für Spaltenüberschrift ("Spielernamen")
+			-041- Zelle für Spaltenüberschrift ("SpielerGold")
+			-042- Zelle für Spaltenüberschrift ("SpielerPunkte")
+			-043- Zelle für Spaltenüberschrift ("AktiverSpieler")
+			-044- Zelle für Spaltenüberschrift ("BesitztBonusMarke")
+			-045- (xAnzahlAktiverSpieler) "Schaltfläche Spielername"-Zelle für Spielername (Die Spielernamen der Übersichtstabelle sind klickbar um einen handel zu starten)
+			-046- (xAnzahlAktiverSpieler) Zelle für Spielergold
+			-047- (xAnzahlAktiverSpieler) Zelle für SpielerPunkte
+			-048- (xAnzahlAktiverSpieler) Zelle für Aktiv/Inaktiv-Feld
+			-049- (xAnzahlAktiverSpieler) Zelle für BomusmarkeFeld
+		-050- Schriftzug (Zeigt aktuelle Rundennummer an)
+		-051- Chatfenster
+			-052- (x12) Zeile für Chatnachrichten
+			-053- Eingabefeld (Für Chatnachricht)
+			-054- Schaltfläche (Chatnachricht abschicken)
 			
-		-000- (x8)Link (Zum entsprechenden Bereich)
-		-000- (x8)Label (Beschriftung des Links:z.b."Marktplatz","Baufeld" usw)
+		-055- (x8)Link (Zum entsprechenden Bereich)
+		-056- (x8)Label (Beschriftung des Links:z.b."Marktplatz","Baufeld" usw)
 		
-		-000- Schaltfläche (Runde Beenden)
-			-000- Label (Runde beenden)
-		-000- Schaltfläche (Inventar anzeigen)
-			-000- Label (Mein Inventar)
-		-000- Schaltfläche (Zur Übersichtsseite)
-			-000- Label (Zur Übersichtsseite)
-		-000- Schaltfläche (Ausloggen)
-			-000- Label (Ausloggen)
-			-000- Text (Y/N Logoutfrage)
-				-000- Schaltfläche (Entgültig Ausloggen)
-					-000- Label (bestätigung)
-				-000- Schaltfläche (Cancel)
-					-000- Label (Logout abbrechen)
+		-057- Schaltfläche (Runde Beenden)
+			-058- Label (Runde beenden)
+		-059- Schaltfläche (Inventar anzeigen)
+			-060- Label (Mein Inventar)
+		-061- Schaltfläche (Zur Übersichtsseite)
+			-062- Label (Zur Übersichtsseite)
+		-063- Schaltfläche (Ausloggen)
+			-064- Label (Ausloggen)
+			-065- Textfeld (Y/N Logoutfrage)
+				-066- Schaltfläche (Entgültig Ausloggen)
+					-067- Label (bestätigung)
+				-068- Schaltfläche (Cancel)
+					-069- Label (Logout abbrechen)
 	
-		-000- Php-Klasse GameMaster (Überwacht Abläufe/erzeugt Inhalte/füllt Tabellen)
-			-000- Funktion Array_Einkäufer (Arrayliste für Einkäufer erzeugen [Größe:Spieler*15])
-			-000- Funktion Array_Bauteile (Arrayliste für Bauteile erzeugen [Größe:Spieler*20])
-			-000- Funktion Create_Array_SpielerInventar_Einkäufer (Erzeugt für jeden aktiven Spieler ein Inventar-Array für Einkäufer [Größe:20])
-			-000- Funktion Create_Array_SpielerInventar_Bauteile (Erzeugt für jeden aktiven Spieler ein Inventar-Array für Bauteile [Größe:15])
-			-000- Funktion Shuffle (mischt Einkäufer-Array oder Bauteile-Array)
-			-000- Funktion Einkäufer_Verteilen (Füllt die ersten 7 Plätze von jedem SpielerInventar mit Einkäufern)
+		-070- Php-Klasse GameMaster (Überwacht Abläufe/erzeugt Inhalte/füllt Tabellen/baut Türme)
+			-071- Funktion Array_Einkäufer (Arrayliste für Einkäufer erzeugen [Größe:Spieler*15])
+			-072- Funktion Array_Basisteile (Arrayliste für Basisteile erzeugen [Größe:Spieler*5])
+			-073- Funktion Array_Mittelteile (Arrayliste für Mittelteile erzeugen [Größe:Spieler*5])
+			-074- Funktion Array_Spitzen (Arrayliste für Spitzen erzeugen [Größe:Spieler*5])
+			-075- Funktion Array_Fenster (Arrayliste für Fenster erzeugen [Größe:Spieler*5])
+			-076- Funktion Array_leuchtende_Fenster (Arrayliste für Leuchtende_Fenster erzeugen [Größe:Spieler*2])
+			-077- Funktion Array_Baufelder (Arrayliste für Baufelder erzeugen [Größe:Spieler*3])
+			-078- Funktion Create_Array_SpielerInventar_Einkäufer (Erzeugt für jeden aktiven Spieler ein Inventar-Array für Einkäufer [Größe:20])
+			-079- Funktion Create_Array_SpielerInventar_Bauteile (Erzeugt für jeden aktiven Spieler ein Inventar-Array für Bauteile [Größe:15])
+			-080- Funktion Create_Array_Fertige_Türme (Erzeugt ein Array für alle fertigen Türme [Größe:Spieler*20])
+			-081- Funktion Shuffle (mischt ein Array/für jeden Rundenstart/Spielbeginn)
+			-082- Funktion Einkäufer_Verteilen (Füllt die ersten 7 Plätze von jedem SpielerInventar_Einkäufer mit Einkäufern)
+			-083- Funktion Aktion (Entfernt|gibt:[Gold,Bauteile,Einkäufer,Bonusmarke,aktivität] /blockt benutztes Baufeld/Füllt|leert Arrays:[Bauteile,Inventar,Übersicht,usw])
 	
-			-000- Funktion Zufall (Wählt einen Wert: [1-AnzahlSpieler] und bestimmt Startspieler)
-			-000- Funktion VergabeBonusMarke (Gibt BonusMarke an ermittelten Spieler/Setzt aktiverSpieler_Zelle der Übersichtstabelle auf aktiv/ermöglicht das anhandeln anderer Spieler)
+			-084- Funktion Zufall (Wählt einen Wert: [1-AnzahlSpieler] und bestimmt Startspieler)
+			-085- Funktion VergabeBonusMarke (Gibt BonusMarke an ermittelten Spieler/Setzt aktiverSpieler_Zelle der Übersichtstabelle auf aktiv/ermöglicht das anhandeln anderer Spieler)
 		
-			-000- Funktion Goldrausch (Legt für jeden Spieler eine Int-Variabel Spielername_Gold mit dem Wert 25 an/plaziert Variabelnwert in der Tabelle)
+			-086- Funktion Goldrausch (Legt für jeden Spieler eine Int-Variabel Spielername_Gold mit dem Wert 25 an/plaziert Variabelnwert in der Tabelle)
 		
-		-000- Php-Klasse Countdown (Erzeugt einen simplen Timer mit 4 variablen: "name","start","stop","zeit")
-			-000- Funktion start-timer
-			-000- Funktion start-runde	
-			-000- Funktion stop-runde
-			-000- Funktion reset_timer
-			-000- Label Countdown (Zeigt verbleibende Zeit an)
+			-087- Funktion End_Round
+			-088- Funktion End_Game
+			-089- Funktion Reach_Highscore
 		
-		-000- Php-Klasse Handeln (benutzt auch den Countdown/Schältflächen der Spielernamen)
-			-000- Funktion Handel_starten (Öffnet bei beiden Handelspartnern die Handelsseite/Erzeugt aus dem Bauteile_Array der Spieler eine Liste mit Schaltflächen für jedes ihrer Bauteile/Startet HandelsTimer)
-				-000- Überschrift ("Handel mit $Spielername")
-				-000- Liste (eigener Bauteile)
-				-000- Schaltfläche Handel_Bestätigen
-				-000- Label (Handelsbestätigung)
-				-000- Schaltfläche Handel_Abbrechen
-				-000- Label (Handelbeenden)
-			-000- Funktion Handel_abbrechen
+		-090- Php-Klasse Countdown (Erzeugt einen simplen Timer mit 4 variablen: "name","start","stop","zeit")
+			-091- Funktion start-timer
+			-092- Funktion start-runde	
+			-093- Funktion stop-runde
+			-094- Funktion reset_timer
+			-095- Label Countdown (Zeigt verbleibende Zeit an)
 		
+		-096- Php-Klasse Handeln (benutzt auch den Countdown/Schältflächen der Spielernamen)
+			-097- Funktion Handel_starten (Öffnet bei beiden Handelspartnern die Handelsseite/Erzeugt aus dem Bauteile_Array der Spieler eine Liste mit Schaltflächen für jedes ihrer Bauteile/Startet HandelsTimer)
+				-098- Überschrift ("Handel mit $Spielername")
+				-099- Liste (eigener Bauteile)
+				-100- Schaltfläche Handel_Bestätigen
+				-101- Label (Handelsbestätigung)
+				-102- Schaltfläche Handel_Abbrechen
+				-103- Label (Handelbeenden)
+			-104- Funktion Handel_abbrechen
+
+		-105- Php-Klasse Gegner (Handel_starten/Handel_annehmen/zug_ausführen)
 		
+		-106- Überschrift ("Baufeld")
+			-107- Liste (Baufelder)
+			-108- Fehlermeldung (Hinweis auf belegtes Baufeld)
+			-109- Textfeld (Wirklich kaufen Y/N)
+			-110- Schaltfläche (Kaufen)
+			-111- Label (Kaufen)
+			-112- Schaltfläche (Kauf abbrechen)
+			-113- Label (Kauf Abbrechen)
+		
+		-114- Überschrift ("Marktplatz")
+			-115- Liste (Basisteile)
+			-116- Liste (Mittelteile)
+			-117- Liste (Spitzen)
+			-118- Liste (Fenster)
+			-119- Fehlermeldung (wenn zuwenig Gold/falsche Einkäuferfarbe)
+			-120- Schaltfläche (Mit 2 Einkäufern kaufen)
+			-121- Label (Kauf mit 2 Einkäufern)
+			-122- Schaltfläche (Kauf mit Einkäufer der richtigen Farbe)
+			-123- Label (Mit Einkäufer der Farbe $Farbe kaufen)
+			-124- Textfeld (Kaufbestätigung an alle Spieler)
+		
+		-125- Überschrift ("Bank")
+			-126- Liste (Eigene Einkäufer)
+		
+		-127- Überschrift ("Palast")
+			-128- Schaltfläche (Um Bonusmarke für Gold zu erwerben)
+		
+		-129- Überschrift ("Werkstatt")
+			-130- Liste (Leuchtende_Fenster)
+			-131- Fehlermeldung (wenn zuwenig Gold/falsche Einkäuferfarbe)
+			-132- Schaltfläche (Mit 2 Einkäufern kaufen)
+			-133- Label (Kauf mit 2 Einkäufern)
+			-134- Schaltfläche (Kauf mit Einkäufer der richtigen Farbe)
+			-135- Label (Mit Einkäufer der Farbe $Farbe kaufen)
+			-136- Textfeld (Kaufbestätigung an alle Spieler)
+		
+		-137- Überschrift ("Zelt")
+			-138- Liste (Array für Einkäufer)
+			-139- Fehlermeldung (wenn zuwenig Gold)
+			-140- Schaltfläche (Einkäufer für Gold anwerben)
+			-141- Label (Einkäufer der Farbe $Farbe mit Gold kaufen)
+			-142- Textfeld (Kaufbestätigung an alle Spieler)
+		
+		-143- Überschrift ("HowToPlay")
+			-144- Image (Mit Pfeilen und Hilfetext einbinden)
+
+
+			
+			
+_________________		
+### Gruppen ###
+
+
+
+
+_________________
+### Ansichten ###
 	
 	
-	*****	Fortsetzung folgt...	*****
-
-
-
-
-
-### Ende strukt-Update vom 16.09.2016 #####
+	
+	
+	
+### Ende strukt-Update vom 17.09.2016 #####
 ###########################################
 ###########################################
     

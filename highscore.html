@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="de">
-
-<!--		- Auflistung der fertigen Türme aller Spieler [pop-up]
-			- Derzeitiger Punktestand aller Spieler -->
-			
+<html lang="de">		
 <head>
-  <meta charset="utf-8">
-	<title>ScoreBoard</title>
-	<link href="index.css" rel="stylesheet"/>
+	<meta charset="utf-8">
+	<title>highscore</title>
+	<link href="CSS/index.css" rel="stylesheet"/>
 </head>
  
     <body>
-		<header>
-		<h2>Übersicht über alle Türme</h2>
-		</header>
 		
-		<section id=tuerme_s>
-		<h3>Alle fertigen Türme von Ihnen - Derzeitige Punkte: <?php $points_user ?></h3>
-		</section>
-		
-		<section id=tuerme_c1>
-		<h3>Alle fertigen Türme von Computer 1 - Derzeitige Punkte: <?php $points_c1 ?></h3>
-		</section>
-		
-		<section id=tuerme_c2>
-		<h3>Alle fertigen Türme von Computer 2 - Derzeitige Punkte: <?php $points_c2 ?></h3>
-		</section>
-		
-		<section id=tuerme_c3>
-		<h3>Alle fertigen Türme von Computer 3 - Derzeitige Punkte: <?php $points_c3 ?></h3>
-		</section>
     </body>
 
 </html>
+
+
+<!-- 
+
+-008- Tabelle  (Spielernamen/Punkte)
+			-009- Zelle für Spaltenüberschrift ("Spielernamen")
+				-010- (x10) Zelle für (Namen von Spielern) (Top-10-Highscoreliste)
+			-011- Zelle für Spaltenüberschrift (Punkte)
+				-012- (x10) Zelle für (Punkte von Spielern)
+		-013- Schaltfläche (Zurück zum Titel)
+		
+-->
