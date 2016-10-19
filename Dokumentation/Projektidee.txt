@@ -163,3 +163,40 @@ Inhalt:
 Da diese Punkte am Anfang Ihrer Beschreibung auftauchen (und es sich um keine Zusammenfassung handelt), würden andere Projektmitglieder erwarten, dass diese Teile auch relativ am Anfang der strukt.html zu finden sind. Wenn Sie sich diese Teile der Beschreibung ansehen, dann werden Sie dagegen feststellen, das nichts hiervon zur Struktur gehört.
 
 Es ist richtig: Die nötige Umstellung der Beschreibung wird eine Menge Zeit erfordern, aber ohne diese Umstellung ist die Beschreibung für die weitere Projektarbeit leider nicht sinnvoll einsetzbar.
+
+===================================
+=== Feedback Alpers, 2016-10-19 ===
+===================================
+
+=== 1.) Inhaltlich
+
+Sehr gute Beschreibung. Es ist klar erkennbar, dass Sie eine Reihe an Punkten umsetzen, die für ein grundlegendes Spiel mit Computergegnern vollkommen ausreichen und viel Raum für Erweiterunsmöglichkeiten lässt.
+
+=== 2.) Formales
+
+Die einzelnen Punkte der Beschreibung sind momentan etwas ausführlich und durch die Absatzstruktur ist es nicht so leicht wie möglich, sie auf einen Blick zu erkennen. Aber dazu ist keine Umformulierung, sondern lediglich die Umformatierung in Listenform nötig. Sie gehen an vielen Stellen schon jetzt auf die Ansichten ein und torpedieren damit die gesamte Planung. Das ist ausgesprochen schade, denn damit haben Sie den Sinn und Zweck der Projektbeschreibung und der nachfolgenden Entwicklung der Struktur ad absurdum geführt.
+
+Hier ein Beispiel:
+
+Zu Beginn erblickt der Spieler den Titelbildschirm mit dem Spieltitel, der Geschichte von Asara und seiner Hintergrundmusik.
+
+Im Endeffekt ist das Design, keine Beschreibung des Spiels.
+
+Nochmal: Ansichten sind das allerletzte Element, das Sie entwickeln sollen. Ansichten und Strukturen in der Projektbeschreibung sind ein Fehler. Ansichten sind etwas für die Nutzerführung. Sie sind also dann und erst dann planbar, wenn alles andere fertig geplant ist. Ansichten sind effektiv der erste Schritt zum Design einer Anwendung.
+
+Leider werden Sie deshalb auch diese Beschreibung überarbeiten müssen: So lange Sie hier weitgehend auf Ansichten und Menüstrukturen eingehen ist diese Beschreibung für Erweiterungen nicht nutzbar. Das ist vor allem deshalb ärgerlich, weil Sie ja (s.o.) bei der Ausarbeitung der eigentlichen Spielbeschreibung schon alles geleistet haben, was nötig ist.
+
+=== 3.) Interaktion
+
+Sie haben hier sehr schön die Spielzüge von Computerspielern aufgeführt, die in dieser Form sinnvoll und gut durchdacht sind. Was leider noch nicht auftaucht ist die Anpassung an einzelne Spieler. (Z.B. durch einen adaptiven Schwierigkeitsgrad) Damit haben Sie zwar streng genommen noch keine Interaktion auf dem geforderten Level, aber zumindest schon ein gut ausgearbeitetes System, um Spiele mit Computergegnern zu realisieren.
+
+=================================================
+=== Wertung 2: Projektentwurf: gesamt: 5 / 10 ===
+=================================================
+- Knappe aber klare Beschreibung 0 bis 5 Pk.: 5
+- Pro Strategie des Computers, die die individuellen Züge des Spielers adaptiert 0 bis 5 Pk.: 3
+=== (Malus beim Projektentwurf) ===
+- Werbeslogans u.ä. -5 bis 0 Pk.: 0
+- Designaspekte -5 bis 0 Pk.: -3
+- Voraussetzung bekannten Wissens -5 bis 0 Pk.: 0
+(Dies ist keine abschließende Wertung.)

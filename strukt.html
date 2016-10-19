@@ -385,7 +385,7 @@ Somit möchte ich erstmal ein "OK" für meine strukt, bevor ich wieder HTML bear
 </html>
 
    
-  <!--	=== Kommentar DangerDulf, 2016-04-16 ===
+<!--	=== Kommentar DangerDulf, 2016-04-16 ===
   	Auch mir ist das Spiel nicht bekannt, was ich aus der Beschreibung entnehmen konnte ist, soweit ich das verstanden habe,
   	hier schon durch die beiden Beiträge abgedeckt.
   
@@ -403,7 +403,7 @@ Somit möchte ich erstmal ein "OK" für meine strukt, bevor ich wieder HTML bear
 	wäre ein Tutorial / ein Hilfe Bereich, da das Spiel nicht gerade einfach wirkt. 
 	Eine Anzeige für den Besitz der Gunst des Kalifen, und eine Runden - / Jahresanzeige könnte man vielleicht ebenfalls ergänzen.
 	Alles Andere, was ich mir notiert habe, haben meine Vorredner und du selbst schon eingebracht.
-  -->
+-->
 
 <!--
 ===================================
@@ -780,5 +780,169 @@ Die Arbeit an der Struktur des Projekts haben Sie leider zum Großteil vermieden
 Da sie somit die zentrale Aufgabe bei der Struktur leider verfehlt haben, kann ich für diese momentan keine Wertung notieren. (Für die Programmierung in HTML natürlich erst recht nicht.)
 
 Doch bevor Sie hier anfangen setzen Sie bitte zunächst die Punkte um, die ich bezüglich Ihrer Beschreibung notiert habe.
+
+-->
+<!--
+===================================
+=== Feedback Alpers, 2016-10-19 ===
+===================================
+
+=== 1.) Strukturelle Elemente
+
+== 1.1.) Entwicklung mit der Struktur im Kopf
+
+Wie schon in der Projektbeschreibung zeigt sich leider auch hier: Sie haben es nicht geschafft, sich gedanklich von den Ansichten zu trennen, die Sie offensichtlich von Anfang an im Kopf hatten. Hier ein Beispiel:
+
+-008- Tabelle  (Spielernamen/Punkte)
+-009- Zelle für Spaltenüberschrift ("Spielernamen")
+-010- (x10) Zelle für (Namen von Spielern) (Top-10-Highscoreliste)
+-011- Zelle für Spaltenüberschrift (Punkte)
+-012- (x10) Zelle für (Punkte von Spielern)
+-013- Schaltfläche (Zurück zum Titel)
+
+Denn eine Verlinkung in eine andere Ansicht hat mit einer Tabelle, die Spielernamen und Punkte anzeigen soll nichts zu tun. Dazu kommt, dass Sie hier von einer Schaltfläche sprechen. Selbst wenn Sie das später auf Effizienzgründen z.B. als Schaltfläche realisieren, die ein PHP-Skript nutzt, ist es eine Verlinkung.
+
+== 1.2.) Nicht genug ausdifferenzierte Aufstellung der strukturellen Elemente
+
+a) Eine Tabelle besteht aus Zeilen, Spalten und Überschriften. In HTML haben wir Zeilen, sowie "Überschrift-"zellen und "Inhalt-"zellen.
+
+Im Gegensatz dazu besteht Ihre Definition der obigen Tabelle aus Zellen. Umgesetzt wäre Ihr Entwurf eine Tabelle, die aus 22 "Inhalts-"Zellen ohne eine einzige Zeile besteht.
+
+b) Sie definieren:
+
+-115- Liste (Basisteile)
+
+Prüfen Sie, was für eine Art Liste das sein soll, bzw. ob es tatsächlich eine Liste im Sinne des entsprechenden strukturellen Elements sein soll. Wir haben einmal drei Listen für Texte (Geordnete, Ungeordnete und deskriptive Listen), dann gibt es "Listen", die tatsächlich Tabellen sind, es gibt Menüs, die eine Ähnlichkeit mit Listen haben und mit Sicherheit gibt es noch andere strukturelle Elemente, die wie Listen wirken.
+
+== 1.3.) Keine Löschung von Duplikaten
+
+Der zentrale Dreh- und Angelpunkt der Ausarbeitung der strukturellen Elemente besteht darin, mehrfach vorkommende Elemente nur einmal zu notieren. Genau das haben Sie leider nicht getan. Hier ein Beispiel:
+
+-014- Überschrift ("Registrierung")
+-015- Container (Formular)
+-016- Label (Spielername)
+-017- Eingabefeld (Für Spielernamen)
+-018- Label (Passwort)
+-019- Eingabefeld (Für Passwort)
+-020- Label (Email)
+-021- Eingabefeld (Für Email-adresse)
+-022- Label (Email Wiederholen)
+-023- Eingabefeld (Für Email-adressen Wiederholung)
+-024- (x4) Fehlermeldung (Zeigt dem User eine der passenden Register-Fehlermeldungen an)
+-025- Label (Jetzt Registrieren)
+-026- Schaltfläche (Registrierung abschicken)
+-027- Link zur Spielseite (Nur bei erfolgreicher Registrierung)
+-013- Schaltfläche (Zurück zum Titel)	
+
+Nehmen wir die strukturellen Elemente 16, 18, 20, 21, 25:
+
+- Bei allen (bis auf eines) handelt es sich um Labels, die sich nur durch den Text unterscheiden, der darin enthalten ist. In der Programmierung müssen wir das zwar später trennen, aber hier ergibt es:
+
+-016- Label für: Spielername / Passwort / Email / Email wiederholen
+
+Allerdings trifft das nicht nur auf die Labels zu. Genau diesen Punkt hatte ich schon früher angemerkt. Prüfen Sie hier den gesamten Entwurf; es ist nicht meine Aufgabe, Ihnen detailliert jeden Fehler an jeder Stelle zu nennen, wo er auftritt.
+
+== 1.4.) Nicht ausreichende Differenzierung von strukturellen Elementen
+
+Ebenfalls bezüglich der o.a. Aufstellung: 
+
+a) Es gibt bei Formularen einen Container für Überschriften. Wenn Sie dagegen ein Formular mit einem Überschriftencontainer versehen, ist das wieder Design. Im Gegensatz dazu gehören zu Containern für Textstrukturen wie z.B. <article> und <section> tatsächlich Überschriften-Container wie <h1>.
+
+b) Es gibt rund zwanzig verschiedene input-Container. Aber einen input-Container vom Typ "Spielername" existiert beispielsweise nicht. Deshalb müssen Sie hier noch genauer ausdifferenzieren.
+
+== 1.5.) Auch wenn etwas wie eine Schaltfläche aussieht, ist es noch keine Schaltfläche!
+
+Bsp.: -026- Schaltfläche (Registrierung abschicken)
+
+Das ist keine Schaltfläche; es wird Nutzern nur als Schaltfläche angezeigt.
+
+Bitte lesen Sie sich wegen aller Anmerkungen zu Formularen durch und überarbeiten Sie die strukturellen Elemente entsprechend.
+
+== 1.6.) Vermischung von Struktur und Funktionalität
+
+In der Struktur legen wir fest, aus welchen Einheiten/Modulen/usw. unsere Anwendung bestehen soll. Die Funktionalitäten habe an dieser Stelle nichts zu suchen, weil Sie die Änderung des Inhalts einzelner strukturelle Elemente bestimmen. Leider trennen Sie hier nicht klar:
+
+-070- Php-Klasse GameMaster (Überwacht Abläufe/erzeugt Inhalte/füllt Tabellen/baut Türme)
+-071- Funktion Array_Einkäufer (Arrayliste für Einkäufer erzeugen [Größe:Spieler*15])
+-072- Funktion Array_Basisteile (Arrayliste für Basisteile erzeugen [Größe:Spieler*5])
+-073- Funktion Array_Mittelteile (Arrayliste für Mittelteile erzeugen [Größe:Spieler*5])
+-074- Funktion Array_Spitzen (Arrayliste für Spitzen erzeugen [Größe:Spieler*5])
+-075- Funktion Array_Fenster (Arrayliste für Fenster erzeugen [Größe:Spieler*5])
+-076- Funktion Array_leuchtende_Fenster (Arrayliste für Leuchtende_Fenster erzeugen [Größe:Spieler*2])
+...
+
+Es ist richtig: Alle strukturellen Elemente, die Sie mit einer Schleife (z.B. in PHP) generieren können sollen Sie mit PHP generieren. Aber PHP bzw. Funktionalitäten gehören nicht (s.o.) in die Struktur (genauer gesagt in die Planung der Struktur).
+
+== 1.7.) Bilder ohne Umgebung
+
+-144- Image (Mit Pfeilen und Hilfetext einbinden)
+
+Hierzu zwei Punkte:
+
+a) Sie notieren hier etwas von Pfeilen und Hilfetexten. Es ist unklar, was damit gemeint ist. Sie können ein Bild einbinden, aber wo sollen da die Pfeile sein?
+b) Ein Image sollte immer im Rahmen eines figure-Containers bzw. mit einer figcaption eingebunden werden.
+
+== 1.8.) Zumindest ein nicht existierendes strukturelles Element
+
+-051- Chatfenster
+
+Es gibt kein strukturelles Element Chatfenster. Ein Chatfenster wäre eine mögliche Gruppe.
+
+== 1.10.) Zusammenfassung
+
+Die hier notierten Anmerkungen ziehen sich wie ein roter Faden durch die gesamte Aufstellung der strukturellen Elemente. Bitte überarbeiten Sie sie, da die Aufstellung im Moment effektiv keinen Wert für die Planung bietet. Es hat eher den Stil der Strafaufgabe von Bart Simpson und das ist das allerletzte worum es hier geht.
+
+================================================================
+=== Wertung 3: Ausarbeitung der strukt. Elem. gesamt: 3 / 10 ===
+================================================================
+- Knappe Form (0 - 3 Pk.): 3
+- Für je 5 unterschiedl. strukt. Elem (keine Gruppierungen) 1 Pk.: 3
+=== (Malus bei strukt. Elem.) ===
+- Vermischung strukt. Elem., Gruppierung, Abläufe usw. -5 bis 0 Pk.: -3
+(Dies ist keine abschließende Wertung.)
+
+=== 2.) Gruppen
+
+== 2.1.) Schlecht gewählter Name
+
+I. Index
+-001- Hintergrundbild ("Startseite")
+-002- Überschrift ("Spieltitel")
+...
+
+Der Name ist der der Start-Ansicht: index
+
+== 2.2.) Sie nutzen keine Inhalte von bestehenden Gruppen, wenn eine neue Gruppe eine bestehende lediglich erweitert.
+
+Bsp.: III. Registrierung enthält (fast) alle Elemente von II. Login.
+
+Also sollten Sie III. Registrierung so definieren, dass es II. Login enthält.
+
+== 2.3.) Zusammenfassung
+
+Die Gruppen sind wahrscheinlich sinnvoll, aber aufgrund der Mängel in der Ausarbeitung der strukturellen Elemente könnte der Eindruck täuschen.
+
+Wertung 4: Gruppierungen: 5 / 5
+- für jede sinnvolle Gruppe: 1
+
+=== 3.) Ansichten
+
+== 3.1.) Redundante Inhalte
+
+________view_index__________
+|			   |
+|   I. Index	    	   |
+|    II. Login	           |
+|     III. Registrierung   |
+|__________________________|
+
+Schauen Sie sich die Definition der Gruppen an: Sie haben hier redundante Inhalte konzipiert, die bei Nutzern später verwirrend wirken dürften.
+
+== 3.2.) Zu den übrigen Ansichten
+
+Die beiden anderen Ansichten sind bis auf ein Detail gut: Warum sollen Nutzer sich die Highscore-Liste nicht ansehen dürfen, nur weil Sie gerade ausgeloggt sind?
+
+Wertung 5: Ansichten: 3 / 5
+- für jede sinnvolle Ansicht: 1
 
 -->
