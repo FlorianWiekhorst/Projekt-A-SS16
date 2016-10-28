@@ -1,331 +1,97 @@
 <!-- Die strukturellen Elemente aus denen Asara Digital bestehen soll: 
-	Stand 17.09.2016	
+	Stand 28.10.2016	
 Aufgeteilt in die drei Schritte [(1) Ausarbeitung der strukt. Elem., 
 (2) Ausarbeitung der Gruppen und (3) Ausarbeitung der Ansichten]:
 _________________
-### Elemente ### 
+### Elemente ### (Ohne Duplikate)
 
-		-001- Hintergrundbild ("Startseite")
-		-002- Überschrift ("Spieltitel")
-		-003- Absatz ("Geschichte vom Spiel")
-		-004- Hintergrundmusik ("Titelmusik")
-
-		-005- Schaltfläche (Login)
-		-006- Schaltfläche (Registrierung)
-		-007- Schaltfläche (Highscore)
-
-		-008- Tabelle  (Spielernamen/Punkte)
-			-009- Zelle für Spaltenüberschrift ("Spielernamen")
-				-010- (x10) Zelle für (Namen von Spielern) (Top-10-Highscoreliste)
-			-011- Zelle für Spaltenüberschrift (Punkte)
-				-012- (x10) Zelle für (Punkte von Spielern)
-		-013- Schaltfläche (Zurück zum Titel)
-	
-		-014- Überschrift ("Registrierung")
-		-015- Container (Formular)
-			-016- Label (Spielername)
-			-017- Eingabefeld (Für Spielernamen)
-			-018- Label (Passwort)
-			-019- Eingabefeld (Für Passwort)
-			-020- Label (Email)
-			-021- Eingabefeld (Für Email-adresse)
-			-022- Label (Email Wiederholen)
-			-023- Eingabefeld (Für Email-adressen Wiederholung)
-			-024- (x4) Fehlermeldung (Zeigt dem User eine der passenden Register-Fehlermeldungen an)
-			-025- Label (Jetzt Registrieren)
-			-026- Schaltfläche (Registrierung abschicken)
-			-027- Link zur Spielseite (Nur bei erfolgreicher Registrierung)
-		-013- Schaltfläche (Zurück zum Titel)	
+		-001- Hintergrundbild: Anmeldebereich / Spiel / Highscore / Firmenlogo
+		-002- Verlinkung: Startseite / Loginbereich / Registerbereich / Highscoreliste / Spiel / Impressum
+		-003- Absatz: Geschichte vom Spiel / Impressum der Firma
+		-004- Hintergrundmusik: Titelmusik / Spielmusik
+		-005- Überschriften-Container: Spieltitel / Login / Registrierung / Highscoreliste / Zelt / Werkstatt / Palast / Bank / Marktplatz / Baufeld 
+		-006- Label für: Spielername / Passwort / Email / Email wiederholen / Einloggen / Registrieren / Runde beenden / Inventar / Ausloggen / Übersicht / Kaufen / Abbrechen / "Mit 2 Einkäufern kaufen" / "Mit Einkäufer der Farbe $Farbe kaufen"
+		-007- Eingabefeld: Textfeld
+		-008- Fehlermeldung: Username unbekannt / pw falsch / email wiederholung ungleich email / emil schon vergeben / pw zu kurz / emailform falsch / zuwenig Gold / falsche Einkaeuferfarbe / belegtes Baufeld
+		-009- Info-Meldung: Kaufbericht(Kaufbestätigung an alle Spieler) / Rundennummer / Countdown
+		-010- Submit: Login / Register / Chat / Handel
+		-011- Schaltfläche: Zelt / Werkstatt / Palast / Bank / Marktplatz / Baufeld / BonusMarke / Ausloggen / Inventar / Übersicht / Kaufen / Abbrechen / RundeBeenden / "Mit 2 Einkäufern kaufen" / "Mit Einkäufer der Farbe $Farbe kaufen"
+		-012- Formular-Container: Login / Register
 		
-		-028- Überschrift ("Login")
-		-029- Container (Formular)
-			-030- Label (Spielername)
-			-031- Eingabefeld (Für Spielernamen)
-			-032- Label (Passwort)
-			-033- Eingabefeld (Für Passwort)
-			-034- (x3) Fehlermeldung (Zeigt dem User eine der passenden Login-Fehlermeldungen an)
-			-035- Label ("Logindaten abschicken")
-			-036- Schaltfläche (Login abschicken)
-			-037- Link zur Spielseite (Nur bei erfolgreichem Login)
-		-013- Schaltfläche (Zurück zum Titel)
-
-		-038- Überschrift (Zeigt aktiven Bereich an)
-		-039- Tabelle (Spielernamen/Gold/Punkte/aktiv/Marke)
-			-040- Zelle für Spaltenüberschrift ("Spielernamen")
-			-041- Zelle für Spaltenüberschrift ("SpielerGold")
-			-042- Zelle für Spaltenüberschrift ("SpielerPunkte")
-			-043- Zelle für Spaltenüberschrift ("AktiverSpieler")
-			-044- Zelle für Spaltenüberschrift ("BesitztBonusMarke")
-			-045- (xAnzahlAktiverSpieler) "Schaltfläche Spielername"-Zelle für Spielername (Die Spielernamen der Übersichtstabelle sind klickbar um einen handel zu starten)
-			-046- (xAnzahlAktiverSpieler) Zelle für Spielergold
-			-047- (xAnzahlAktiverSpieler) Zelle für SpielerPunkte
-			-048- (xAnzahlAktiverSpieler) Zelle für Aktiv/Inaktiv-Feld
-			-049- (xAnzahlAktiverSpieler) Zelle für BomusmarkeFeld
-		-050- Schriftzug (Zeigt aktuelle Rundennummer an)
-		-051- Chatfenster
-			-052- (x12) Zeile für Chatnachrichten
-			-053- Eingabefeld (Für Chatnachricht)
-			-054- Schaltfläche (Chatnachricht abschicken)
-			
-		-055- (x8)Link (Zum entsprechenden Bereich)
-		-056- (x8)Label (Beschriftung des Links:z.b."Marktplatz","Baufeld" usw)
-		
-		-057- Schaltfläche (Runde Beenden)
-			-058- Label (Runde beenden)
-		-059- Schaltfläche (Inventar anzeigen)
-			-060- Label (Mein Inventar)
-		-061- Schaltfläche (Zur Übersichtsseite)
-			-062- Label (Zur Übersichtsseite)
-		-063- Schaltfläche (Ausloggen)
-			-064- Label (Ausloggen)
-			-065- Textfeld (Y/N Logoutfrage)
-				-066- Schaltfläche (Entgültig Ausloggen)
-					-067- Label (bestätigung)
-				-068- Schaltfläche (Cancel)
-					-069- Label (Logout abbrechen)
-	
-		-070- Php-Klasse GameMaster (Überwacht Abläufe/erzeugt Inhalte/füllt Tabellen/baut Türme)
-			-071- Funktion Array_Einkäufer (Arrayliste für Einkäufer erzeugen [Größe:Spieler*15])
-			-072- Funktion Array_Basisteile (Arrayliste für Basisteile erzeugen [Größe:Spieler*5])
-			-073- Funktion Array_Mittelteile (Arrayliste für Mittelteile erzeugen [Größe:Spieler*5])
-			-074- Funktion Array_Spitzen (Arrayliste für Spitzen erzeugen [Größe:Spieler*5])
-			-075- Funktion Array_Fenster (Arrayliste für Fenster erzeugen [Größe:Spieler*5])
-			-076- Funktion Array_leuchtende_Fenster (Arrayliste für Leuchtende_Fenster erzeugen [Größe:Spieler*2])
-			-077- Funktion Array_Baufelder (Arrayliste für Baufelder erzeugen [Größe:Spieler*3])
-			-078- Funktion Create_Array_SpielerInventar_Einkäufer (Erzeugt für jeden aktiven Spieler ein Inventar-Array für Einkäufer [Größe:20])
-			-079- Funktion Create_Array_SpielerInventar_Bauteile (Erzeugt für jeden aktiven Spieler ein Inventar-Array für Bauteile [Größe:15])
-			-080- Funktion Create_Array_Fertige_Türme (Erzeugt ein Array für alle fertigen Türme [Größe:Spieler*20])
-			-081- Funktion Shuffle (mischt ein Array/für jeden Rundenstart/Spielbeginn)
-			-082- Funktion Einkäufer_Verteilen (Füllt die ersten 7 Plätze von jedem SpielerInventar_Einkäufer mit Einkäufern)
-			-083- Funktion Aktion (Entfernt|gibt:[Gold,Bauteile,Einkäufer,Bonusmarke,aktivität] /blockt benutztes Baufeld/Füllt|leert Arrays:[Bauteile,Inventar,Übersicht,usw])
-	
-			-084- Funktion Zufall (Wählt einen Wert: [1-AnzahlSpieler] und bestimmt Startspieler)
-			-085- Funktion VergabeBonusMarke (Gibt BonusMarke an ermittelten Spieler/Setzt aktiverSpieler_Zelle der Übersichtstabelle auf aktiv/ermöglicht das anhandeln anderer Spieler)
-		
-			-086- Funktion Goldrausch (Legt für jeden Spieler eine Int-Variabel Spielername_Gold mit dem Wert 25 an/plaziert Variabelnwert in der Tabelle)
-		
-			-087- Funktion End_Round
-			-088- Funktion End_Game
-			-089- Funktion Reach_Highscore
-		
-		-090- Php-Klasse Countdown (Erzeugt einen simplen Timer mit 4 variablen: "name","start","stop","zeit")
-			-091- Funktion start-timer
-			-092- Funktion start-runde	
-			-093- Funktion stop-runde
-			-094- Funktion reset_timer
-			-095- Label Countdown (Zeigt verbleibende Zeit an)
-		
-		-096- Php-Klasse Handeln (benutzt auch den Countdown/Schältflächen der Spielernamen)
-			-097- Funktion Handel_starten (Öffnet bei beiden Handelspartnern die Handelsseite/Erzeugt aus dem Bauteile_Array der Spieler eine Liste mit Schaltflächen für jedes ihrer Bauteile/Startet HandelsTimer)
-				-098- Überschrift ("Handel mit $Spielername")
-				-099- Liste (eigener Bauteile)
-				-100- Schaltfläche Handel_Bestätigen
-				-101- Label (Handelsbestätigung)
-				-102- Schaltfläche Handel_Abbrechen
-				-103- Label (Handelbeenden)
-			-104- Funktion Handel_abbrechen
-
-		-105- Php-Klasse Gegner (Handel_starten/Handel_annehmen/zug_ausführen)
-		
-		-106- Überschrift ("Baufeld")
-			-107- Liste (Baufelder)
-			-108- Fehlermeldung (Hinweis auf belegtes Baufeld)
-			-109- Textfeld (Wirklich kaufen Y/N)
-			-110- Schaltfläche (Kaufen)
-			-111- Label (Kaufen)
-			-112- Schaltfläche (Kauf abbrechen)
-			-113- Label (Kauf Abbrechen)
-		
-		-114- Überschrift ("Marktplatz")
-			-115- Liste (Basisteile)
-			-116- Liste (Mittelteile)
-			-117- Liste (Spitzen)
-			-118- Liste (Fenster)
-			-119- Fehlermeldung (wenn zuwenig Gold/falsche Einkäuferfarbe)
-			-120- Schaltfläche (Mit 2 Einkäufern kaufen)
-			-121- Label (Kauf mit 2 Einkäufern)
-			-122- Schaltfläche (Kauf mit Einkäufer der richtigen Farbe)
-			-123- Label (Mit Einkäufer der Farbe $Farbe kaufen)
-			-124- Textfeld (Kaufbestätigung an alle Spieler)
-		
-		-125- Überschrift ("Bank")
-			-126- Liste (Eigene Einkäufer)
-		
-		-127- Überschrift ("Palast")
-			-128- Schaltfläche (Um Bonusmarke für Gold zu erwerben)
-		
-		-129- Überschrift ("Werkstatt")
-			-130- Liste (Leuchtende_Fenster)
-			-131- Fehlermeldung (wenn zuwenig Gold/falsche Einkäuferfarbe)
-			-132- Schaltfläche (Mit 2 Einkäufern kaufen)
-			-133- Label (Kauf mit 2 Einkäufern)
-			-134- Schaltfläche (Kauf mit Einkäufer der richtigen Farbe)
-			-135- Label (Mit Einkäufer der Farbe $Farbe kaufen)
-			-136- Textfeld (Kaufbestätigung an alle Spieler)
-		
-		-137- Überschrift ("Zelt")
-			-138- Liste (Array für Einkäufer)
-			-139- Fehlermeldung (wenn zuwenig Gold)
-			-140- Schaltfläche (Einkäufer für Gold anwerben)
-			-141- Label (Einkäufer der Farbe $Farbe mit Gold kaufen)
-			-142- Textfeld (Kaufbestätigung an alle Spieler)
-		
-		-143- Überschrift ("HowToPlay")
-			-144- Image (Mit Pfeilen und Hilfetext einbinden)
-
-
-			
+		-013- Tabelle: Highscore / Übersicht / Inventar / Chat / Baufelder / Basisteile / Mittelteile / Spitzen / Fenster / Einkaeufer / leuchtende Fenster / Einkaeufer_Spieler
+			-014- Zeile: x10 für Highscore / xAnzahlMitspieler für Übersicht / x15 für Chat / xAnzahlBauteile für Inventar /x8 für Baufelder / 
+			-015- "Überschrift-"zellen: Spielernamen / Punkte / Gold / Am-Zug / Bonusmarke / Bauteil 
+			-016- "Inhalt-"zellen: SpielerNamen / SpielerPunkte / SpielerGold / Am-Zug / Bonusmarke / Bauteil / Chatnachrichten
 			
 ===========================================================================	
 ### Gruppen ###
 	_____________________________
 	
-		I. Index
-			-001- Hintergrundbild ("Startseite")
-			-002- Überschrift ("Spieltitel")
+		I. Startseite
+			-001- Hintergrundbild ("Anmeldebereich")
+			-005- Überschrift ("Spieltitel")
 			-003- Absatz ("Geschichte vom Spiel")
 			-004- Hintergrundmusik ("Titelmusik")
-
-			-005- Schaltfläche (Login)
-			-006- Schaltfläche (Registrierung)
-			-007- Schaltfläche (Highscore)
+			-002- Verlinkung ("Loginbereich")
+			-002- Verlinkung ("Registerbereich")
+			-002- Verlinkung ("Highscoreliste")
 	_____________________________
 	
-		II. Login
-			-028- Überschrift ("Login")
-			-029- Container (Formular)
-				-030- Label (Spielername)
-				-031- Eingabefeld (Für Spielernamen)
-				-032- Label (Passwort)
-				-033- Eingabefeld (Für Passwort)
-				-034- (x3) Fehlermeldung (Zeigt dem User eine der passenden Login-Fehlermeldungen an)
-				-035- Label ("Logindaten abschicken")
-				-036- Schaltfläche (Login abschicken)
-				-037- Link zur Spielseite (Nur bei erfolgreichem Login)
-			-013- Schaltfläche (Zurück zum Titel)
+		II. Authentifizierung
+			-005- Überschrift ("Login" / "Registrierung")
+			-012- Formular-Container ("Login" / "Register")
+				-006- Label (Spielername / Passwort / Email / Email Wiederholen / Einloggen / Registrieren)
+				-007- Eingabefeld (Textfeld)
+				-008- Fehlermeldung ("Username unbekannt" / "pw falsch")("email wiederholung ungleich email" / "emil schon vergeben" / "pw zu kurz" / "emailform falsch")
+				-010- Submit: Login / Register
+			-002- Verlinkung: ("Spiel" / "Startseite")
 	_____________________________	
 	
-		III. Registrierung
-			-014- Überschrift ("Registrierung")
-			-015- Container (Formular)
-				-016- Label (Spielername)
-				-017- Eingabefeld (Für Spielernamen)
-				-018- Label (Passwort)
-				-019- Eingabefeld (Für Passwort)
-				-020- Label (Email)
-				-021- Eingabefeld (Für Email-adresse)
-				-022- Label (Email Wiederholen)
-				-023- Eingabefeld (Für Email-adressen Wiederholung)
-				-024- (x4) Fehlermeldung (Zeigt dem User eine der passenden Register-Fehlermeldungen an)
-				-025- Label (Jetzt Registrieren)
-				-026- Schaltfläche (Registrierung abschicken)
-				-027- Link zur Spielseite (Nur bei erfolgreicher Registrierung)
-			-013- Schaltfläche (Zurück zum Titel)	
+		III. Uebersichtstabelle
+			-013- Tabelle ("Übersicht")
+				-014- Zeile (1x pro Mitspieler)
+				-015- "Überschrift-"zelle (5 insg: "SpielerNamen"/"SpielerGold"/"SpielerPunkte"/"Am_Zug"/"BonusMarke")
+				-016- "Inhalt-"zelle (5x pro Mitspieler: SpielerNamen / SpielerPunkte / SpielerGold / Am-Zug / Bonusmarke)
+			-009- Info-Meldung ("Rundennummer")
 	_____________________________	
 	
-		IV. Uebersichtstabelle
-			-039- Tabelle (Spielernamen/Gold/Punkte/aktiv/Marke)
-				-040- Zelle für Spaltenüberschrift ("Spielernamen")
-				-041- Zelle für Spaltenüberschrift ("SpielerGold")
-				-042- Zelle für Spaltenüberschrift ("SpielerPunkte")
-				-043- Zelle für Spaltenüberschrift ("AktiverSpieler")
-				-044- Zelle für Spaltenüberschrift ("BesitztBonusMarke")
-				-045- (xAnzahlAktiverSpieler) "Schaltfläche Spielername"-Zelle für Spielername (Die Spielernamen der Übersichtstabelle sind klickbar um einen handel zu starten)
-				-046- (xAnzahlAktiverSpieler) Zelle für Spielergold
-				-047- (xAnzahlAktiverSpieler) Zelle für SpielerPunkte
-				-048- (xAnzahlAktiverSpieler) Zelle für Aktiv/Inaktiv-Feld
-				-049- (xAnzahlAktiverSpieler) Zelle für BomusmarkeFeld
-			-050- Schriftzug (Zeigt aktuelle Rundennummer an)
+		IV. Chatfenster
+			-013- Tabelle ("Chat")
+				-014- Zeile (x15 für Chatnachrichten)
+				-007- Eingabefeld: Textfeld
+				-010- Submit: Chat
 	_____________________________	
 	
-		V. Chatfenster
-			-051- Chatfenster
-				-052- (x12) Zeile für Chatnachrichten
-				-053- Eingabefeld (Für Chatnachricht)
-				-054- Schaltfläche (Chatnachricht abschicken)
-	_____________________________	
-	
-		VI. Menueleiste
-			-038- Überschrift (Zeigt aktiven Bereich an)
-			-055- (x8)Link (Zum entsprechenden Bereich)
-			-056- (x8)Label (Beschriftung des Links:z.b."Marktplatz","Baufeld" usw)
-			-057- Schaltfläche (Runde Beenden)
-				-058- Label (Runde beenden)
-			-059- Schaltfläche (Inventar anzeigen)
-				-060- Label (Mein Inventar)
-			-061- Schaltfläche (Zur Übersichtsseite)
-				-062- Label (Zur Übersichtsseite)
-			-063- Schaltfläche (Ausloggen)
-				-064- Label (Ausloggen)
-				-065- Textfeld (Y/N Logoutfrage)
-					-066- Schaltfläche (Entgültig Ausloggen)
-						-067- Label (bestätigung)
-					-068- Schaltfläche (Cancel)
-						-069- Label (Logout abbrechen)
+		V. Menueleiste
+			-005- Überschriften-Container: ("Zelt" / "Werkstatt" / "Palast" / "Bank" / "Marktplatz" / "Baufeld" / "Inventar" / "Uebersicht")
+			-011- Schaltfläche: ("Zelt" / "Werkstatt" / "Palast" / "Bank" / "Marktplatz" / "Baufeld" / "Inventar" / "Uebersicht" / "RundeBeenden" / "Ausloggen")
+			-006- Label: ("Zelt" / "Werkstatt" / "Palast" / "Bank" / "Marktplatz" / "Baufeld" / "Inventar" / "Uebersicht" / "RundeBeenden" / "Ausloggen")
 	_____________________________
 	
-		VII. Highscoreliste
-			-008- Tabelle  (Spielernamen/Punkte)
-				-009- Zelle für Spaltenüberschrift ("Spielernamen")
-					-010- (x10) Zelle für (Namen von Spielern) (Top-10-Highscoreliste)
-				-011- Zelle für Spaltenüberschrift (Punkte)
-					-012- (x10) Zelle für (Punkte von Spielern)
-			-013- Schaltfläche (Zurück zum Titel)
+		VI. Highscoreliste
+			-005- Überschriften-Container ("Highscoreliste")
+			-013- Tabelle: Highscore
+				-014- Zeile (x10)
+				-015- "Überschrift-"zelle (2 insg: "Spielernamen" / "SpielerPunkte")
+				-016- "Inhalt-"zelle (2x pro Zeile: "Spielernamen" / "SpielerPunkte")
+			-002- Verlinkung: ("Startseite")
 	_____________________________	
 	
-		VIII. Spielbereiche
-			-106- Überschrift ("Baufeld")
-				-107- Liste (Baufelder)
-				-108- Fehlermeldung (Hinweis auf belegtes Baufeld)
-				-109- Textfeld (Wirklich kaufen Y/N)
-				-110- Schaltfläche (Kaufen)
-				-111- Label (Kaufen)
-				-112- Schaltfläche (Kauf abbrechen)
-				-113- Label (Kauf Abbrechen)
-			
-			-114- Überschrift ("Marktplatz")
-				-115- Liste (Basisteile)
-				-116- Liste (Mittelteile)
-				-117- Liste (Spitzen)
-				-118- Liste (Fenster)
-				-119- Fehlermeldung (wenn zuwenig Gold/falsche Einkäuferfarbe)
-				-120- Schaltfläche (Mit 2 Einkäufern kaufen)
-				-121- Label (Kauf mit 2 Einkäufern)
-				-122- Schaltfläche (Kauf mit Einkäufer der richtigen Farbe)
-				-123- Label (Mit Einkäufer der Farbe $Farbe kaufen)
-				-124- Textfeld (Kaufbestätigung an alle Spieler)
-			
-			-125- Überschrift ("Bank")
-				-126- Liste (Eigene Einkäufer)
-			
-			-127- Überschrift ("Palast")
-				-128- Schaltfläche (Um Bonusmarke mit Gold zu erwerben)
-			
-			-129- Überschrift ("Werkstatt")
-				-130- Liste (Leuchtende_Fenster)
-				-131- Fehlermeldung (wenn zuwenig Gold/falsche Einkäuferfarbe)
-				-132- Schaltfläche (Mit 2 Einkäufern kaufen)
-				-133- Label (Kauf mit 2 Einkäufern)
-				-134- Schaltfläche (Kauf mit Einkäufer der richtigen Farbe)
-				-135- Label (Mit Einkäufer der Farbe $Farbe kaufen)
-				-136- Textfeld (Kaufbestätigung an alle Spieler)
-			
-			-137- Überschrift ("Zelt")
-				-138- Liste (Array für Einkäufer)
-				-139- Fehlermeldung (wenn zuwenig Gold)
-				-140- Schaltfläche (Einkäufer für Gold anwerben)
-				-141- Label (Einkäufer der Farbe $Farbe mit Gold kaufen)
-				-142- Textfeld (Kaufbestätigung an alle Spieler)
-			
-			-143- Überschrift ("HowToPlay")
-				-144- Image (Mit Pfeilen und Hilfetext einbinden)
+		VII. Spielbereiche	// Sie sagten das die verschiedenen Spielbereiche eigentlich einer seien. Darum sind diese nun unuebersichtlich in einer Gruppe vereint. Die vers. Bereiche bedienen sich derselben strukt. Elemente, nutzen diese jedoch unterschiedlich.
+			-005- Überschriften-Container: ("Inventar" / "Baufeld" / "Marktplatz" / "Zelt" / "Werkstatt" / "Bank" / "Uebersicht" / "Palast")
+				-013- Tabelle: (Inventar / Baufelder / Basisteile / Mittelteile / Spitzen / Fenster / Einkaeufer / leuchtende Fenster / Einkaeufer_Spieler)
+				-015- "Überschrift-"zelle ("Eigene Bauteile","Eigene Einkaeufer" für Inventar / "Felder zum bebauen" für Baufeld / "Basisteile","Mittelteile","Spitzen","Fenster" für Marktplatz / "verfuegbare Einkaeufer" für Zelt / "leuchtende Fenster" für Werkstatt / "Ihre Einkaeufer zum verkaufen" für Bank)
+				-016- "Inhalt-"zelle (xAnzahlBauteile,xAnzahlEinkaeufer für Inventar / xAnzahlMitspieler für Baufeld / xAnzahlMitspieler*2 für die 4 Bereiche des Marktplatzes / xAnzahlMitspieler für Zelt / xAnzahlMitspieler/3 für Werkstatt / xAnzahlEinkaeufer des Spielers)
+				-014- Zeile (xAnzahlBauteile für Inventar / xAnzahlMitspieler für Baufeld / xAnzahlMitspieler*2 für Marktplatz / xAnzahlMitspieler für Zelt / [xAnzahlMitspieler/3] für Werkstatt / xAnzahlEinkaeufer des Spielers)
+				-008- Fehlermeldung: zuwenig Gold / falsche Einkaeuferfarbe / belegtes Baufeld
+				-009- Info-Meldung: Kaufbericht(Kaufbestätigung an alle Spieler)
+				-011- Schaltfläche (Mit 2 Einkäufern kaufen / Mit Einkäufer der Farbe $Farbe kaufen / BonusMarke / Kaufen)
+				-006- Label (Kauf mit 2 Einkäufern / Mit Einkäufer der Farbe $Farbe kaufen / Kaufen)
 	_____________________________
 	
-		IX. Timer
-			-095- Label Countdown (Zeigt verbleibende Zeit an) 
+		VIII. Timer
+			-009- Info-Meldung: Countdown(Zeigt verbleibende Zeit an) 
 			 
-		
-	*** Die PHP-Elemente erstelle ich gesondert, und binde die mit include() dann ein. ***
 
 ===========================================================================
 ### Ansichten ###
@@ -333,27 +99,26 @@ _________________
 	
 	________view_index__________
 	|			   |
-	|   I. Index	    	   |
-	|    II. Login	           |
-	|     III. Registrierung   |
+	|   I. Startseite	   |
+	|    II. Authentifizierung |
+	|       		   |
 	|__________________________|
-
 	
 	
 	________view_game___________
 	|			   |
-	| IV. Uebersichtstabelle   |
-	|  V. Chatfenster	   |
-	|   VI. Menueleiste	   |
-	|    VIII. Spielbereiche   |
-	|     IX. Timer		   |
+	| III. Uebersichtstabelle  |
+	|  IV. Chatfenster	   |
+	|   V. Menueleiste	   |
+	|    VII. Spielbereiche    |
+	|     VIII. Timer	   |
 	|__________________________|
 	
 	
 	
 	______view_highscore________
 	|			   |
-	|   VII. Highscoreliste	   |
+	|   VI. Highscoreliste	   |
 	|__________________________|
 	
 	
@@ -361,22 +126,7 @@ _________________
 ===========================================================================	
 	
 	
-### Ende strukt-Update vom 17.09.2016 #####
-
-!!!! Info-Anmerk. zur Bearbeitung: 06.10.2016 !!!!
-Seit dem Feedback vom 27.07. sind viele Wochen vergangen.
-Ich habe (nach meinem Urlaub im August) direkt die Beschreibung komplet neu geschrieben.
-Und danach 1 zu 1 von der Beschreibung neue strukt. Elemente erstellt.
-Näher an der Beschreibung kann die Reihenfolge der Elemente nicht sein.
-
-In der Vergangenheit habe ich mich dann direkt an den HTML-Part gemacht,
-allerdings wurde mir von Ihnen davon abgeraten, da ich 90% davon eh nicht gebrauchen könnte,
-da ich meine Beschreibung + strukt erneuern musste.
-
-Somit möchte ich erstmal ein "OK" für meine strukt, bevor ich wieder HTML bearbeite.
-
-!!!! Ende Info-Anmerk. zur Bearbeitung: 06.10.2016 !!!!
-
+### Ende strukt-Update vom 28.10.2016 #####
 ###########################################
 ###########################################
     
