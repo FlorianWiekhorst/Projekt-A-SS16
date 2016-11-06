@@ -1,27 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="de">
-<head>
-	<meta name="description" content="Simple WebGame">
-	<meta name="author" content="Florian Wiekhorst">
-	<meta charset="UTF-8">	
-	<title>Asara Hauptmenü</title>
-	<link href="CSS/index.css" rel="stylesheet"/>
-</head>
-<body> <!--  -001- Hintergrundbild ("Startseite") / -004- Hintergrundmusik ("Titelmusik") -->
-	<header> 
-		<h1>Asara - Land der 1000 Bugs</h1> <!-- -002- Überschrift ("Spieltitel") -->
-	</header>
-	<section>
-		<img src="https://cf.geekdo-images.com/images/pic745896.jpg" id="titleImg"><br> <!-- Das TitelBild -->
-		
-		<!--  -003- Absatz ("Geschichte vom Spiel") -->
-	</section>
-	<aside>
-		<button id="anmeldeButton">Anmelden</button> 		 <!-- -005- Schaltfläche (Login) -->
-		<button id="registButton">Register Mich!</button> 	 <!-- -006- Schaltfläche (Registrierung) -->
-		<button id="highscoreButton">Zur HighScoreliste</button> <!-- -007- Schaltfläche (Highscore) -->
-	</aside>
-</body>
+	<head>
+		<meta name="description" content="Simple WebGame">
+		<meta name="author" content="Florian Wiekhorst">
+		<meta charset="UTF-8">	
+		<title>Asara Hauptmenue</title>
+		<link href="CSS/index.css" rel="stylesheet"/>
+	</head>
+	
+	<body> 
+			<?php include("Gruppen_de/Startseite.php") ?>
+			<?php include("Gruppen_de/Authentifizierung.php") ?>
+	</body>
+	
 </html>
 
 
