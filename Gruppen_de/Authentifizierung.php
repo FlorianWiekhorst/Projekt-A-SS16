@@ -8,6 +8,19 @@
 			-002- Verlinkung: ("Spiel" / "Startseite")
 	-->
 	
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+	<title>Authentifizierung</title>
+</head>
+<body>
+	
+	<?php include("Formulare/login.php") ?>
+	<?php include("Formulare/register.php") ?>
+	
+</body>
+</html>
 	
 	
 	

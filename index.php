@@ -1,4 +1,46 @@
-<!DOCTYPE html>
+<?php
+session_start();
+header("Content-Type: text/html; Charset=utf-8");
+
+$host = 'localhost';
+$user = 'root';
+$password = 'hardcorepassword';
+$db = 'asaradatenbank';
+
+$connection = mysqli_connect($host, $user, $password);
+if($connection){
+	if(!mysqli_select_db($connection, $db))
+		echo "<br>".mysqli_error($connection);
+}else{
+	echo "<br>".mysqli_error($connection);
+}
+
+if(!empty($_SESSION['userID'])){
+	$userID = mysqli_real_escape_string($connection, $_SESSION['userID']);
+	$query = "SELECT * FROM users WHERE id = '$userID'";
+	$execQuery = mysqli_query($connection, $query);
+	if(mysqli_num_rows($execQuery) != 0){
+		$userData = mysqli_fetch_array($execQuery);
+		echo "<h1>Herzlich Willkommen, ".$userData['name']."</h1>";
+	}
+}
+
+echo "
+	<p>
+	<a href='index.php?form=register'>Registrieren</a>
+	<a href='index.php?form=login'>Einloggen</a>
+	</p>
+	";
+
+if(empty($_GET['form']) OR !empty($_GET['form']) AND $_GET['form'] == "register"){
+	//Registrierungs-Formular
+	include("register.php");
+}else if(!empty($_GET['form']) AND $_GET['form'] == "login"){
+	//Login-Formular
+	include("login.php");
+}
+
+?>
 
 <html lang="de">
 	<head>
@@ -10,8 +52,10 @@
 	</head>
 	
 	<body> 
-			<?php include("Gruppen_de/Startseite.php") ?>
-			<?php include("Gruppen_de/Authentifizierung.php") ?>
+			
+	
+	
+			<?php include("Gruppen_de/Startseite.php")?>
 	</body>
 	
 </html>
