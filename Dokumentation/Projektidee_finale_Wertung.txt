@@ -200,25 +200,26 @@ Sie haben hier sehr schön die Spielzüge von Computerspielern aufgeführt, die 
 - Wenn Micrservices vergessen wurden, die für verteilte adaptive Anwendungen eine Voraussetzung sind, je 1 Pk. Abzug: 0
 
 =========================================
-=== Wertung 5: Ansichten/Views: n / 5 ===
+=== Wertung 5: Ansichten/Views: 3 / 5 ===
 =========================================
 - für jede sinnvolle Ansicht 1 Pk.: 3
 
-Aufgabe 6 und 7 setzen voraus, dass in Aufgabe 1 - 5 insgesamt min. 20 Punkte erreicht wurden.
-Tipp: Dennoch ist es sinnvoll, dass Sie Microservices direkt in HTML mit PHP- und MySQL-Anbindung umsetzen. Denn so können Sie erkennen, wo Ihre Planung Schwächen hat.
-
 =================================
-=== Wertung 6: HTML 5: n / 10 ===
+=== Wertung 6: HTML 5: 0 / 10 ===
 =================================
-- Umsetzung pro Microservice je 1 Pk. (max. 10):
-- Missachtung von Änderungen von HTML 4.01 zu 5 (-5 bis 0 Pk.):
-- Abweichung von den Vorgaben in der strukt.txt (je -1/2 Pk.):
+- Umsetzung pro Microservice je 1 Pk. (max. 10): 0
+- Missachtung von Änderungen von HTML 4.01 zu 5 (-5 bis 0 Pk.): 0
+- Abweichung von den Vorgaben in der strukt.txt (je -1/2 Pk.): 0
 
 ====================================
-=== Wertung 7: PHP/MySQL: n / 30 ===
+=== Wertung 7: PHP/MySQL: 5 / 30 ===
 ====================================
-- Funktionalität von Formularen 0 bis 5 Pk.:
-- Funktionalität für Microservices 0 bis 5 Pk.:
-- Realisierung einer Programmlogik 0 bis 10 Pk.:
-- Erzeugung einer DB 0 bis 5 Pk.:
-- Anbindung einer Transaktion, um Variablen in der Anwendung zu verwenden 0 bis 5 Pk.:
+- Funktionalität von Formularen 0 bis 5 Pk.: 0
+- Funktionalität für Microservices 0 bis 5 Pk.: 1
+- Realisierung einer Programmlogik 0 bis 10 Pk.: 0
+- Erzeugung einer DB 0 bis 5 Pk.: 0
+- Anbindung einer Transaktion, um Variablen in der Anwendung zu verwenden 0 bis 5 Pk.: 4
+
+Damit haben Sie 26 von 35 nötigen Punkten erreicht. 
+
+Die fehlenden 9 Punkte können Sie wie beschrieben über die Umsetzung eines Projektes erreichen, das Sie in den nächsten Tagen erhalten werden. Sollten dann immer noch Punkte fehlen, können Sie an Ihrem Projekt weiterarbeiten. Sprechen Sie mich in dem Fall zeitnah an.
